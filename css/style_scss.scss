@@ -1,0 +1,93 @@
+@charset "utf-8"; 
+
+.btn_style_01 {
+    border: none; 
+    background: transparent;
+    cursor: pointer;
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+  
+  // THE GOOD STUFF
+  
+  :root {
+    --shadow-color: 208deg 22% 58%;
+    --shadow-elevation-low:
+      0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.34),
+      0.4px 0.8px 1px -1.2px hsl(var(--shadow-color) / 0.34),
+      1px 2px 2.5px -2.5px hsl(var(--shadow-color) / 0.34);
+    --shadow-elevation-medium:
+      0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.36),
+      0.8px 1.6px 2px -0.8px hsl(var(--shadow-color) / 0.36),
+      2.1px 4.1px 5.2px -1.7px hsl(var(--shadow-color) / 0.36),
+      5px 10px 12.6px -2.5px hsl(var(--shadow-color) / 0.36);
+    --shadow-elevation-high:
+      0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.34),
+      1.5px 2.9px 3.7px -0.4px hsl(var(--shadow-color) / 0.34),
+      2.7px 5.4px 6.8px -0.7px hsl(var(--shadow-color) / 0.34),
+      4.5px 8.9px 11.2px -1.1px hsl(var(--shadow-color) / 0.34),
+      7.1px 14.3px 18px -1.4px hsl(var(--shadow-color) / 0.34),
+      11.2px 22.3px 28.1px -1.8px hsl(var(--shadow-color) / 0.34),
+      17px 33.9px 42.7px -2.1px hsl(var(--shadow-color) / 0.34),
+      25px 50px 62.9px -2.5px hsl(var(--shadow-color) / 0.34);
+  }
+  
+  .btn_style_01 {
+    border: none; 
+    background: transparent;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.4rem 2.2rem;
+    overflow: hidden;
+    border-radius: 100vmax;
+    box-shadow: var(--shadow-elevation-high);
+    transition: box-shadow 0.2s ease-in-out;
+    
+    &::after, &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-color: red;
+    }
+    
+    &::before {
+      z-index: 1;
+      right: -100%;
+      background: linear-gradient(to right, #9900F0 0%, #FF85B3 50%, #9900F0 100%);
+        background-size: 50% 100%;
+      animation: scroll 1.2s infinite linear;
+    }
+  
+    
+    &::after {
+      z-index: 2;
+      inset: 5px;
+      border-radius: 100vmax;
+      background-color: black;
+      transition: inset 0.2s ease-in-out;
+    }
+    
+    span {
+      z-index: 3;
+      color: white;
+      text-transform: uppercase;
+    }
+    
+    &:hover {
+      box-shadow: var(--shadow-elevation-medium);
+      &::after {
+        inset: 8px;
+      }
+    }
+  }
+  
+  
+  
+  @keyframes scroll {
+    to {
+      transform: translateX(-50%);
+    }
+  }

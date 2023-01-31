@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <script src="/resource/jquery.js"></script>
+        <!--fullpage-->
+        <link rel="stylesheet" href="/resource/fullpage/fullpage.css">
+         <!--swiper-->
+        <link rel="stylesheet" href="/resource/swiper/swiper-bundle.min.css">
+        <script type="module" src="/js/background/main_bg.js"></script>
+        
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/style_scss.scss">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet" />
+        <script type="text/javascript" src="/resource/tweenmax/TweenMax.min.js"></script>
+    </head>
+    <body>
+        <div data-include-path="common/header.html"></div>
+        <div class="site">
+            <div class="circle circle--1"></div>
+            <div class="circle circle--2"></div>
+        </div>
+        <main>
+            <div class="container"  id="fullpage">
+                <section class="section main_vis">
+                    <canvas class="orb-canvas"></canvas>
+                    <div class="w1600">
+                        <div class="main-vis_txt">
+                            <strong>
+                                늘 새로운 크리에이티브로<br>
+                                <i>내일의 변화를 만들어 나갑니다.</i>
+                            </strong>
+                            <p>남다른 광고 아이디어와 전략을 추구하며 창의적인 생각을<br>
+                                존중하고 구체화 합니다.</p>
+                                <button class="btn_style_01">
+                                    <span>프로젝트 문의하기</span>
+                                </button>
+                        </div>
+                        <a href="" class="inq_btn">문의하기</a>
+                    </div>
+                    <!-- <i class="circle01"></i>
+                    <i class="circle02"></i> -->
+                </section>
+                <section class="section main02 ">
+                    <div class="w1600">
+                        <div class="main_title">
+                            <h2><b>혁신을 바라보는</b> 아이앤뷰커뮤니케이션</h2>
+                            <p>혁신적인 관점에서 바라본다라는 의미로 미래에 알맞는 온라인 마케팅 솔루션을<br>
+                                미래를 함께하기 위해 최선을 다하고 있습니다.</p>
+                        </div>
+                        <div class="main02_cont">
+                            <div class="main02_box  w1200 flex">
+                                <div class="main02_left">
+                                    <span class="with_comp">함께한 업체들</span>
+                                    <strong class="comp_no">28,151<i>개</i></strong>
+                                    <p>온라인 마케팅의 처음부터 끝까지,<br>
+                                        필요한 모든 것을 지원합니다.</p>
+                                </div>
+                                <div class="main02_right">
+                                    <img src="/img/main02_graph.png" alt="">
+                                </div>
+                            </div>
+                            <div class="main02_list">
+                                <ul class="flex">
+                                    <li><img src="/img/main02_icon1.png" alt=""></li>
+                                    <li><img src="/img/main02_icon2.png" alt=""></li>
+                                    <li><img src="/img/main02_icon3.png" alt=""></li>
+                                    <li><img src="/img/main02_icon4.png" alt=""></li>
+                                    <li><img src="/img/main02_icon5.png" alt=""></li>
+                                    <li><img src="/img/main02_icon6.png" alt=""></li>
+                                    <li><img src="/img/main02_icon7.png" alt=""></li>
+                                    <li><img src="/img/main02_icon8.png" alt=""></li>
+                                    <li><img src="/img/main02_icon9.png" alt=""></li>
+                                    <li><img src="/img/main02_icon10.png" alt=""></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section main03">
+                    <div class="w1200">
+                        <div class="main_title">
+                            <h2><b>믿고 맡기는</b> 다양한마케팅</h2>
+                        </div>
+                        <div class="main03_cont flex">
+                            <div class="main03_box fis">
+                                <div class="main03_icon">
+                                    <img src="/img/main03_icon1.png" alt="">
+                                </div>
+                                <span class="market_en">Off-line marketing</span>
+                                <b class="market_ko">오프라인 마케팅</b>
+                                <p class="market_desc">
+                                    오프라인 마케팅은 소비자에게 자연스럽게<br>생활 속으로 다가가 각인이 될 수 있습니다.
+                                </p>
+                            </div>
+                            <div class="main03_box">
+                                <div class="main03_icon">
+                                    <img src="/img/main03_icon2.png" alt="">
+                                </div>
+                                <span class="market_en">Search marketing</span>
+                                <b class="market_ko">검색 마케팅</b>
+                                <p class="market_desc">소비자가 필요한 , 혹은 원하는 단어의<br>
+                                    키워드를 검색하였을 때 나오는 광고입니다.</p>
+                            </div>
+                            <div class="main03_box">
+                                <div class="main03_icon">
+                                    <img src="/img/main03_icon3.png" alt="">
+                                </div>
+                                <span class="market_en">SNS marketing</span>
+                                <b class="market_ko">SNS 마케팅</b>
+                                <p class="market_desc">소셜미디어 마케팅은 인스타그램, 트위터,<br>
+                                    페이스북 등 SNS를 활용하는 광고를 말합니다.</p>
+                            </div>
+                            <div class="main03_box">
+                                <div class="main03_icon">
+                                    <img src="/img/main03_icon4.png" alt="">
+                                </div>
+                                <span class="market_en">Viral marketing</span>
+                                <b class="market_ko">바이럴 마케팅</b>
+                                <p class="market_desc">실제리뷰를 통하여 리얼후기로 컨텐츠를<br>
+                                    작성하여 소비자분들의 신뢰를 쌓을수있습니다.</p>
+                            </div>
+                            <div class="main03_box">
+                                <div class="main03_icon">
+                                    <img src="/img/main03_icon5.png" alt="">
+                                </div>
+                                <span class="market_en">Media news marketing</span>
+                                <b class="market_ko">언론 뉴스 마케팅</b>
+                                <p class="market_desc">언론뉴스기사 홍보는 회사의 브랜드 가치를<br>
+                                    가장 효과적으로 높일수있는 마케팅방법입니다</p>
+                            </div>
+                            <div class="main03_box">
+                                <div class="main03_icon">
+                                    <img src="/img/main03_icon6.png" alt="">
+                                </div>
+                                <span class="market_en">GDN marketing</span>
+                                <b class="market_ko">GDN 마케팅</b>
+                                <p class="market_desc">디스플레이 광고는 사용자가 웹이나 앱을<br>
+                                    사용할 때 내 비즈니스를 홍보하는 데 유용합니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section main04">
+                    <div class="main04_cont">
+                        <div class="main_title w1200">
+                            <h2>
+                                온라인 마케팅이 <b>어려우셨던 분들,</b><br>
+                                아이앤뷰와 함께 <b>해결해보세요.</b>
+                            </h2>
+                            <p>수많은 마케팅 종류에 머리 아프실 필요 없습니다.<br>
+                                무작정 다 들어가는 마케팅이 아닌, <i class="c_wh">필요한 마케팅만을 제안</i>합니다!</p>
+                        </div>
+                        <div class="review_slide">
+                            <div class="mySwiper swiper-container-free-mode">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide flex">
+                                        <div class="review_icon"><img src="/img/review_person01.png" alt=""></div>
+                                        <div class="quest_box">
+                                            <p>온라인 상점을 처음 오픈했는데<br>
+                                                어떤 마케팅을 해야하는지 모르겠어요.</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide flex">
+                                        <div class="review_icon"><img src="/img/review_person02.png" alt=""></div>
+                                        <div class="quest_box">
+                                            <p>광고관리시스템을 들어갔는데<br>
+                                                뭐가 뭔지 하나도 모르겠어요ㅠㅠ</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide flex">
+                                        <div class="review_icon"><img src="/img/review_person03.png" alt=""></div>
+                                        <div class="quest_box">
+                                            <p>홈페이지를 통해 저희 브랜드를 알리고<br>
+                                                소비자들에게 신뢰도도 높이고 싶어요!</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide flex">
+                                        <div class="review_icon"><img src="/img/review_person04.png" alt=""></div>
+                                        <div class="quest_box">
+                                            <p>온라인 상점을 처음 오픈했는데<br>
+                                                어떤 마케팅을 해야하는지 모르겠어요.</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide flex">
+                                        <div class="review_icon"><img src="/img/review_person05.png" alt=""></div>
+                                        <div class="quest_box">
+                                            <p>온라인 상점을 처음 오픈했는데<br>
+                                                어떤 마케팅을 해야하는지 모르겠어요.</p>
+                                        </div>
+                                    </div>
+                              </div>
+                        </div>
+                        </div>
+                        <div class="heart_bnr w1200">
+                            <div class="heart_txt">
+                                <b>온라인 마케팅 솔루션 <strong>NO.1</strong></b>
+                                <p>업종에 따른 특성을 파악하여 함께해주시는 광고주분들이<br>
+                                    <i class="c_wh">최고의 효과를 보실 수 있게 아이앤뷰가 함께합니다 :)</i>
+                                </p>
+                            </div>
+                            <div class="heart_wrap">
+                                <i class="icon_heart"></i>
+                                <i class="icon_heart"></i>
+                                <i class="icon_heart"></i>
+                                <i class="icon_heart"></i>
+                                <i class="icon_heart"></i>
+                                <i class="icon_heart"></i>
+                                <i class="icon_heart"></i>
+                                <i class="icon_heart"></i>
+                            </div>
+                            <div class="circle_wrap">
+                                <i class="icon_circle"></i>
+                                <i class="icon_circle"></i>
+                                <i class="icon_circle"></i>
+                                <i class="icon_circle"></i>
+                                <i class="icon_circle"></i>
+                            </div>
+                        </div>
+                </section>
+                <section class="section main05">
+                    <div class="main05_cont flex">
+                        <div class="main05_left">
+                            <div class="main_title">
+                                <h2>
+                                    <b>한눈에 보는</b> 아이앤뷰 소식
+                                </h2>
+                                <p class="c_wh">온라인 뉴스기사를 통해 아이앤뷰커뮤니케이션의 소식을 확인하세요.<br>
+                                    신뢰를 바탕으로 여러분께 한걸음 더 다가갑니다.</p>
+                            </div>
+                            <div class="g_partner">
+                                <img src="/img/google_logo.png" alt="">
+                                <p>Partner</p>
+                            </div>
+                        </div>
+                        <div class="main05_right">
+                           <ul>
+                            <li>
+                                <h3>Google 공식 파트너사로 선정</h3>
+                                <p>온라인을 전문적으로 다루고있는 광고대행사 및 웹에이전시<br>
+                                    (주)아이앤뷰커뮤니케이션은 구글 공식 파트너사로 선정됐다고 27일…</p>
+                            </li>
+                            <li>
+                                <h3>Google 검색인증서 외 5건 추가로 인증서 취득</h3>
+                                <p>오프라인, 온라인마케팅 및 홈페이지제작, 영상제작 등 다양한 마케팅<br>
+                                    사업이 주력인 (주)아이앤뷰커뮤니케이션에서 구글 검색인증 외에 …</p>
+                            </li>
+                            <li>
+                                <h3>온라인 불법광고 피해사례, 직접 나서다</h3>
+                                <p>최근 들어 늘어나고 있는 잘못된 온라인마케팅 피해사례로 인한 환불의<br>
+                                    어려움을 겪고 있는 광고주분들을 위하여 '(주)아이앤뷰커뮤니케이션…</p>
+                            </li>
+                            <li>
+                                <h3>인플루언서 통한 SNS 스타 마케팅 정식 서비스</h3>
+                                <p>아이앤뷰커뮤니케이션은 인플루언서를 통한 SNS 스타 마케팅을 정식<br>
+                                    서비스한다고 3일 밝혔다. 아이앤뷰커뮤니케이션은 SNS사용량이 …</p>
+                            </li>
+                           </ul>
+                        </div>
+                    </div>
+                </section>
+                <section class="section main06">
+                    <div class="main_title">
+                        <h2><b>트렌디한 반응형</b> 홈페이지 제작</h2>
+                    </div>
+                    <div class="hompage_slide">
+                        <div class="mySwiper">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide"><img src="/img/hp_img02.png" alt=""></div>
+                              <div class="swiper-slide"><img src="/img/hp_img03.png" alt=""></div>
+                              <div class="swiper-slide"><img src="/img/hp_img01.png" alt=""></div>
+                              <div class="swiper-slide"><img src="/img/hp_img03.png" alt=""></div>
+                              <div class="swiper-slide"><img src="/img/hp_img02.png" alt=""></div>
+                              <div class="swiper-slide"><img src="/img/hp_img01.png" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="hp_desc">
+                        정해진 템플릿 형식과 다르게 의뢰시작부터 제작완료까지 모든 과정을 함께 합니다.<br>
+                        높은 퀄리티와 완성도는 물론 새로운 트렌디한 디자인, 모바일/태블릿 모든 기기에 완벽 호환하는 반응형으로 제작을 진행하며,<br>
+                        서버 관리/도메인/호스팅/웹 접근성/검색 노출 등 모든 부분을 통합하여 서비스로 제공합니다.
+                    </p>
+                </section>
+                <section class="section main07">
+                    <div class="w1600">
+                    <div class="main_title">
+                        <h2>아이앤뷰의 <b>경험</b></h2>
+                    </div>
+                    <ul class="pj_list flex">
+                        <li>
+                            <div class="project_thumb"></div>
+                            <div class="project_desc flex">
+                                <div class="pj_name">
+                                    <span class="pj-name_ko">한샘비츠</span>
+                                    <span class="pj-work">#Web design</span>
+                                </div>
+                                <a href="https://hansamvitz1202.cafe24.com/" class="pj_link" target="_blank"></a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="project_thumb"></div>
+                            <div class="project_desc flex">
+                                <div class="pj_name">
+                                    <span class="pj-name_ko">수코미치</span>
+                                    <span class="pj-work">#Web design</span>
+                                </div>
+                                <a href="https://sukomichi.co.kr/" class="pj_link" target="_blank"></a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="project_thumb"></div>
+                            <div class="project_desc flex">
+                                <div class="pj_name">
+                                    <span class="pj-name_ko">로하스하우징</span>
+                                    <span class="pj-work">#Web design</span>
+                                </div>
+                                <a href="https://lohashousing1007.cafe24.com/" class="pj_link" target="_blank"></a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="project_thumb"></div>
+                        </li>
+                        <li>
+                            <div class="project_thumb"></div>
+                        </li>
+                        <li>
+                            <div class="project_thumb"></div>
+                        </li>
+                    </ul>
+                    <a href="" class="more_pj">포트폴리오 더보기</a>
+                </div>
+                </section>
+                <section class="section main08">
+                    <div class="main_title">
+                        <h2>아이앤뷰와 함께<b>멈추지 않는 성장을 경험하세요.</b></h2>
+                    </div>
+                    <div class="main08-btn_wrap flex">
+                        <a href="">회사소개서 다운로드</a>
+                        <a href="">문의하기</a>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+
+        <footer></footer>
+    </body>
+    <script src="/resource/includeHtml.js"></script>
+    <script src="/resource/fullpage/fullpage.js"></script>
+    <script src="/resource/swiper/swiper-bundle.min.js"></script>
+    <script src="/js/script.js"></script>
+</html>
