@@ -1,5 +1,5 @@
 $(function () {
-  // document.body.style.cursor = 'none';
+  document.body.style.cursor = 'none';
   var myFullpage = new fullpage('#fullpage', {
     anchors: ['firstPage', 'secondPage', '3rdPage', '4rdPage', '5rdPage', '6rdPage', '7rdPage', '8rdPage'],
     /* navigation: true,*/

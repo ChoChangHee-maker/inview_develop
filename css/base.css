@@ -109,8 +109,8 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after { content: ""; content: none; } 
-/* a { color: #fff; text-decoration: none; cursor:none; } */
-a { color: #fff; text-decoration: none; } 
+a { color: #fff; text-decoration: none; cursor:none; }
+/* a { color: #fff; text-decoration: none; }  */
 table { border-collapse: collapse; border-spacing: 0; } 
 button { border: none; background: none; } 
 
@@ -131,7 +131,7 @@ button { border: none; background: none; }
 .header .header_right .menu_btn span:last-child { width: 21px; margin-top: 8px; } 
 
 /* mouse style */
-.site { display:none; } 
+/* .site { display:none; }  */
 .circle { border-radius: 100px; will-change: transform; position: absolute; z-index: 2; } 
 .circle--1 { height: 40px; width: 40px; border: solid rgba(255, 255, 255, 0.5) 1px; } 
 .circle--2 { background: black; height: 5px; width: 5px; background: red; } 
