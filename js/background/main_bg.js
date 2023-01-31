@@ -201,11 +201,6 @@ for (let i = 0; i < 10; i++) {
   orbs.push(orb);
 }
 
-function ddd(){
-  console.log(colorPalette.randomColor());
-}
-ddd()
-
 // Animate!
 if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
   app.ticker.add(() => {

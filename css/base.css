@@ -1,4 +1,7 @@
-@charset "utf-8"; html,
+@charset "utf-8"; 
+
+html {scroll-behavior: smooth;}
+html,
 body,
 div,
 span,
@@ -132,9 +135,9 @@ button { border: none; background: none; }
 
 /* mouse style */
 /* .site { display:none; }  */
-.circle { border-radius: 100px; will-change: transform; position: absolute; z-index: 2; } 
-.circle--1 { height: 40px; width: 40px; border: solid rgba(255, 255, 255, 0.5) 1px; } 
-.circle--2 { background: black; height: 5px; width: 5px; background: red; } 
+.circle { border-radius: 100px; will-change: transform; position: absolute; z-index: 2; pointer-events: none;} 
+.circle--1 {height: 40px;width: 40px;border: solid rgba(255, 255, 255, 0.5) 1px;} 
+.circle--2 {height: 5px;width: 5px;background: #ff0000;} 
 
 /* commons class */
 .flex { display: flex; flex-wrap: wrap; } 

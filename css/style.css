@@ -6,9 +6,9 @@
 .main_vis .w1600 { height: 100vh; z-index: 1; } 
 .main_vis canvas { position:absolute; } 
 .main_vis .main-vis_txt { position: absolute; top: 50%; transform: translateY(-50%); left: 0; z-index: 1; width: 100%; } 
-.main_vis .main-vis_txt > strong { font-weight:700; color: var(--font-color-primary); font-size: 74px; line-height: 1.44; } 
-.main_vis .main-vis_txt > strong i { font-style: normal; background: linear-gradient(to right, #FF2174 , #9100B3); background-clip: text; -webkit-background-clip: text; color: transparent; animation: gradient 15s ease infinite; } 
-.main_vis .main-vis_txt > p { font-size: 24px; padding: 25px 0 60px; color: var(--font-color-secondary); line-height: 1.5; } 
+.main_vis .main-vis_txt > p:nth-child(1) {padding: 0;font-weight:700;color: var(--font-color-primary);font-size: 74px;line-height: 1.44;display: inline-block;} 
+.main_vis .main-vis_txt > p:nth-child(2) {padding: 0;font-style: normal;background: linear-gradient(to right, #FF2174 , #9100B3);background-clip: text;-webkit-background-clip: text;color: transparent;animation: gradient 15s ease infinite;font-size: 74px;font-weight: 700;line-height: 1.44;display: inline-block;} 
+.main_vis .main-vis_txt > p {font-size: 24px;padding: 25px 0 60px;color: var(--font-color-secondary);line-height: 1.5;} 
 .main_vis .main-vis_txt > a { display: block; width: 255px; height: 70px; line-height: 70px; border-radius: 40px; font-size: 18px; text-align: center; border: 1px solid transparent; background-image: linear-gradient(#121e25, #121e25), linear-gradient(to right, #FF2174, #9100B3); background-origin: border-box; background-clip: content-box, border-box; } 
 .main_vis .main-vis_txt > a span { color: #FF2174; } 
 .main_vis a.inq_btn { position: absolute; right: 0; bottom: 80px; text-decoration: underline; } 
@@ -23,13 +23,16 @@
 .main_title > p { padding: 6px 0 32px; font-size: 17px; line-height: 1.58; color: var(--font-color-secondary); } 
 
 /*main02*/
-.main02 { padding-top: 3rem; } 
+.main02 {padding: 120px 20px;} 
 .main02 .main02_cont .main02_box > div { background:#1C2830; border-radius: 15px; overflow: hidden; } 
 .main02 .main02_cont .main02_box { justify-content: space-between; margin: 50px auto 80px; } 
 .main02 .main02_cont .main02_left { padding: 93px 0; width: calc(33% - 16px); text-align: center; } 
 .main02 .main02_cont .main02_left .with_comp { color: #FF2174; font-size: 24px; line-height: 1.62; } 
-.main02 .main02_cont .main02_left .comp_no { display: block; margin: 0 0 8px; font-family: 'Montserrat'; color:var(--font-color-primary); font-size: 80px; font-weight: 500; } 
-.main02 .main02_cont .main02_left .comp_no i { font-style: normal; font-size: 18px; } 
+.main02 .main02_cont .main02_left .comp_no_box{
+    position: relative;
+}
+.main02 .main02_cont .main02_left .comp_no_box .comp_no { display: block; margin: 0 0 8px; font-family: 'Montserrat'; color:var(--font-color-primary); font-size: 80px; font-weight: 500; } 
+.main02 .main02_cont .main02_left .comp_no_box i {font-style: normal;font-size: 18px;} 
 .main02 .main02_cont .main02_left p { color: var(--font-color-secondary); line-height: 1.625; } 
 .main02 .main02_cont .main02_right { width: calc(67% - 16px); position: relative; } 
 .main02 .main02_cont .main02_right img { width: calc(100% - 60px); position: absolute; top: 55%; left: 50%; transform: translate(-50%,-50%); } 
