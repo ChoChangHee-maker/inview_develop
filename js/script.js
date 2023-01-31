@@ -1,10 +1,10 @@
 $(function () {
-  document.body.style.cursor = 'none';
-  var myFullpage = new fullpage('#fullpage', {
-    anchors: ['firstPage', 'secondPage', '3rdPage', '4rdPage', '5rdPage', '6rdPage', '7rdPage', '8rdPage'],
-    /* navigation: true,*/
-    responsiveWidth: 900,
-  });
+  // document.body.style.cursor = 'none';
+  // var myFullpage = new fullpage('#fullpage', {
+  //   anchors: ['firstPage', 'secondPage', '3rdPage', '4rdPage', '5rdPage', '6rdPage', '7rdPage', '8rdPage'],
+  //   /* navigation: true,*/
+  //   responsiveWidth: 900,
+  // });
   /*메인리뷰슬라이드*/
   var review_slide = new Swiper(".review_slide .mySwiper", {
     loop: true,
