@@ -6,7 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
-  <script src="resource/jquery.js"></script>
   <!--fullpage-->
   <link rel="stylesheet" href="resource/fullpage/fullpage.css">
   <!--swiper-->
@@ -26,6 +25,19 @@
 
 <body>
   <div data-include-path="common/header.html"></div>
+  <div class="nav">
+		<div class="nav__content">
+			<ul class="nav__list">
+				<li class="nav__list-item"><a href="#" class="hover-target">회사소개</a></li>
+				<li class="nav__list-item">온라인마케팅</li>
+				<li class="nav__list-item"><a href="#" class="hover-target">오프라인마케팅</a></li>
+				<li class="nav__list-item"><a href="#" class="hover-target">홈페이지 제작</a></li>
+				<li class="nav__list-item"><a href="#" class="hover-target">마케팅 교육</a></li>
+				<li class="nav__list-item"><a href="#" class="hover-target">문의하기</a></li>
+			</ul>
+		</div>
+	</div>
+  
   <div class="site">
     <div class="circle circle--1"></div>
     <div class="circle circle--2"></div>
@@ -94,63 +106,25 @@
       <section class="section main03">
         <div class="w1200">
           <div class="main_title">
-            <h2><b>믿고 맡기는</b> 다양한마케팅</h2>
+            <h2>제휴<b>파트너사</b></h2>
+            <p>혁신적인 관점에서 바라본다라는 의미로 미래에 알맞는 온라인 마케팅 솔루션을<br>
+              미래를 함께하기 위해 최선을 다하고 있습니다.</p>
           </div>
           <div class="main03_cont flex">
-            <div class="main03_box fis">
-              <div class="main03_icon">
-                <img src="img/main03_icon1.png" alt="">
-              </div>
-              <span class="market_en">Off-line marketing</span>
-              <b class="market_ko">오프라인 마케팅</b>
-              <p class="market_desc">
-                오프라인 마케팅은 소비자에게 자연스럽게<br>생활 속으로 다가가 각인이 될 수 있습니다.
-              </p>
+            <div class="main04_box partner">
+              <img src="" alt="goolge">
             </div>
-            <div class="main03_box">
-              <div class="main03_icon">
-                <img src="img/main03_icon2.png" alt="">
-              </div>
-              <span class="market_en">Search marketing</span>
-              <b class="market_ko">검색 마케팅</b>
-              <p class="market_desc">소비자가 필요한 , 혹은 원하는 단어의<br>
-                키워드를 검색하였을 때 나오는 광고입니다.</p>
+            <div class="main04_box partner">
+              <img src="" alt="daum">
             </div>
-            <div class="main03_box">
-              <div class="main03_icon">
-                <img src="img/main03_icon3.png" alt="">
-              </div>
-              <span class="market_en">SNS marketing</span>
-              <b class="market_ko">SNS 마케팅</b>
-              <p class="market_desc">소셜미디어 마케팅은 인스타그램, 트위터,<br>
-                페이스북 등 SNS를 활용하는 광고를 말합니다.</p>
+            <div class="main04_box partner">
+              <img src="" alt="kakao">
             </div>
-            <div class="main03_box">
-              <div class="main03_icon">
-                <img src="img/main03_icon4.png" alt="">
-              </div>
-              <span class="market_en">Viral marketing</span>
-              <b class="market_ko">바이럴 마케팅</b>
-              <p class="market_desc">실제리뷰를 통하여 리얼후기로 컨텐츠를<br>
-                작성하여 소비자분들의 신뢰를 쌓을수있습니다.</p>
+            <div class="main04_box partner">
+              <img src="" alt="nate">
             </div>
-            <div class="main03_box">
-              <div class="main03_icon">
-                <img src="img/main03_icon5.png" alt="">
-              </div>
-              <span class="market_en">Media news marketing</span>
-              <b class="market_ko">언론 뉴스 마케팅</b>
-              <p class="market_desc">언론뉴스기사 홍보는 회사의 브랜드 가치를<br>
-                가장 효과적으로 높일수있는 마케팅방법입니다</p>
-            </div>
-            <div class="main03_box">
-              <div class="main03_icon">
-                <img src="img/main03_icon6.png" alt="">
-              </div>
-              <span class="market_en">GDN marketing</span>
-              <b class="market_ko">GDN 마케팅</b>
-              <p class="market_desc">디스플레이 광고는 사용자가 웹이나 앱을<br>
-                사용할 때 내 비즈니스를 홍보하는 데 유용합니다.</p>
+            <div class="main04_box partner">
+              <img src="" alt="cafe24">
             </div>
           </div>
         </div>
@@ -423,6 +397,7 @@
 
 
   <footer></footer>
+  <script src="resource/jquery.js"></script>
 </body>
 <script src="resource/includeHtml.js"></script>
 <script src="resource/fullpage/fullpage.js"></script>
@@ -451,7 +426,7 @@
               countNum: countTo
             },
             {
-              duration: 1500,
+              duration: 2500,
               easing: 'swing',
               step: function() {
                 $this.text(Math.floor(this.countNum));

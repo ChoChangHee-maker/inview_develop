@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="38" height="44" viewBox="0 0 38 44">
+  <g id="그룹_12" data-name="그룹 12" transform="translate(-587 -345)">
+    <g id="다각형_1" data-name="다각형 1" transform="translate(587 389) rotate(-90)" fill="none">
+      <path d="M33,0,44,19,33,38H11L0,19,11,0Z" stroke="none"/>
+      <path d="M 11.57655334472656 1 L 1.155502319335938 19 L 11.57655334472656 37 L 32.42343902587891 37 L 42.844482421875 19 L 32.42343902587891 1 L 11.57655334472656 1 M 10.99999618530273 0 L 32.99999618530273 0 L 43.99998474121094 19 L 32.99999618530273 38 L 10.99999618530273 38 L -3.814697265625e-06 19 L 10.99999618530273 0 Z" stroke="none" fill="#ff2174"/>
+    </g>
+    <path id="합치기_1" data-name="합치기 1" d="M9,0,4.5,4ZM0,0,4.5,4Z" transform="translate(610.5 368.5) rotate(180)" fill="none" stroke="#ff2174" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+  </g>
+</svg>

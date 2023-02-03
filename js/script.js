@@ -1,3 +1,30 @@
+$(window).on('load', function(){
+  $(function(){
+    //Navigation
+    var app = function () {
+      var body = undefined;
+      var menu = undefined;
+      var menuItems = undefined;
+      var init = function init() {
+        body = document.querySelector('body');
+        menu = document.querySelector('.menu_btn');
+        menuItems = document.querySelectorAll('.nav__list-item');
+        applyListeners();
+      };
+      var applyListeners = function applyListeners() {
+        menu.addEventListener('click', function () {
+          console.log("fuck");
+          return toggleClass(body, 'nav-active');
+        });
+      };
+      var toggleClass = function toggleClass(element, stringClass) {
+        if (element.classList.contains(stringClass)) element.classList.remove(stringClass);else element.classList.add(stringClass);
+      };
+      init();
+    }();
+  })
+})
+
 $(function () {
   // document.body.style.cursor = 'none';
   // var myFullpage = new fullpage('#fullpage', {
@@ -27,7 +54,6 @@ $(function () {
   });
   TweenMax.to($('.more_pj'), .4, { y: -10, repeat: -1, yoyo: true });
 });
-
 
 // aos load event
 AOS.init({
