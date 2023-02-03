@@ -18,11 +18,10 @@
 
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/style_scss.scss">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap"
-    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet" />
   <script type="text/javascript" src="resource/tweenmax/TweenMax.min.js"></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.3.0/snap.svg-min.js'></script>
+  <script src="resource/chart.js/chart.min.js"></script>
 </head>
 
 <body>
@@ -70,8 +69,8 @@
               </div>
               <div class="main02_right" data-aos="fade-left" data-aos-duration="600">
                 <div class="grp_wrap">
-                  <div class="charts-container">
-                  </div>
+                  <canvas id="chart01"style="height:100%; width=100%"></canvas>
+                  <img src="img/main_cont02_svg.svg" alt="main_cont02_svg" data-aos="fade-up" data-aos-delay="600" data-aos-duration="600">
                 </div>
               </div>
             </div>
@@ -156,8 +155,73 @@
           </div>
         </div>
       </section>
+
       <section class="section main04">
-        <div class="main04_cont">
+        <div class="w1200">
+          <div class="main_title">
+            <h2><b>믿고 맡기는</b> 다양한마케팅</h2>
+          </div>
+          <div class="main04_cont flex">
+            <div class="main04_box fis">
+              <div class="main04_icon">
+                <img src="img/main04_icon1.png" alt="">
+              </div>
+              <span class="market_en">Off-line marketing</span>
+              <b class="market_ko">오프라인 마케팅</b>
+              <p class="market_desc">
+                오프라인 마케팅은 소비자에게 자연스럽게<br>생활 속으로 다가가 각인이 될 수 있습니다.
+              </p>
+            </div>
+            <div class="main04_box">
+              <div class="main04_icon">
+                <img src="img/main04_icon2.png" alt="">
+              </div>
+              <span class="market_en">Search marketing</span>
+              <b class="market_ko">검색 마케팅</b>
+              <p class="market_desc">소비자가 필요한 , 혹은 원하는 단어의<br>
+                키워드를 검색하였을 때 나오는 광고입니다.</p>
+            </div>
+            <div class="main04_box">
+              <div class="main04_icon">
+                <img src="img/main04_icon3.png" alt="">
+              </div>
+              <span class="market_en">SNS marketing</span>
+              <b class="market_ko">SNS 마케팅</b>
+              <p class="market_desc">소셜미디어 마케팅은 인스타그램, 트위터,<br>
+                페이스북 등 SNS를 활용하는 광고를 말합니다.</p>
+            </div>
+            <div class="main04_box">
+              <div class="main04_icon">
+                <img src="img/main04_icon4.png" alt="">
+              </div>
+              <span class="market_en">Viral marketing</span>
+              <b class="market_ko">바이럴 마케팅</b>
+              <p class="market_desc">실제리뷰를 통하여 리얼후기로 컨텐츠를<br>
+                작성하여 소비자분들의 신뢰를 쌓을수있습니다.</p>
+            </div>
+            <div class="main04_box">
+              <div class="main04_icon">
+                <img src="img/main04_icon5.png" alt="">
+              </div>
+              <span class="market_en">Media news marketing</span>
+              <b class="market_ko">언론 뉴스 마케팅</b>
+              <p class="market_desc">언론뉴스기사 홍보는 회사의 브랜드 가치를<br>
+                가장 효과적으로 높일수있는 마케팅방법입니다</p>
+            </div>
+            <div class="main04_box">
+              <div class="main04_icon">
+                <img src="img/main04_icon6.png" alt="">
+              </div>
+              <span class="market_en">GDN marketing</span>
+              <b class="market_ko">GDN 마케팅</b>
+              <p class="market_desc">디스플레이 광고는 사용자가 웹이나 앱을<br>
+                사용할 때 내 비즈니스를 홍보하는 데 유용합니다.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section main05">
+        <div class="main05_cont">
           <div class="main_title w1200">
             <h2>
               온라인 마케팅이 <b>어려우셨던 분들,</b><br>
@@ -233,9 +297,9 @@
             </div>
           </div>
       </section>
-      <section class="section main05">
-        <div class="main05_cont flex">
-          <div class="main05_left">
+      <section class="section main06">
+        <div class="main06_cont flex">
+          <div class="main06_left">
             <div class="main_title">
               <h2>
                 <b>한눈에 보는</b> 아이앤뷰 소식
@@ -248,7 +312,7 @@
               <p>Partner</p>
             </div>
           </div>
-          <div class="main05_right">
+          <div class="main06_right">
             <ul>
               <li>
                 <h3>Google 공식 파트너사로 선정</h3>
@@ -274,7 +338,7 @@
           </div>
         </div>
       </section>
-      <section class="section main06">
+      <section class="section main07">
         <div class="main_title">
           <h2><b>트렌디한 반응형</b> 홈페이지 제작</h2>
         </div>
@@ -296,7 +360,7 @@
           서버 관리/도메인/호스팅/웹 접근성/검색 노출 등 모든 부분을 통합하여 서비스로 제공합니다.
         </p>
       </section>
-      <section class="section main07">
+      <section class="section main08">
         <div class="w1600">
           <div class="main_title">
             <h2>아이앤뷰의 <b>경험</b></h2>
@@ -345,7 +409,7 @@
           <a href="" class="more_pj">포트폴리오 더보기</a>
         </div>
       </section>
-      <section class="section main08">
+      <section class="section main09">
         <div class="main_title">
           <h2>아이앤뷰와 함께<b>멈추지 않는 성장을 경험하세요.</b></h2>
         </div>
@@ -365,39 +429,104 @@
 <script src="resource/swiper/swiper-bundle.min.js"></script>
 <script src="js/script.js"></script>
 <script>
-  // aos load event
-  AOS.init({
-    easing: 'ease-out',
-    duration: 700
-  });
-
-  // count load event
-  var a = 0;
-  $(window).scroll(function() {
-  var oTop = $('.main02_cont').offset().top - window.innerHeight;
-  if (a == 0 && $(window).scrollTop() > oTop) {
-    $('.comp_no').each(function() {
-      var $this = $(this),
-        countTo = $this.attr('data-count');
-      $({
-        countNum: $this.text()
-      }).animate({
-          countNum: countTo
-        },
-        {
-          duration: 1500,
-          easing: 'swing',
-          step: function() {
-            $this.text(Math.floor(this.countNum));
-          },
-          complete: function() {
-              $this.text(this.countNum.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')).append('<i>개</i>');
-          }
-        });
+  $(document).ready(function(){
+    // aos load event
+    AOS.init({
+      easing: 'ease-out',
+      duration: 700
     });
-    a = 1;
-  }
-});
+
+    // main02_cont load event
+    var a = 0;
+    $(window).scroll(function() {
+      var oTop = $('.main02_cont').offset().top - window.innerHeight;
+      if (a == 0 && $(window).scrollTop() > oTop) {
+        // count event
+        $('.comp_no').each(function() {
+          var $this = $(this),
+            countTo = $this.attr('data-count');
+          $({
+            countNum: $this.text()
+          }).animate({
+              countNum: countTo
+            },
+            {
+              duration: 1500,
+              easing: 'swing',
+              step: function() {
+                $this.text(Math.floor(this.countNum));
+              },
+              complete: function() {
+                  $this.text(this.countNum.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')).append('<i>개</i>');
+              }
+            });
+        });
+        // chart
+        // 1.1 line chart default
+        var colorchip = ["255,33,116"]
+        var chart01 = $("#chart01");
+        const colors = {
+          purple: {
+            default: "rgba(255,33,116, 1)",
+            half: "rgba(255,33,116, 0.5)",
+            quarter: "rgba(255,33,116, 0.25)",
+            zero: "rgba(255,33,116, 0)"
+          }
+        };
+        const ctx = document.getElementById("chart01").getContext("2d");
+        ctx.canvas.height = 100;
+        gradient = ctx.createLinearGradient(0, 100, 20, 350);
+        gradient.addColorStop(0, colors.purple.half);
+        gradient.addColorStop(0.35, colors.purple.quarter);
+        gradient.addColorStop(1, colors.purple.zero);
+        
+        setTimeout(function() { 
+          new Chart(chart01, {
+            type:'line',
+            data:{
+            labels:['', '', '', '', '', '', '', '', '', ''],
+            datasets:[{
+                label:false,
+                lineTension:0,
+                fill: true,
+                data:[5,10,8,20,20,30,45,60,80,100],
+                borderWidth: 2,
+                backgroundColor: gradient,
+                borderColor:"rgba("+ colorchip[0] +")",
+                pointBackgroundColor:"rgba("+ colorchip[0] +")"
+              }]
+            },
+            options: {
+              scales: {
+                x: {grid: {display: false,},
+               ticks: {
+                   display: false
+              }},
+                y: {grid: {display: false},
+               ticks: {
+                   display: false
+              }},
+              },
+              responsive: true,
+              maintainAspectRatio: false,
+              plugins: {
+                legend: {
+                  display:false
+                },
+                title: {
+                  display: false
+                },
+                tooltip: {
+                  enabled: false
+                },
+              }
+            },
+          });
+        }, 500);
+        a = 1;
+      }
+    });
+    })
 </script>
 
 </html>
