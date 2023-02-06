@@ -1,7 +1,7 @@
 @charset "utf-8"; @import url(base.css); /*메인비주얼*/
 .fp-table { background-color: var(--font-color-base); } 
 .main_vis { overflow: hidden; position: relative; background-color: #121e25; height: 100vh; } 
-.main_vis::before { content: ""; display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%; backdrop-filter: blur(44px) brightness(80%); z-index: 1; } 
+.main_vis::before {content: "";display: block;position: absolute;top: 0;left: 0;width: 100%;height: 100%;/* backdrop-filter: blur(44px) brightness(80%); */z-index: 1;} 
 .main_vis .w1600 { height: 100vh; z-index: 1; } 
 .main_vis canvas { position:absolute; } 
 .main_vis .main-vis_txt { position: absolute; top: 50%; transform: translateY(-50%); left: 0; z-index: 1; width: 100%; } 
@@ -98,7 +98,7 @@
 .main05 .heart_bnr .circle_wrap i.icon_circle:nth-child(5) { width: 15px; height: 15px; right: 12%; bottom: 23%; } 
 
 /*main06*/
-.main06 { padding: 120px 0; padding-right: 20px; position: relative; background: #2C3840; } 
+.main06 {padding: 120px 0;padding-right: 20px;position: relative;background: #2C3840;overflow: hidden;} 
 .main06:after { content: ""; display: block; position: absolute; width: 694px; height: 344px; background:url(../img/logo_bg.png)no-repeat center/cover; right: -5%; bottom: 5%; } 
 .main06 .main_title { text-align: left; max-width: 600px; width: 100%; } 
 .main06 .main06_cont > div { width: 50%; } 
@@ -161,9 +161,7 @@
 @keyframes move-up-down { 
  0% { transform: translateY(-0); } 
  100% { transform: translateY(-40px); } 
- }
-
-
+}
 
 
 

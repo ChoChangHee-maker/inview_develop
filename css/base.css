@@ -148,7 +148,6 @@ body.nav-active .menu-icon:hover .menu-icon__line-left,
 body.nav-active .menu-icon:hover .menu-icon__line-right { width: 30px; } 
 
 /* mouse style */
-/* .site { display:none; } */
 .circle { border-radius: 100px; will-change: transform; position: absolute; z-index:9999; pointer-events: none; } 
 .circle--1 { height: 40px; width: 40px; border: solid rgba(255, 255, 255, 0.5) 1px; } 
 .circle--2 { height: 5px; width: 5px; background: #ff0000; } 
@@ -212,3 +211,10 @@ body.nav-active .nav__list-item:nth-child(7) { -webkit-transition-delay: 1.4s; t
 body.nav-active .nav__list-item:nth-child(8) { -webkit-transition-delay: 1.5s; transition-delay: 1.5s; } 
 body.nav-active .nav__list-item:nth-child(9) { -webkit-transition-delay: 1.6s; transition-delay: 1.6s; } 
 body.nav-active .nav__list-item:nth-child(10) { -webkit-transition-delay: 1.7s; transition-delay: 1.7s; } 
+
+@media (hover: hover) {
+}
+
+@media (hover: none) { 
+    .site { display:none; }
+}

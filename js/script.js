@@ -73,5 +73,5 @@ const render = () => {
   requestAnimationFrame(render);
 };
 
-setInterval(() => render(), 500);
+setInterval(() => render(), 1000);
 render();
