@@ -17,19 +17,23 @@
 
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/style_scss.scss">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap"
+    rel="stylesheet" />
   <script type="text/javascript" src="resource/tweenmax/TweenMax.min.js"></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.3.0/snap.svg-min.js'></script>
   <script src="resource/chart.js/chart.min.js"></script>
+  <script src="https://dl.dropbox.com/s/sk7fbhx9burholi/dat.gui.min.js?dl=0"></script>
 </head>
 
 <body>
   <div data-include-path="common/header.html"></div>
   <div class="nav">
-		<div class="nav__content">
-			<ul class="nav__list">
-				<li class="nav__list-item"><a href="#" class="hover-target">회사소개</a></li>
-				<li class="nav__list-item in_depth"><p>온라인마케팅</p>
+    <div class="nav__content">
+      <ul class="nav__list">
+        <li class="nav__list-item"><a href="#" class="hover-target">회사소개</a></li>
+        <li class="nav__list-item in_depth">
+          <p>온라인마케팅</p>
           <ul class="nav__list-item_ul">
             <li>
               <a href="#" class="hover-target">검색 마케팅</a>
@@ -51,7 +55,8 @@
             </li>
           </ul>
         </li>
-				<li class="nav__list-item in_depth"><p>오프라인마케팅</p>
+        <li class="nav__list-item in_depth">
+          <p>오프라인마케팅</p>
           <ul class="nav__list-item_ul">
             <li>
               <a href="#" class="hover-target">버스광고 마케팅</a>
@@ -61,8 +66,9 @@
             </li>
           </ul>
         </li>
-				<li class="nav__list-item"><a href="#" class="hover-target">홈페이지 제작</a></li>
-				<li class="nav__list-item in_depth"><p>마케팅 교육</p>
+        <li class="nav__list-item"><a href="#" class="hover-target">홈페이지 제작</a></li>
+        <li class="nav__list-item in_depth">
+          <p>마케팅 교육</p>
           <ul class="nav__list-item_ul">
             <li>
               <a href="#" class="hover-target">마케팅 교육</a>
@@ -70,12 +76,13 @@
             <li>
               <a href="#" class="hover-target">불법광고 환불대행</a>
             </li>
-          </ul></li>
-				<li class="nav__list-item"><a href="#" class="hover-target">문의하기</a></li>
-			</ul>
-		</div>
-	</div>
-  
+          </ul>
+        </li>
+        <li class="nav__list-item"><a href="#" class="hover-target">문의하기</a></li>
+      </ul>
+    </div>
+  </div>
+
   <div class="site">
     <div class="circle circle--1"></div>
     <div class="circle circle--2"></div>
@@ -119,8 +126,9 @@
               </div>
               <div class="main02_right" data-aos="fade-left" data-aos-duration="600">
                 <div class="grp_wrap">
-                  <canvas id="chart01"style="height:100%; width=100%"></canvas>
-                  <img src="img/main_cont02_svg.svg" alt="main_cont02_svg" data-aos="fade-up" data-aos-delay="600" data-aos-duration="600">
+                  <canvas id="chart01" style="height:100%; width:100%"></canvas>
+                  <img src="img/main_cont02_svg.svg" alt="main_cont02_svg" data-aos="fade-up" data-aos-delay="600"
+                    data-aos-duration="600">
                 </div>
               </div>
             </div>
@@ -452,12 +460,17 @@
         </div>
       </section>
       <section class="section main09">
+        <canvas class="particle_bg"></canvas>
         <div class="main_title">
           <h2>아이앤뷰와 함께<b>멈추지 않는 성장을 경험하세요.</b></h2>
         </div>
-        <div class="main08-btn_wrap flex">
-          <a href="">회사소개서 다운로드</a>
-          <a href="">문의하기</a>
+        <div class="main09-btn_wrap flex">
+          <button class="btn_style_01">
+            <span>회사소개서 다운로드</span>
+          </button>
+          <button class="btn_style_01">
+            <span>문의하기</span>
+          </button>
         </div>
       </section>
     </div>
@@ -472,7 +485,7 @@
 <script src="resource/swiper/swiper-bundle.min.js"></script>
 <script src="js/script.js"></script>
 <script>
-  $(document).ready(function(){
+  $(document).ready(function () {
     // aos load event
     AOS.init({
       easing: 'ease-out',
@@ -481,31 +494,30 @@
 
     // main02_cont load event
     var a = 0;
-    $(window).scroll(function() {
+    $(window).scroll(function () {
       var oTop = $('.main02_cont').offset().top - window.innerHeight;
       if (a == 0 && $(window).scrollTop() > oTop) {
         // count event
-        $('.comp_no').each(function() {
+        $('.comp_no').each(function () {
           var $this = $(this),
             countTo = $this.attr('data-count');
           $({
             countNum: $this.text()
           }).animate({
-              countNum: countTo
-            },
+            countNum: countTo
+          },
             {
               duration: 2500,
               easing: 'swing',
-              step: function() {
+              step: function () {
                 $this.text(Math.floor(this.countNum));
               },
-              complete: function() {
-                  $this.text(this.countNum.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')).append('<i>개</i>');
+              complete: function () {
+                $this.text(this.countNum.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')).append('<i>개</i>');
               }
             });
         });
         // chart
-        // 1.1 line chart default
         var colorchip = ["255,33,116"]
         var chart01 = $("#chart01");
         const colors = {
@@ -522,21 +534,20 @@
         gradient.addColorStop(0, colors.purple.half);
         gradient.addColorStop(0.35, colors.purple.quarter);
         gradient.addColorStop(1, colors.purple.zero);
-        
-        setTimeout(function() { 
+        setTimeout(function () {
           new Chart(chart01, {
-            type:'line',
-            data:{
-            labels:['', '', '', '', '', '', '', '', '', ''],
-            datasets:[{
-                label:false,
-                lineTension:0,
+            type: 'line',
+            data: {
+              labels: ['', '', '', '', '', '', '', '', '', ''],
+              datasets: [{
+                label: false,
+                lineTension: 0,
                 fill: true,
-                data:[5,10,8,20,20,30,45,60,80,100],
+                data: [5, 10, 8, 20, 20, 30, 45, 60, 80, 100],
                 borderWidth: 2,
                 backgroundColor: gradient,
-                borderColor:"rgba("+ colorchip[0] +")",
-                pointBackgroundColor:"rgba("+ colorchip[0] +")"
+                borderColor: "rgba(" + colorchip[0] + ")",
+                pointBackgroundColor: "rgba(" + colorchip[0] + ")"
               }]
             },
             options: {
@@ -544,20 +555,24 @@
                 duration: 2500,
               },
               scales: {
-                x: {grid: {display: false,},
-               ticks: {
-                   display: false
-              }},
-                y: {grid: {display: false},
-               ticks: {
-                   display: false
-              }},
+                x: {
+                  grid: { display: false, },
+                  ticks: {
+                    display: false
+                  }
+                },
+                y: {
+                  grid: { display: false },
+                  ticks: {
+                    display: false
+                  }
+                },
               },
               responsive: true,
               maintainAspectRatio: false,
               plugins: {
                 legend: {
-                  display:false
+                  display: false
                 },
                 title: {
                   display: false
@@ -572,7 +587,106 @@
         a = 1;
       }
     });
-    })
+    // main09 bg article
+    $(function () {
+      window.requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame;
+      var canvas = document.querySelector(".particle_bg");
+      canvas.width = window.innerWidth
+      canvas.height = window.innerHeight;
+      var ctx = canvas.getContext("2d");
+      ctx.globalCompositeOperation = "source-over";
+      var particles = [];
+      var pIndex = 0;
+      var x, y, frameId;
+      //Particle作成
+      function Particle(x, vx, vy, color, size) {
+        this.x = x;
+        this.y = -canvas.height / 2;
+        this.vx = vx;
+        this.vy = vy;
+        this.color = color;
+        particles[pIndex] = this;
+        this.id = pIndex;
+        pIndex++;
+        this.life = 0;
+        this.maxlife = 600;
+        this.degree = getRandom(0, 360);
+        this.size = Math.floor(getRandom(size * 0.8, size));
+      };
+      Particle.prototype.draw = function () {
+        this.degree += 1;
+        this.vx *= 0.99;
+        this.vy *= 0.999;
+        this.x += this.vx + Math.cos(this.degree * Math.PI / 180);
+        this.y += this.vy;
+        this.width = this.size;
+        this.height = Math.cos(this.degree * Math.PI / 45) * this.size;
+        ctx.fillStyle = this.color;
+        ctx.beginPath();
+        ctx.moveTo(this.x + this.x / 2, this.y + this.y / 2);
+        ctx.lineTo(this.x + this.x / 2 + this.width / 2, this.y + this.y / 2 + this.height);
+        ctx.lineTo(this.x + this.x / 2 + this.width + this.width / 2, this.y + this.y / 2 + this.height);
+        ctx.lineTo(this.x + this.x / 2 + this.width, this.y + this.y / 2);
+        ctx.closePath();
+        ctx.fill();
+        this.life++;
+        if (this.life >= this.maxlife) {
+          delete particles[this.id];
+        }
+      }
+      var params, params_A, params_B, params_C;
+      function setGUI() {
+        params = {
+          'colorful_mode': false,
+          'amount': 5,
+          'bg_color': "#222",
+          'vx': 2,
+          'vy': 4,
+          'size': 10
+        };
+
+        params_A = {
+          'color': "#ED1A3D",
+        };
+
+        params_B = {
+          'color': "#FFF",
+        };
+      }
+      setGUI();
+      function loop() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        if (frameId % (11 - params.amount) == 0) {
+          if (params.colorful_mode) {
+            var hue = Math.floor(getRandom(0, 12.99)) * 30;
+            var hsl_color = "hsl(" + hue + ", 80%, 60%)";
+            new Particle(canvas.width * Math.random(), getRandom(-params.vx, params.vx), getRandom(params.vy - 2, params.vy), hsl_color, params.size);
+          } else {
+            var x1 = canvas.width * Math.random() + canvas.width / 2 * Math.random();
+            var x2 = canvas.width * Math.random() - canvas.width / 2 * Math.random();
+            new Particle(x1, -1 * getRandom(params.vx - 2, params.vx), getRandom(params.vy - 2, params.vy), params_A.color, params.size);
+            new Particle(x2, getRandom(params.vx - 2, params.vx), getRandom(params.vy - 2, params.vy), params_B.color, params.size);
+          }
+        }
+        for (var i in particles) {
+          particles[i].draw();
+        }
+        frameId = requestAnimationFrame(loop);
+        if (frameId % 2 == 0) { return; }
+      }
+      loop();
+      window.addEventListener("resize", function () {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        x = canvas.width / 2;
+        y = canvas.height / 2;
+      });
+      function getRandom(min, max) {
+        return Math.random() * (max - min) + min;
+      }
+    })();
+
+  })
 </script>
 
 </html>

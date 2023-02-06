@@ -161,7 +161,6 @@ body.nav-active .menu-icon:hover .menu-icon__line-right { width: 30px; }
 
 /* button customer */
 .btn_style_01 { border: none; background: transparent;} 
-.btn_style_01:not(:last-child) { margin-bottom: 2rem; } 
 .btn_style_01 { border: none; background: transparent; position: relative; display: flex; align-items: center; justify-content: center; padding: 22px 60px; overflow: hidden; border-radius: 100vmax; box-shadow: var(--shadow-elevation-medium); transition: box-shadow 0.2s ease-in-out; } 
 .btn_style_01::after, .btn_style_01::before { content: ""; position: absolute; inset: 0; background-color: red; } 
 .btn_style_01::before { z-index: 1; right: -100%; background: linear-gradient(to right, #FF2174 0%, #9100B3 50%, #FF2174 100%); background-size: 50% 100%; animation: scroll 1.2s infinite linear; } 
