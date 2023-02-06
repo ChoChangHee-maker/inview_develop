@@ -22,7 +22,7 @@ $(document).off().on("click", function () {
       var menuItems = undefined;
       var init = function init() {
         body = $('body');
-        menu = $('.menu_btn');
+        menu = $('.menu.flex');
         menuItems = $('.nav__list-item');
         applyListeners();
       };
