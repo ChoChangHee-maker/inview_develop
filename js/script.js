@@ -1,3 +1,5 @@
+document.body.style.cursor = 'none';
+
 // nav category toggle
 $(document).on('click', '.nav__list-item.in_depth > p', function () {
   $(this).next("ul").slideToggle(200);

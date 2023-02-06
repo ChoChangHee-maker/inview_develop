@@ -42,7 +42,7 @@
 .main02 .main02_cont .grp_wrap img { width: 75px; left: initial; right: 25px; top: 20px; } 
 
 /*main03*/
-.main03 { padding: 120px 20px; } 
+.main03 {padding: 0 20px 120px;} 
 .main03_cont { display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-around; align-items: center; gap: 50px 0; margin-top: 30px; } 
 .main03_box.partner { width: calc(20% - 15px); text-align: center; } 
 .main03_box.partner img { max-width: 160px; height: auto; transition:all .3s ease-in-out; } 
