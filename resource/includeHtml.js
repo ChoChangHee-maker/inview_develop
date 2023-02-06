@@ -14,3 +14,26 @@ window.addEventListener('load', function() {
         }
     });
 });
+
+$(document).off().on("click", function () {
+    //Navigation
+      var body = undefined;
+      var menu = undefined;
+      var menuItems = undefined;
+      var init = function init() {
+        body = $('body');
+        menu = $('.menu_btn');
+        menuItems = $('.nav__list-item');
+        applyListeners();
+      };
+      var applyListeners = function applyListeners() {
+        menu.off().click(function () {
+            toggleClass(body, 'nav-active');
+          });
+      };
+      var toggleClass = function toggleClass(element, stringClass) {
+        if (element.hasClass(stringClass)) element.removeClass(stringClass);
+        else element.addClass(stringClass);
+      };
+      init();
+  });
