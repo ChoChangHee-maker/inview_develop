@@ -477,7 +477,37 @@
   </main>
 
 
-  <footer></footer>
+  <!-- <div data-include-path="common/header.html"></div> -->
+  <footer class="footer">
+    <div class="ft_top">
+      <div class="ft_left">
+        <ul class="corp_area">
+          <li><a href="#">회사소개</a></li>
+          <li><a href="#">개인정보처리방침</a></li>
+          <li><a href="#">이메일무단수집거부</a></li>
+        </ul>
+      </div>
+      <div class="ft_right">
+        <ul class="social_area">
+          <li><a href="#"><img src="img/insta_s_logo.svg" alt="instagram"></a></li>
+          <li><a href="#"><img src="img/youtube_s_logo.svg" alt="youtube"></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="ft_bottom">
+      <div class="ft_left">
+        <p>(주)아이앤뷰커뮤니케이션</p>
+        <span>서울특별시 마포구 상암동 1647 DMC디지털큐브 5층</span>
+        <span>사업자 등록번호 858-87-01471</span>
+        <span>대표번호 O2-6956-9091</span>
+        <span>이메일 inview0310@naver.com</span>
+      </div>
+    </div>
+    <div class="copylight">
+      <span>© I&VIEW COMMUNICATION. All rights reserved.</span>
+      <img src="img/logo_b.svg" alt="logo">
+    </div>
+  </footer>
   <script src="resource/jquery.js"></script>
 </body>
 <script src="resource/includeHtml.js"></script>
@@ -556,13 +586,14 @@
               },
               scales: {
                 x: {
-                  grid: { display: false, },
+                  grid: { display: false, drawBorder: false},
+                  gridLines: {display: false},
                   ticks: {
                     display: false
                   }
                 },
                 y: {
-                  grid: { display: false },
+                  grid: { display: false, drawBorder: false},
                   ticks: {
                     display: false
                   }
@@ -598,7 +629,7 @@
       var particles = [];
       var pIndex = 0;
       var x, y, frameId;
-      //Particle作成
+      //particle
       function Particle(x, vx, vy, color, size) {
         this.x = x;
         this.y = -canvas.height / 2;
@@ -648,9 +679,11 @@
         params_A = {
           'color': "#ED1A3D",
         };
-
         params_B = {
-          'color': "#FFF",
+          'color': "#24E259",
+        };
+        params_C = {
+          'color': "#16CDCE",
         };
       }
       setGUI();
@@ -664,8 +697,10 @@
           } else {
             var x1 = canvas.width * Math.random() + canvas.width / 2 * Math.random();
             var x2 = canvas.width * Math.random() - canvas.width / 2 * Math.random();
+            var x3 = canvas.width * Math.random() - canvas.width / 2 * Math.random();
             new Particle(x1, -1 * getRandom(params.vx - 2, params.vx), getRandom(params.vy - 2, params.vy), params_A.color, params.size);
             new Particle(x2, getRandom(params.vx - 2, params.vx), getRandom(params.vy - 2, params.vy), params_B.color, params.size);
+            new Particle(x3, getRandom(params.vx - 2, params.vx), getRandom(params.vy - 2, params.vy), params_C.color, params.size);
           }
         }
         for (var i in particles) {
