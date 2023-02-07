@@ -1,10 +1,9 @@
-// document.body.style.cursor = 'none';
 
 // nav category toggle
 $(document).on('click', '.nav__list-item.in_depth > p', function () {
   $(this).next("ul").slideToggle(200);
   $(this).parents().toggleClass("active");
-  $(this).parents().siblings().removeClass("active").find("ul").slideUp(200);
+  $(this).parent().siblings().removeClass("active").find("ul").slideUp(200);
 });
 
 $(function () {
