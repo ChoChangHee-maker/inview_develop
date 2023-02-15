@@ -47,7 +47,6 @@ class ColorPalette {
       this.saturation,
       this.lightness
     );
-
     // store the color choices in an array so that a random one can be picked later
     this.colorChoices = [
       this.baseColor,
@@ -55,7 +54,6 @@ class ColorPalette {
       this.complimentaryColor2
     ];
   }
-
   randomColor() {
     // pick a random color
     return this.colorChoices[~~random(0, this.colorChoices.length)].replace(

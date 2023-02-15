@@ -15,6 +15,7 @@ const triggers = document.getElementsByTagName("span");
 var renderer = new THREE.WebGLRenderer();
 renderer.setPixelRatio(window.devicePixelRatio);
 renderer.setSize(window.innerWidth, window.innerHeight);
+renderer.domElement.id = 'canvas_id';
 document.body.appendChild(renderer.domElement);
 
 // Ensure Full Screen on Resize
