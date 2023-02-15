@@ -26,9 +26,9 @@ class ColorPalette {
 
   setColors() {
     // pick a random hue somewhere between 220 and 360
-    this.hue = (220, 230);
+    this.hue = (171, 230);
     this.complimentaryHue1 = this.hue + 340;
-    this.complimentaryHue2 = this.hue + 250;
+    this.complimentaryHue2 = this.hue + 171;
     // define a fixed saturation and lightness
     this.saturation = 95,
     this.lightness = 50

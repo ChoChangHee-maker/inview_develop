@@ -1,3 +1,4 @@
+
 // Options
 const particleCount = 6000;
 
