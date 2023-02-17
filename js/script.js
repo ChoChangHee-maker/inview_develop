@@ -6,30 +6,6 @@ $(document).on('click', '.nav__list-item.in_depth > p', function () {
   $(this).parent().siblings().removeClass("active").find("ul").slideUp(200);
 });
 
-$(function () {
-  /*메인리뷰슬라이드*/
-  var review_slide = new Swiper(".review_slide .mySwiper", {
-    loop: true,
-    autoplay: {
-      delay: 1,
-      disableOnInteraction: false
-    },
-    slidesPerView: "auto",
-    speed: 10000,
-  });
-  var hp_slide = new Swiper(".hompage_slide .mySwiper", {
-    slidesPerView: "auto",
-    loop: true,
-    centeredSlides: true,
-    speed: 800,
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-    },
-  });
-  TweenMax.to($('.more_pj'), .4, { y: -10, repeat: -1, yoyo: true });
-});
-
 // aos load event
 AOS.init({
   easing: 'ease-out',
