@@ -67,8 +67,10 @@ body.sub { background: #2C3840; }
 .bnf_list_box h3 {color: var(--font-color-primary);font-size: 22px;line-height: 30px;margin-bottom: 10px;} 
 .bnf_list_box span {font-size: 16px;color: var(--font-color-base02);line-height: 26px;word-break: keep-all;} 
 
-.slide_list {width:100%; overflow:hidden;}
-.slide_list {}
+.slide_list {width:100%;overflow:hidden;padding: 35px 0;background: var(--font-color-base);}
+.slide_list .swiper-wrapper{display:flex;transition-timing-function: linear;}
+.slide_list .swiper-slide{width: auto;display: inline-block;flex:1;margin-right: 60px;}
+.slide_list .swiper-slide img{width: auto;height: 40px;display: inline-block;}
 
 @media (hover: hover){
  .timeline_list_wrap { overflow: hidden; } 

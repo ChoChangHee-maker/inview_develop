@@ -289,6 +289,7 @@
               <i class="icon_circle"></i>
             </div>
           </div>
+        </div>
       </section>
       <section class="section main06">
         <div class="main06_cont flex">
@@ -419,242 +420,241 @@
     </div>
   </main>
   <div data-include-path="common/footer.html"></div>
-</body>
-<script src="resource/includeHtml.js"></script>
-<script src="resource/swiper/swiper-bundle.min.js"></script>
-<script src="js/script.js"></script>
-<script>
-  $(document).ready(function () {
-    document.body.style.cursor = 'none';
-    $(function () {
-      /*메인리뷰슬라이드*/
-      var review_slide = new Swiper(".review_slide .mySwiper", {
-        loop: true,
-        autoplay: {
-          delay: 1,
-          disableOnInteraction: false
-        },
-        slidesPerView: "auto",
-        speed: 10000,
-      });
-      var hp_slide = new Swiper(".hompage_slide .mySwiper", {
-        slidesPerView: "auto",
-        loop: true,
-        centeredSlides: true,
-        speed: 800,
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
-        },
-      });
-      TweenMax.to($('.more_pj'), .4, { y: -10, repeat: -1, yoyo: true });
-    });
-
-    // aos load event
-    AOS.init({
-      easing: 'ease-out',
-      duration: 700
-    });
-
-    // main02_cont load event
-    var a = 0;
-    $(window).scroll(function () {
-      var oTop = $('.main02_cont').offset().top - window.innerHeight;
-      if (a == 0 && $(window).scrollTop() > oTop) {
-        // count event
-        $('.comp_no').each(function () {
-          var $this = $(this),
-            countTo = $this.attr('data-count');
-          $({
-            countNum: $this.text()
-          }).animate({
-            countNum: countTo
+  <script src="resource/includeHtml.js"></script>
+  <script src="resource/swiper/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+    $(document).ready(function () {
+      document.body.style.cursor = 'none';
+      $(function () {
+        /*메인리뷰슬라이드*/
+        var review_slide = new Swiper(".review_slide .mySwiper", {
+          loop: true,
+          autoplay: {
+            delay: 1,
+            disableOnInteraction: false
           },
-            {
-              duration: 2500,
-              easing: 'swing',
-              step: function () {
-                $this.text(Math.floor(this.countNum));
-              },
-              complete: function () {
-                $this.text(this.countNum.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')).append('<i>개</i>');
-              }
-            });
+          slidesPerView: "auto",
+          speed: 10000,
         });
-        // chart
-        var colorchip = ["255,33,116"]
-        var chart01 = $("#chart01");
-        const colors = {
-          purple: {
-            default: "rgba(255,33,116, 1)",
-            half: "rgba(255,33,116, 0.5)",
-            quarter: "rgba(255,33,116, 0.25)",
-            zero: "rgba(255,33,116, 0)"
-          }
-        };
-        const ctx = document.getElementById("chart01").getContext("2d");
-        ctx.canvas.height = 100;
-        gradient = ctx.createLinearGradient(0, 100, 20, 350);
-        gradient.addColorStop(0, colors.purple.half);
-        gradient.addColorStop(0.35, colors.purple.quarter);
-        gradient.addColorStop(1, colors.purple.zero);
-        setTimeout(function () {
-          new Chart(chart01, {
-            type: 'line',
-            data: {
-              labels: ['', '', '', '', '', '', '', '', '', ''],
-              datasets: [{
-                label: false,
-                lineTension: 0,
-                fill: true,
-                data: [5, 10, 8, 20, 20, 30, 45, 60, 80, 100],
-                borderWidth: 2,
-                backgroundColor: gradient,
-                borderColor: "rgba(" + colorchip[0] + ")",
-                pointBackgroundColor: "rgba(" + colorchip[0] + ")"
-              }]
-            },
-            options: {
-              animation: {
-                duration: 2500,
-              },
-              scales: {
-                x: {
-                  grid: { display: false, drawBorder: false},
-                  gridLines: {display: false},
-                  ticks: {
-                    display: false
-                  }
-                },
-                y: {
-                  grid: { display: false, drawBorder: false},
-                  ticks: {
-                    display: false
-                  }
-                },
-              },
-              responsive: true,
-              maintainAspectRatio: false,
-              plugins: {
-                legend: {
-                  display: false
-                },
-                title: {
-                  display: false
-                },
-                tooltip: {
-                  enabled: false
-                },
-              }
-            },
-          });
-        }, 500);
-        a = 1;
-      }
-    });
-    // main09 bg article
-    $(function () {
-      window.requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame;
-      var canvas = document.querySelector(".particle_bg");
-      canvas.width = window.innerWidth
-      canvas.height = window.innerHeight;
-      var ctx = canvas.getContext("2d");
-      ctx.globalCompositeOperation = "source-over";
-      var particles = [];
-      var pIndex = 0;
-      var x, y, frameId;
-      //particle
-      function Particle(x, vx, vy, color, size) {
-        this.x = x;
-        this.y = -canvas.height / 2;
-        this.vx = vx;
-        this.vy = vy;
-        this.color = color;
-        particles[pIndex] = this;
-        this.id = pIndex;
-        pIndex++;
-        this.life = 0;
-        this.maxlife = 600;
-        this.degree = getRandom(0, 360);
-        this.size = Math.floor(getRandom(size * 0.8, size));
-      };
-      Particle.prototype.draw = function () {
-        this.degree += 1;
-        this.vx *= 0.99;
-        this.vy *= 0.999;
-        this.x += this.vx + Math.cos(this.degree * Math.PI / 180);
-        this.y += this.vy;
-        this.width = this.size;
-        this.height = Math.cos(this.degree * Math.PI / 45) * this.size;
-        ctx.fillStyle = this.color;
-        ctx.beginPath();
-        ctx.moveTo(this.x + this.x / 2, this.y + this.y / 2);
-        ctx.lineTo(this.x + this.x / 2 + this.width / 2, this.y + this.y / 2 + this.height);
-        ctx.lineTo(this.x + this.x / 2 + this.width + this.width / 2, this.y + this.y / 2 + this.height);
-        ctx.lineTo(this.x + this.x / 2 + this.width, this.y + this.y / 2);
-        ctx.closePath();
-        ctx.fill();
-        this.life++;
-        if (this.life >= this.maxlife) {
-          delete particles[this.id];
-        }
-      }
-      var params, params_A, params_B, params_C;
-      function setGUI() {
-        params = {
-          'colorful_mode': false,
-          'amount': 5,
-          'bg_color': "#222",
-          'vx': 2,
-          'vy': 4,
-          'size': 10
-        };
-
-        params_A = {
-          'color': "#ED1A3D",
-        };
-        params_B = {
-          'color': "#24E259",
-        };
-        params_C = {
-          'color': "#16CDCE",
-        };
-      }
-      setGUI();
-      function loop() {
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
-        if (frameId % (11 - params.amount) == 0) {
-          if (params.colorful_mode) {
-            var hue = Math.floor(getRandom(0, 12.99)) * 30;
-            var hsl_color = "hsl(" + hue + ", 80%, 60%)";
-            new Particle(canvas.width * Math.random(), getRandom(-params.vx, params.vx), getRandom(params.vy - 2, params.vy), hsl_color, params.size);
-          } else {
-            var x1 = canvas.width * Math.random() + canvas.width / 2 * Math.random();
-            var x2 = canvas.width * Math.random() - canvas.width / 2 * Math.random();
-            var x3 = canvas.width * Math.random() - canvas.width / 2 * Math.random();
-            new Particle(x1, -1 * getRandom(params.vx - 2, params.vx), getRandom(params.vy - 2, params.vy), params_A.color, params.size);
-            new Particle(x2, getRandom(params.vx - 2, params.vx), getRandom(params.vy - 2, params.vy), params_B.color, params.size);
-            new Particle(x3, getRandom(params.vx - 2, params.vx), getRandom(params.vy - 2, params.vy), params_C.color, params.size);
-          }
-        }
-        for (var i in particles) {
-          particles[i].draw();
-        }
-        frameId = requestAnimationFrame(loop);
-        if (frameId % 2 == 0) { return; }
-      }
-      loop();
-      window.addEventListener("resize", function () {
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
-        x = canvas.width / 2;
-        y = canvas.height / 2;
+        var hp_slide = new Swiper(".hompage_slide .mySwiper", {
+          slidesPerView: "auto",
+          loop: true,
+          centeredSlides: true,
+          speed: 800,
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+        });
+        TweenMax.to($('.more_pj'), .4, { y: -10, repeat: -1, yoyo: true });
       });
-      function getRandom(min, max) {
-        return Math.random() * (max - min) + min;
-      }
-    })();
-  })
-</script>
-
+  
+      // aos load event
+      AOS.init({
+        easing: 'ease-out',
+        duration: 700
+      });
+  
+      // main02_cont load event
+      var a = 0;
+      $(window).scroll(function () {
+        var oTop = $('.main02_cont').offset().top - window.innerHeight;
+        if (a == 0 && $(window).scrollTop() > oTop) {
+          // count event
+          $('.comp_no').each(function () {
+            var $this = $(this),
+              countTo = $this.attr('data-count');
+            $({
+              countNum: $this.text()
+            }).animate({
+              countNum: countTo
+            },
+              {
+                duration: 2500,
+                easing: 'swing',
+                step: function () {
+                  $this.text(Math.floor(this.countNum));
+                },
+                complete: function () {
+                  $this.text(this.countNum.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')).append('<i>개</i>');
+                }
+              });
+          });
+          // chart
+          var colorchip = ["255,33,116"]
+          var chart01 = $("#chart01");
+          const colors = {
+            purple: {
+              default: "rgba(255,33,116, 1)",
+              half: "rgba(255,33,116, 0.5)",
+              quarter: "rgba(255,33,116, 0.25)",
+              zero: "rgba(255,33,116, 0)"
+            }
+          };
+          const ctx = document.getElementById("chart01").getContext("2d");
+          ctx.canvas.height = 100;
+          gradient = ctx.createLinearGradient(0, 100, 20, 350);
+          gradient.addColorStop(0, colors.purple.half);
+          gradient.addColorStop(0.35, colors.purple.quarter);
+          gradient.addColorStop(1, colors.purple.zero);
+          setTimeout(function () {
+            new Chart(chart01, {
+              type: 'line',
+              data: {
+                labels: ['', '', '', '', '', '', '', '', '', ''],
+                datasets: [{
+                  label: false,
+                  lineTension: 0,
+                  fill: true,
+                  data: [5, 10, 8, 20, 20, 30, 45, 60, 80, 100],
+                  borderWidth: 2,
+                  backgroundColor: gradient,
+                  borderColor: "rgba(" + colorchip[0] + ")",
+                  pointBackgroundColor: "rgba(" + colorchip[0] + ")"
+                }]
+              },
+              options: {
+                animation: {
+                  duration: 2500,
+                },
+                scales: {
+                  x: {
+                    grid: { display: false, drawBorder: false},
+                    gridLines: {display: false},
+                    ticks: {
+                      display: false
+                    }
+                  },
+                  y: {
+                    grid: { display: false, drawBorder: false},
+                    ticks: {
+                      display: false
+                    }
+                  },
+                },
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                  legend: {
+                    display: false
+                  },
+                  title: {
+                    display: false
+                  },
+                  tooltip: {
+                    enabled: false
+                  },
+                }
+              },
+            });
+          }, 500);
+          a = 1;
+        }
+      });
+      // main09 bg article
+      $(function () {
+        window.requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame;
+        var canvas = document.querySelector(".particle_bg");
+        canvas.width = window.innerWidth
+        canvas.height = window.innerHeight;
+        var ctx = canvas.getContext("2d");
+        ctx.globalCompositeOperation = "source-over";
+        var particles = [];
+        var pIndex = 0;
+        var x, y, frameId;
+        //particle
+        function Particle(x, vx, vy, color, size) {
+          this.x = x;
+          this.y = -canvas.height / 2;
+          this.vx = vx;
+          this.vy = vy;
+          this.color = color;
+          particles[pIndex] = this;
+          this.id = pIndex;
+          pIndex++;
+          this.life = 0;
+          this.maxlife = 600;
+          this.degree = getRandom(0, 360);
+          this.size = Math.floor(getRandom(size * 0.8, size));
+        };
+        Particle.prototype.draw = function () {
+          this.degree += 1;
+          this.vx *= 0.99;
+          this.vy *= 0.999;
+          this.x += this.vx + Math.cos(this.degree * Math.PI / 180);
+          this.y += this.vy;
+          this.width = this.size;
+          this.height = Math.cos(this.degree * Math.PI / 45) * this.size;
+          ctx.fillStyle = this.color;
+          ctx.beginPath();
+          ctx.moveTo(this.x + this.x / 2, this.y + this.y / 2);
+          ctx.lineTo(this.x + this.x / 2 + this.width / 2, this.y + this.y / 2 + this.height);
+          ctx.lineTo(this.x + this.x / 2 + this.width + this.width / 2, this.y + this.y / 2 + this.height);
+          ctx.lineTo(this.x + this.x / 2 + this.width, this.y + this.y / 2);
+          ctx.closePath();
+          ctx.fill();
+          this.life++;
+          if (this.life >= this.maxlife) {
+            delete particles[this.id];
+          }
+        }
+        var params, params_A, params_B, params_C;
+        function setGUI() {
+          params = {
+            'colorful_mode': false,
+            'amount': 5,
+            'bg_color': "#222",
+            'vx': 2,
+            'vy': 4,
+            'size': 10
+          };
+  
+          params_A = {
+            'color': "#ED1A3D",
+          };
+          params_B = {
+            'color': "#24E259",
+          };
+          params_C = {
+            'color': "#16CDCE",
+          };
+        }
+        setGUI();
+        function loop() {
+          ctx.clearRect(0, 0, canvas.width, canvas.height);
+          if (frameId % (11 - params.amount) == 0) {
+            if (params.colorful_mode) {
+              var hue = Math.floor(getRandom(0, 12.99)) * 30;
+              var hsl_color = "hsl(" + hue + ", 80%, 60%)";
+              new Particle(canvas.width * Math.random(), getRandom(-params.vx, params.vx), getRandom(params.vy - 2, params.vy), hsl_color, params.size);
+            } else {
+              var x1 = canvas.width * Math.random() + canvas.width / 2 * Math.random();
+              var x2 = canvas.width * Math.random() - canvas.width / 2 * Math.random();
+              var x3 = canvas.width * Math.random() - canvas.width / 2 * Math.random();
+              new Particle(x1, -1 * getRandom(params.vx - 2, params.vx), getRandom(params.vy - 2, params.vy), params_A.color, params.size);
+              new Particle(x2, getRandom(params.vx - 2, params.vx), getRandom(params.vy - 2, params.vy), params_B.color, params.size);
+              new Particle(x3, getRandom(params.vx - 2, params.vx), getRandom(params.vy - 2, params.vy), params_C.color, params.size);
+            }
+          }
+          for (var i in particles) {
+            particles[i].draw();
+          }
+          frameId = requestAnimationFrame(loop);
+          if (frameId % 2 == 0) { return; }
+        }
+        loop();
+        window.addEventListener("resize", function () {
+          canvas.width = window.innerWidth;
+          canvas.height = window.innerHeight;
+          x = canvas.width / 2;
+          y = canvas.height / 2;
+        });
+        function getRandom(min, max) {
+          return Math.random() * (max - min) + min;
+        }
+      })();
+    })
+  </script>
+</body>
 </html>

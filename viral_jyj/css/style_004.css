@@ -108,8 +108,8 @@
 .viral_prev::after, .viral_next::after{ opacity: 1; z-index:-1; width: 100%; height: 100%; content:"" !important; position: absolute; background: transparent linear-gradient(170deg, #69757e 0%, #141c21 100%) 0% 0% no-repeat padding-box; border-radius: 20px; filter: blur(7px);}
 .viral_prev::before, .viral_next::before{ content: ""; position: absolute; width:100%; height:100%; background-color: var(--font-color-viral_btn); border-radius: 20px; box-shadow:0 5px 12px rgba(0,0,0,62%);}
 .viral_prev > i, .viral_next > i{position: absolute; z-index: 1; width:10px; height:10px; border-top: 2px solid var(--font-color-primary); border-right: 2px solid var(--font-color-primary);}
-.viral_prev > i{rotate: -135deg;}
-.viral_next > i{rotate: 45deg;}
+.viral_prev > i{transform: rotate(-135deg);}
+.viral_next > i{transform: rotate(45deg);}
 
 .viral_prev:active{top:399px;}
 .viral_prev:active::after{opacity: 0;}
