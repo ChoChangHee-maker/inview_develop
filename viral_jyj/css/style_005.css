@@ -1,0 +1,31 @@
+@charset "utf-8";
+@import url(../../css/base.css); 
+
+
+
+/*news_top_box*/
+.news_top_box{position:relative; background-color:rgba(0,0,0,25%); width:100%; height:900px; display:flex; align-items: center; justify-content: center;}
+.news_top_box .orb-canvas {position: absolute; width:100%; height:100%; z-index: -1;}
+.news_top_title{width:500px;}
+.col_green{color:#82F8B3;}
+
+/* button customer */
+.news_top_title .news_inq { width:255px; border: none; background: transparent; position: relative; display: flex; align-items: center; justify-content: center; padding: 22px 0px; overflow: hidden; border-radius: 100vmax; box-shadow: var(--shadow-elevation-medium); transition: box-shadow 0.2s ease-in-out; } 
+.news_top_title .news_inq::after, .news_top_title .news_inq::before { content: ""; position: absolute; inset: 0; } 
+.news_top_title .news_inq::before { z-index: 1; right: -100%; background: linear-gradient(to right, #16FFC7 0%, #F9F09D 50%, #16FFC7 100%); background-size: 50% 100%; animation: scroll 1.2s infinite linear; } 
+.news_top_title .news_inq::after { z-index: 2; inset: 3px; border-radius: 100vmax; background-color:#18252E; transition: inset 0.2s ease-in-out; } 
+.news_top_title .news_inq a { z-index: 3; font-size: 18px; color: #82F8B3; text-transform: uppercase; cursor: pointer; } 
+.news_top_title .news_inq:hover { box-shadow: var(--shadow-elevation-medium); } 
+.news_top_title .news_inq:hover::after { inset: 6px; } 
+@keyframes scroll { to { transform: translateX(-50%); } }
+
+/*public_section*/
+.public_section{margin:120px 0; position:relative; height: 725px;}
+/* .moniter_wrap{width:774px; height:553px; margin:0 auto; background: url("/viral_jyj/img/moniter.png") no-repeat center /cover;} */
+.public_con{width:100%; height:430px; position:absolute; top:180px; left:0px;}
+.swiper-slide{ height: 430px !important; opacity: .2; transition: all .3s; transition-property:initial !important}
+.swiper-slide img{border-radius: 20px;}
+.public_con::after{content: ""; width:764px; height: 550px; background: url("/viral_jyj/img/moniter.png") no-repeat center /cover; position: absolute; top:-4px; left:calc(50% - 390px);}
+.swiper-slide-active{opacity: 1; }
+.swiper-slide-active img{border-radius: 0;}
+

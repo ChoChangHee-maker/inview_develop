@@ -1,5 +1,4 @@
-$(document).ready(function(){
-
+$(document).ready(function () {
   $(".vir_cont").hide();
   $(".vir_cont").first().show();
   $(".viral_tabs li").first().addClass("select");
@@ -13,7 +12,7 @@ $(document).ready(function(){
     $(this).addClass("select");
   });
 
-  /*swiper*/
+  /* swiper_P004 */
   var swiper = new Swiper(".viral_swiper", {
     slidesPerView: 1,
     loop: true,
@@ -27,9 +26,15 @@ $(document).ready(function(){
     },
   });
 
-
-
-
-
-
+  /* swiper_P005 */
+  var swiper = new Swiper(".public_swiper", {
+    slidesPerView: 3,
+    spaceBetween: 40,
+    centeredSlides: true,
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+  });
 });

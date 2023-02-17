@@ -1,22 +1,23 @@
-
 // Options
-const particleCount = 6000;
+const particleCount = 10000;
 
-const particleSize = 0.3;
+const particleSize = 0.9;
 
 const defaultAnimationSpeed = 1,
   morphAnimationSpeed = 18,
-  color = "#FFFFF";
+  color = "#FFFFFF";
 
 // Triggers
-const triggers = document.getElementsByTagName("span");
+const triggers = document.getElementsByClassName("viral_rotate");
 
 // Renderer
-var renderer = new THREE.WebGLRenderer();
+var renderer = new THREE.WebGLRenderer({ alpha: true });
 renderer.setPixelRatio(window.devicePixelRatio);
 renderer.setSize(window.innerWidth, window.innerHeight);
-renderer.domElement.id = 'canvas_id';
-document.body.appendChild(renderer.domElement);
+renderer.domElement.id = "canvas_id";
+document
+  .getElementsByClassName("viral_vis_right")[0]
+  .appendChild(renderer.domElement);
 
 // Ensure Full Screen on Resize
 function fullScreen() {
@@ -30,18 +31,18 @@ window.addEventListener("resize", fullScreen, false);
 
 // Scene
 var scene = new THREE.Scene();
-scene.background = new THREE.Color("transparent");
 
 // Camera and position
 var camera = new THREE.PerspectiveCamera(
-  45,
+  30,
   window.innerWidth / window.innerHeight,
   1,
-  10000
+  1000
 );
 
+camera.position.x = 180;
 camera.position.y = -45;
-camera.position.z = 45;
+camera.position.z = -45;
 
 // Lighting
 var light = new THREE.AmbientLight(0xffffff, 1);
@@ -71,8 +72,8 @@ loader.load(typeface, (font) => {
 
     texts[idx].geometry = new THREE.TextGeometry(trigger.textContent, {
       font: font,
-      size: window.innerWidth * 0.01,
-      height: 4,
+      size: window.innerWidth * 0.02,
+      height: 8,
       curveSegments: 10,
     });
 
