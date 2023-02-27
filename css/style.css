@@ -100,7 +100,7 @@
 
 /*main06*/
 .main06 { padding: 120px 0; padding-right: 20px; position: relative; background: #2C3840; overflow: hidden; } 
-.main06:after { content: ""; display: block; position: absolute; width: 694px; height: 344px; background:url(../img/logo_bg.png)no-repeat center/cover; right: -5%; bottom: 5%; } 
+.main06:after { content: ""; display: block; position: absolute; width: 694px; height: 344px; background:url(../img/logo/logo_bg.png)no-repeat center/cover; right: -5%; bottom: 5%; } 
 .main06 .main_title { text-align: left; max-width: 600px; width: 100%; } 
 .main06 .main06_cont > div { width: 50%; } 
 .main06 .main06_cont .main06_left { display: flex; flex-wrap: wrap; justify-content: end; } 

@@ -24,9 +24,9 @@ class ColorPalette {
   }
   setColors() {
     // set fixed values for hue and complimentary hues
-    this.complimentaryHue1 = 182, 100, 78;
-    this.complimentaryHue2 = 234, 80, 37;
-    this.complimentaryHue3 = 160, 100, 35;
+    this.complimentaryHue1 = 289, 45, 100;
+    this.complimentaryHue2 = 289, 45, 100;
+    this.complimentaryHue3 = 214, 67, 89;
     
     // define a fixed saturation and lightness
     this.saturation = 100;
@@ -375,7 +375,7 @@ function animate() {
 
 animate();
 
-function morphTo(newParticles, color = "#2990D4") {
+function morphTo(newParticles, color = "#CC5DF4") {
   TweenMax.to(animationVars, 0.1, {
     ease: Power4.easeIn,
     speed: fullSpeed,
