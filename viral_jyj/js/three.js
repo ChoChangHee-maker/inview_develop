@@ -50,7 +50,9 @@ scene.add(light);
 
 // Orbit Controls
 var controls = new THREE.OrbitControls(camera);
-controls.update();
+// controls.update();
+controls.enabled = false;
+
 
 // Particle Vars
 var particles = new THREE.Geometry();

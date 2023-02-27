@@ -141,7 +141,7 @@ button { border: none; background: none; }
 body.sub{background-color:var(--font-color-base03);}
 .w1200{max-width:1200px; width:100%; height:100%; margin: 0 auto;}
 .w1600{max-width:1600px; width:100%; margin:0 auto;}
-.section_a{margin:120px 0;}
+.section_m{margin:120px 0;}
 
 .top_dimmed{width:1747px; height:690px; background-color:rgba(31, 38, 42, 33%); border-radius: 50px;}
 .top_dimmed .w1200{ display: flex; align-items: center; justify-content: left;}
@@ -155,7 +155,7 @@ body.sub{background-color:var(--font-color-base03);}
 
 .top_title_box{text-align: center; width:700px; margin:0 auto 60px;}
 .top_title_box > h2{font-size:50px; font-weight:600; color:var(--font-color-primary);}
-.top_title_box > p{word-break: keep-all; font-size: 18px; color:var(--font-color-base02); line-height: 1.555; margin:8px 0 0;}
+.top_title_box > p{word-break: keep-all; font-size: 18px; color:var(--font-color-base02); line-height: 1.555; margin:10px 0 0;}
 
 
 

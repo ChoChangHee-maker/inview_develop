@@ -26,9 +26,21 @@ $(document).ready(function () {
     },
   });
 
-  /* swiper_P005 */
+  /* swiper_P005 public */
   var swiper = new Swiper(".public_swiper", {
     slidesPerView: 3,
+    spaceBetween: 40,
+    centeredSlides: true,
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+  });
+
+  /* swiper_P005 strength */
+  var swiper = new Swiper(".strength_swiper", {
+    slidesPerView: "auto",
     spaceBetween: 40,
     centeredSlides: true,
     loop: true,
