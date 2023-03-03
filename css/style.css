@@ -147,7 +147,7 @@
 .main08 .more_pj::after { content: ""; display: block; position: absolute; width: 15px; height: 38px; background: url(../img/move_arrow.png)no-repeat center/contain; bottom: 0; left: 50%; transform: translateX(-50%); } 
 
 /*main09*/
-.main09 {padding: 170px 20px;height: auto;position:relative;overflow:hidden;} 
+.main09 {padding: 170px 20px;height: auto;position:relative;overflow:hidden;background: url(../img/footer_bg.png)center center no-repeat;background-size: cover;} 
 .main09 .particle_bg{position:absolute;top: 0;}
 .main09 .main_title {position: relative;} 
 .main09 .main_title b { display: block; margin-bottom: 50px; } 
