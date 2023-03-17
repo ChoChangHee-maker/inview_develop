@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" href="img/inv_favicon.ico">
+	<title>아이앤뷰커뮤니케이션 | SNS 마케팅</title>
+	<!--fullpage-->
+	<link rel="stylesheet" href="resource/fullpage/fullpage.css">
+	<!--swiper-->
+	<link rel="stylesheet" href="resource/swiper/swiper-bundle.min.css">
+	<script src="resource/swiper/swiper-bundle.min.js"></script>
+	<!-- aos -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+	<link rel="stylesheet" href="css/style_sub.css">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap"
+		rel="stylesheet" />
+	<script src="resource/jquery.js"></script>
+	<script type="text/javascript" src="resource/tweenmax/TweenMax.min.js"></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.3.0/snap.svg-min.js'></script>
+	<script src="https://dl.dropbox.com/s/sk7fbhx9burholi/dat.gui.min.js?dl=0"></script>
+	<script type="module" src="js/background/sub_bg__sns.js"></script>
+</head>
+
+<body class="sub sns">
+	<div data-include-path="common/header.html"></div>
+	<div class="site">
+		<div class="circle circle--1"></div>
+		<div class="circle circle--2"></div>
+	</div>
+	<div class="sub_head_box">
+		<canvas class="orb-canvas"></canvas>
+		<div class="top_dimmed">
+			<div class="w1200">
+				<div class="sub_head_word_box">
+					<h1 class="page_title"><b>SNS</b> 마케팅</h1>
+					<div class="tag">
+						<span>#강한파급력</span>
+						<span>#빛보다빠른광고</span>
+						<span>#고객과의소통</span>
+					</div>
+					<p class="page_desc">
+						소셜 미디어를 활용하여 고객들과 소통하는 마케팅 전략으로<br> 
+            거미줄처럼 뻗어나가는 SNS는 확산력이 빠르며 강력한 파급력을 가진<br> 
+            바이럴 마케팅의 일종이라 할 수 있습니다.
+					</p>
+					<button class="btn_style_06">
+						<span>SNS 마케팅 문의하기</span>
+					</button>
+				</div>
+				<div class="trigger_txt_box">
+					<span class="trigger_txt">SNS</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="sub_block">
+		<div class="w1200">
+			<div class="tabs_control">
+				<input type="radio" name="radio2" value="1" id="tab_1" checked />
+				<label for="tab_1" class="tabs_control__1 half">
+					인스타그램 마케팅
+				</label>
+				<input type="radio" name="radio2" value="2" id="tab_2" />
+				<label for="tab_2" class="tabs_control__2 half">
+					페이스북 마케팅
+				</label>
+				<div class="tabs_control__color"></div>
+			</div>
+			<div class="tab_contents_wrap">
+				<div class="tab_cont active" attr-tabValue="tab_1">
+					<div class="search_top_cont">
+						<div class="top_title_box" data-aos="fade-down" data-aos-duration="450">
+							<h2 class="with_img"><img src="img/logo/naver_logo.svg" alt="naver logo">파워링크</h2>
+							<p>
+								검색어에 따라 노출되는 네이버 대표 검색광고 상품으로 네이버 내/외부의 다양한 영역에<br> 텍스트와 사이트 링크를 노출하는 기본적인 검색광고입니다.
+							</p>
+						</div>
+						<div class="add_cont_box">
+							<img data-aos="fade-down" data-aos-duration="450" src="img/naver_add_pc.png" alt="naver pc">
+							<img data-aos="fade-down" data-aos-duration="450" data-aos-delay="200" src="img/naver_add_mo.png" alt="naver mo">
+						</div>
+					</div>
+				</div>
+				<div class="tab_cont" attr-tabValue="tab_2">
+					<div class="search_top_cont">
+						<div class="top_title_box">
+							<h2 class="with_img">구글 검색광고</h2>
+							<p>
+								매일 수십억 건의 검색이 발생하는 구글에서 키워드 검색 시 검색결과상단에 4개업체가 노출 되는<br> 광고상품으로 잠재고객의 브랜드 인지도 및 구매 고려도를
+								높이고 액션을 유도합니다.
+							</p>
+						</div>
+						<div class="add_cont_box">
+							<img src="img/google_add_pc.png" alt="google pc">
+							<img src="img/google_add_mo.png" alt="google mo">
+						</div>
+					</div>
+				</div>
+				<div class="tab_cont" attr-tabValue="tab_3">
+					<div class="search_top_cont">
+						<div class="top_title_box">
+							<h2 class="with_img">다음&amp;카카오 검색광고</h2>
+							<p>
+								주요 검색의 최상단인 프리미엄 링크 영역에 동시 노출되며, 키워드 검색으로 사용자의 의도를 파악하여<br> 광고를 통해 원하는 정보를 전달 할 수 있습니다.
+							</p>
+						</div>
+						<div class="add_cont_box">
+							<img src="img/daum_add_pc.png" alt="daum pc">
+							<img src="img/daum_add_mo.png" alt="daum mo">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="sub_block bg_secondary">
+		<div class="w1200">
+			<div class="top_title_box" data-aos="fade-down" data-aos-duration="450">
+				<h2 class="l_s">검색광고가 필요한 이유?</h2>
+				<p><b>'필요한 소비자에게 필요한 정보를'</b> 검색광고의 특징으로 높은 전환율 때문에<br> 많은 광고주분들이 선호하시고 기본적으로 진행해 주시는 광고입니다.</p>
+			</div>
+			<ul class="search_cont_wrap_01">
+				<li data-aos="fade-up" data-aos-duration="300">
+					<img src="img/search_marketing_01.svg" alt="search marketing 01">
+					<p>무언가 필요할 때 현대사회인들은<br> "검색"이라는 행동을 합니다.</p>
+				</li>
+				<li data-aos="fade-up" data-aos-duration="300" data-aos-delay="150">
+					<img src="img/search_marketing_02.svg" alt="search marketing 02">
+					<p>원하는 키워드를 쳤을 때<br> 연관된 업체가 노출된다면?</p>
+				</li>
+				<li data-aos="fade-up" data-aos-duration="300" data-aos-delay="300">
+					<img src="img/search_marketing_03.svg" alt="search marketing 03">
+					<p>원하는 결과를 찾은 잠재 고객들의<br> 소비를 불러일으킬 수 있습니다.</p>
+				</li>
+			</ul>
+			<ul class="dp_w_c_flex search_cont_wrap_02">
+				<li data-aos="fade-left" data-aos-duration="300">
+					<p>01</p>
+					<h3>검색결과 최상단 위치</h3>
+					<p>지하철 광고와 마찬가지로 시민들이<br> 가장 많이 이용하는 교통수단입니다.</p>
+				</li>
+				<li data-aos="fade-left" data-aos-duration="300" data-aos-delay="150">
+					<p>02</p>
+					<h3>정확한 타겟팅</h3>
+					<p>검색 니즈에 따라 노출되는 타겟팅으로<br> 다수의 잠재 고객을 확보합니다.</p>
+				</li>
+				<li data-aos="fade-left" data-aos-duration="300" data-aos-delay="300">
+					<p>03</p>
+					<h3>유연한 대응</h3>
+					<p>유행이나 시즌에 따라 바뀌는 키워드<br> 특성상 유동적인 변경이 가능합니다.</p>
+				</li>
+				<li data-aos="fade-left" data-aos-duration="300" data-aos-delay="450">
+					<p>04</p>
+					<h3>비용대비 높은효율</h3>
+					<p>클릭당 비용을 분석하여 비용 대비<br> 가장 높은 효율을 만들어 드립니다.</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="sub_block">
+		<div class="top_title_box" data-aos="fade-down" data-aos-duration="450">
+			<h2 class="l_s">왜 아이앤뷰커뮤니케이션일까?</h2>
+			<p>아이앤뷰커뮤니케이션은 지난 N 연간 수많은 클라이언트의 검색광고를 진행하며<br> 탄탄한 노하우와 아이앤뷰만의 운영 프로세스로 광고주분들의 효율을 극대화합니다.</p>
+		</div>
+		<div class="search_cont_wrap_03">
+			<div class="speech_box01" data-aos="fade-right" data-aos-duration="450">
+				<p>관리의 영향을 많이 받는다 부정클릭이 많다 다른 매체에 비해 비싸다</p>
+			</div>
+			<div class="speech_box02" data-aos="fade-left" data-aos-duration="450">
+				<p>웬만한 마케터도 기본만 할 줄 아는 매체 관리에 따른 효율이 천차만별 수수료 납부</p>
+			</div>
+			<div class="w1200">
+				<img src="img/why_inv_01.png" alt="why inv 01" data-aos="fade-up" data-aos-duration="450">
+				<img src="img/why_inv_02.png" alt="why inv 02" data-aos="fade-down" data-aos-duration="450">
+			</div>
+		</div>
+		<div class="search_why_txt" data-aos="fade-up" data-aos-duration="450">
+			<p>저희 아이앤뷰커뮤니케이션은 전문적인 지식과 노하우를 바탕으로<br>
+				<b>매체마다 가지고 있는 특성을 파악하여 최고의 마케팅 솔루션을 제공합니다.</b><br>
+				상담 시 더욱 자세하게 안내드립니다.
+			</p>
+		</div>
+		<div class="top_title_box" data-aos="fade-down" data-aos-duration="450">
+			<h2 class="l_s">검색광고의 집행효과는?</h2>
+		</div>
+		<div class="w1200 add_effective">
+			<ul>
+				<li data-aos="fade-right" data-aos-duration="350">
+					<p>소비자의 니즈에 따라 노출되는<br> 타겟팅으로 <b>다수의 잠재 고객 확보</b></p>
+				</li>
+				<li data-aos="fade-right" data-aos-duration="350" data-aos-delay="100">
+					<p>클릭 시에만 과금되는 CPC 광고로<br> <b>합리적인 광고 운영 가능</b></p>
+				</li>
+				<li data-aos="fade-right" data-aos-duration="350" data-aos-delay="200">
+					<p>능동적인 고객들의 유입으로<br> <b>높은 전환율을 확보</b></p>
+				</li>
+			</ul>
+			<ul>
+				<li data-aos="fade-right" data-aos-duration="350" data-aos-delay="300">
+					<p>실시간으로 광고 변경이 가능하여 효율에 따라 <b>유연한 대응이 가능</b></p>
+				</li>
+				<li data-aos="fade-right" data-aos-duration="350" data-aos-delay="400">
+					<p>기업의 규모와 관계없이 입찰 순위에 따라 <b>상위 게재 가능</b></p>
+				</li>
+				<li data-aos="fade-right" data-aos-duration="350" data-aos-delay="500">
+					<p>구체적이고 정확한 광고효과 분석으로 <b>효율적인 광고 운영</b></p>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="sub_block bg_secondary">
+		<div class="w1200">
+			<div class="top_title_box" data-aos="fade-down" data-aos-duration="450">
+				<h2 class="l_s">이런 업체는 조심하세요!</h2>
+				<p>최근 들어 늘어나고 있는 불법광고대행사에 피해를 입는 광고주 분들이 늘어나고 있습니다.<br> 정상적인 마케팅과 잘못된 마케팅의 차이점을 살펴보세요.</p>
+			</div>
+			<div class="search_cont_wrap_04">
+				<div class="add_warning">
+					<img src="img/review_person06.png" alt="review person">
+					<div class="speech_box03" data-aos="fade-left" data-aos-duration="450">
+						<p>안녕하세요, 대표님! 네이○ 다○ 광고대행사입니다~<br> 월 3만 원씩 1년 결제하시면 홈페이지도 무료로 만들어드리고<br> 원하는 키워드 상위 노출도 가능하세요!
+						</p>
+					</div>
+				</div>
+				<div class="add_warning">
+					<div class="speech_box04" data-aos="fade-right" data-aos-duration="450" data-aos-delay="150">
+						<p>한 달에 3만 원이요?<br> 좋은 거 같은데... 한번 진행해 볼까?</p>
+					</div>
+					<img src="img/review_person07.png" alt="review person">
+				</div>
+			</div>
+			<div class="keyword_wrap" data-aos="fade-down" data-aos-duration="350">
+				<div class="keyword_table">
+					<div class="keyword_title" data-aos="fade-down" data-aos-duration="300">
+						실제 1개월 '꽃배달' 키워드
+					</div>
+					<table>
+						<tr data-aos="zoom-up" data-aos-duration="200">
+							<th>키워드</th>
+							<th>PC 검색량</th>
+							<th>MO 검색량</th>
+						</tr>
+						<tr class="check">
+							<td><i class="check"></i>꽃배달</td>
+							<td data-aos="zoom-out" data-aos-duration="400" data-aos-delay="300">12,000</td>
+							<td data-aos="zoom-out" data-aos-duration="400" data-aos-delay="550">73,800</td>
+						</tr>
+						<tr class="warning">
+							<td><i class="warning"></i>꽃배달잘하는곳</td>
+							<td>10건 미만</td>
+							<td>10건 미만</td>
+						</tr>
+						<tr class="warning">
+							<td><i class="warning"></i>꽃배달업체추천</td>
+							<td>10건 미만</td>
+							<td>10건</td>
+						</tr>
+					</table>
+				</div>
+				<ul>
+					<li data-aos="fade-down" data-aos-duration="450">
+						<div class="outline">
+							<div class="waves"></div>
+						</div>
+						<p>키워드</p><span>검색량이 한 달에 10건도 안되는 효과를<br> 볼 수 없는 키워드들로 들어갑니다.</span>
+					</li>
+					<li data-aos="fade-down" data-aos-duration="450" data-aos-delay="100">
+						<div class="outline">
+							<div class="waves"></div>
+						</div>
+						<p>노출</p><span>상위 노출이 불가능할뿐더러 몇몇 키워드는<br> 제대로 노출이 되지 않습니다.</span>
+					</li>
+					<li data-aos="fade-down" data-aos-duration="450" data-aos-delay="200">
+						<div class="outline">
+							<div class="waves"></div>
+						</div>
+						<p>관리</p><span>유령회사들로 계약 직후 연락이 되지 않아<br> 취소 및 관리가 불가능합니다.</span>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+	<div data-include-path="common/footer.html"></div>
+	<script type="text/javascript" src="resource/includeHtml.js"></script>
+	<script src="resource/chart.js/chart.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r83/three.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+	<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/605067/OrbitControls.js"></script>
+	<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/605067/GeometryUtils.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$(".tabs_control").children("input").click(function () {
+				const tabValue = $(this).attr('id');
+				$(".tab_cont[attr-tabValue=" + tabValue + "]").addClass("active").siblings().removeClass("active")
+			})
+		})
+	</script>
+</body>
+
+</html>

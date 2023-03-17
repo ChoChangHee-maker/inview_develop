@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1163.928" height="394.229" viewBox="0 0 1163.928 394.229">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.015" y1="1.051" x2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#59c739" stop-opacity="0"/>
+      <stop offset="1" stop-color="#59c739"/>
+    </linearGradient>
+  </defs>
+  <g id="그룹_4811" data-name="그룹 4811" transform="translate(-359.596 -4412.167)">
+    <path id="패스_18836" data-name="패스 18836" d="M7780.846,19704.4c-50.913,0-81.708-1.691-83.25-1.783l.834-12.977c7.927.479,796.15,43.547,1096.974-323.762l10.51,8.082C8559.573,19674.738,7993.99,19704.4,7780.846,19704.4Z" transform="translate(-7338 -14898)" fill="url(#linear-gradient)"/>
+    <path id="다각형_41" data-name="다각형 41" d="M30.1,11.746a8,8,0,0,1,13.8,0l23.024,39.2A8,8,0,0,1,60.024,63H13.976a8,8,0,0,1-6.9-12.051Z" transform="matrix(0.719, 0.695, -0.695, 0.719, 1470.293, 4412.167)" fill="#59c739"/>
+  </g>
+</svg>
