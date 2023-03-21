@@ -122,10 +122,13 @@ button { text-decoration: none; cursor:none; }
 table { border-collapse: collapse; border-spacing: 0; } 
 button { border: none; background: none; } 
 b { font-weight:600; } 
+.p_xl{padding:120px 0;}
 .bg_primary { background:var(--font-color-base03); } 
 .bg_secondary { background:var(--font-color-base); } 
+.w_maximum{width:calc(100% + 40px); margin-left:-20px; padding:0 20px;}
 .t_align_r{text-align:right;}
 .t_align_l{text-align:left;}
+.t_aling_c{text-align:center;}
 
 /* color setup */
 :root { --font-color-base:#243038; --font-color-primary:#fff; --font-color-secondary:#647178; --font-color-base02:#81919A; --font-color-base03:#2C3840; --font-color-point:#FF2174; --font-color-viral_btn:#1D272E; --font-color-sky:#75D0EE; --shadow-color: 208deg 22% 58%; --shadow-elevation-low: 0.3px 0.5px 0.7px #000, 0.4px 0.8px 1px -1.2px #000, 1px 2px 2.5px -2.5px #000; --shadow-elevation-medium: 0.3px 0.5px 0.7px #000, 0.8px 1.6px 2px -0.8px #000, 2.1px 4.1px 5.2px -1.7px #000, 5px 10px 12.6px -2.5px #000; --shadow-elevation-high: 0.3px 0.5px 0.7px #000, 1.5px 2.9px 3.7px -0.4px #000, 2.7px 5.4px 6.8px -0.7px #000, 4.5px 8.9px 11.2px -1.1px #000, 7.1px 14.3px 18px -1.4px #000, 11.2px 22.3px 28.1px -1.8px #000, 17px 33.9px 42.7px -2.1px #000, 25px 50px 62.9px -2.5px #000; } 
@@ -191,7 +194,7 @@ body.nav-active .menu-icon:hover .menu-icon__line-right { width: 30px; }
 .footer .ft_top { max-width: 1640px; padding: 0 20px; margin: 0 auto; overflow: hidden; margin-bottom: 15px; } 
 .footer .ft_bottom { max-width: 1640px; padding: 0 20px; margin: 0 auto; } 
 .footer .ft_left { float: left; } 
-.footer .ft_right { display: inline-block; float: right; } 
+.footer .ft_right {float: right; } 
 .footer .copylight { position: absolute; bottom: 50px; width: 100%; max-width: 1640px; padding: 0 20px; left: 50%; transform: translateX(-50%); display: flex; flex-direction: row; align-items: flex-end; justify-content: space-between; } 
 .footer .copylight span { font-size: 14px; color: #647178; } 
 .footer .copylight img { float: right; } 
@@ -204,7 +207,6 @@ body.nav-active .menu-icon:hover .menu-icon__line-right { width: 30px; }
 .footer .social_area { display: flex; gap: 0 15px; } 
 .footer .social_area li { display: inline-block; } 
 .footer .social_area li a { display: inline-block; width: 100%; } 
-.footer .social_area li a img { } 
 .footer .ft_bottom p { color: #fff; font-size: 14px; margin-bottom: 10px; } 
 .footer .ft_bottom span { display: block; font-size: 14px; margin-bottom: 10px; color: #647178; } 
 
