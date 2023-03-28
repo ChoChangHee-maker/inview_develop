@@ -601,17 +601,17 @@ body.sub.youtube .page_title b { color:#F60202 }
 .sub.youtube .yt_cont_wrap04 .instance_box:last-of-type > div { right: initial; left: 0; } 
 
 .sub [class*="portpolio_box"] { display: flex; flex-direction: row; flex-wrap: wrap; gap: 35px; } 
-.sub [class*="portpolio_box"] li { width: calc(50% - 18.5px); height: 430px; position: relative; border-radius: 20px; overflow: hidden; } 
+.sub [class*="portpolio_box"] li { width: calc(50% - 18.5px); height: 430px; position: relative; border-radius: 20px; overflow: hidden; display:none;} 
 .sub [class*="portpolio_box"] li:hover .portpolio_info{
     bottom: 20px;
 }
 .sub [class*="portpolio_box"] li a { width: 100%; height: 100%; display: inline-block; } 
 .sub [class*="portpolio_box"] li a img { width: 100%; height: 100%; object-fit: cover; } 
-.sub [class*="portpolio_box"] li .portpolio_info {position: absolute;height: initial;bottom: -100px;left: 20px;padding: 25px 30px;width: calc(100% - 40px);background: rgb(0 0 0 / 50%) 0% 0% no-repeat padding-box;border-radius: 42px;display: flex;flex-direction: row;flex-wrap: nowrap;align-items: center;transition: bottom .2s ease-in-out;} 
-.sub [class*="portpolio_box"] li .portpolio_info h4 { font-size: 24px; color: var(--font-color-primary); font-weight: 500; margin-right: 10px; word-break: keep-all; } 
-.sub [class*="portpolio_box"] li .portpolio_info span { font-size: 16px; color: #FFFFFF; opacity: 0.6; line-height: 22px; } 
+.sub [class*="portpolio_box"] li .portpolio_info {position: absolute;height: initial;bottom: -150px;left: 20px;padding: 25px 30px;width: calc(100% - 40px);background: rgb(0 0 0 / 50%) 0% 0% no-repeat padding-box;border-radius: 42px;display: flex;flex-direction: row;flex-wrap: nowrap;align-items: center;transition: bottom .3s ease-in-out;} 
+.sub [class*="portpolio_box"] li .portpolio_info h4 {font-size: 24px;color: var(--font-color-primary);font-weight: 500;margin-right: 10px;word-break: keep-all;line-height: 30px;} 
+.sub [class*="portpolio_box"] li .portpolio_info span {font-size: 16px;color: #FFFFFF;opacity: 0.6;line-height: 22px;padding-right: 45px;} 
 .sub [class*="portpolio_box"] li .portpolio_info::after { content:""; background: url(/img/errow_r_xl.svg)center center no-repeat; width: 40px; height: 17px; position: absolute; right: 20px; } 
-.sub.youtube .yt_cont_wrap05 .ytb_portpolio_box { } 
+.sub.youtube .yt_cont_wrap05 .ytb_portpolio_box + .btn_style_01{margin: 60px auto 0;padding: 22px 100px;box-shadow: 0px 10px 20px #0000005C;} 
 
 /******** sub offline */
 .sub.offline .dp_w_c_flex li { margin-right:30px; border-radius:20px; overflow:hidden; text-align:center; padding:0 0 30px; background: transparent linear-gradient(180deg, #1C283000 0%, #1C2830 100%) 0% 0% no-repeat padding-box; } 

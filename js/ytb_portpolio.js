@@ -509,7 +509,7 @@ function setList() {
       ' target="_blank"><img src="/img/ytb_portpolio/' +
       videoList[i].img +
       '.png" alt="'+ videoList[i].name + ' 섬네일" /></a>' +
-      '<a href="'+ videoList[i].url +'" class="portpolio_info"><h4>' +
+      '<a href="'+ videoList[i].url +'" target="_blank" class="portpolio_info"><h4>' +
       videoList[i].name +
       "</h4><span>" +
       videoList[i].descript +
@@ -518,3 +518,18 @@ function setList() {
   }
 }
 setList();
+
+$(function(){
+  $(".ytb_portpolio_box li").slice(0, 12).show(); // 초기갯수
+  $(".ytb_portpolio_more").click(function(e){ // 클릭시 more
+      e.preventDefault();
+      $(".ytb_portpolio_box li:hidden").slice(0, 12).show(); // 클릭시 more 갯수 지저정
+      if($(".ytb_portpolio_box li:hidden").length == 0){ // 컨텐츠 남아있는지 확인
+        $(".ytb_portpolio_more").fadeOut(450);
+      }      
+      AOS.init({
+        easing: 'ease-out',
+        duration: 700
+      });
+  });
+});

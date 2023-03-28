@@ -68,7 +68,7 @@
                   필요한 모든 것을 지원합니다.</p>
               </div>
               <div class="main02_right" data-aos="fade-left" data-aos-duration="600">
-                <div class="grp_wrap">
+                <div class="grp_wrap" style="display:none;">
                   <canvas id="chart01" style="height:100%; width:100%"></canvas>
                   <img src="/img/main_cont02_svg.svg" alt="main_cont02_svg" data-aos="fade-up" data-aos-delay="600" data-aos-duration="600">
                 </div>
@@ -87,6 +87,8 @@
                 <li><img src="/img/main02_icon9.png" alt=""></li>
                 <li><img src="/img/main02_icon10.png" alt=""></li>
               </ul>
+            </div>
+            <div class="cert_img_box">
             </div>
           </div>
         </div>
@@ -424,6 +426,15 @@
   <script src="js/script.js"></script>
   <script>
     $(document).ready(function () {
+      $(".main02_list ul").children("li").click(function(){
+        let cert_cont = $(this).index() + 1
+        $(".cert_img_box").addClass("active").empty().append('<img src="/img/certification-img_'+ cert_cont +'.png" alt="certification img'+ cert_cont +'.png">')
+      })
+      $(".cert_img_box").click(function(){
+        console.log("fuck")
+        $(this).removeClass("active")
+      })
+
       document.body.style.cursor = 'none';
       $(function () {
         /*메인리뷰슬라이드*/
