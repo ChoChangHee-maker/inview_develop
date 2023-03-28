@@ -529,6 +529,7 @@ body.sub.youtube .page_title b { color:#F60202 }
 .sub.gdn .gnd_cont_wrap05 .top_title_box p b { font-weight: 400; color: var(--font-color-primary); text-decoration: underline; } 
 
 /* youtube */
+.sub.youtube .sub_block { padding-bottom:0; } 
 .sub.youtube .tabs_control__color, 
 .sub.youtube #tab_2:checked ~ .tabs_control__color { background: transparent linear-gradient(360deg, #821114 0%, #F60303 100%) 0% 0% no-repeat padding-box; } 
 .sub.youtube [class*="yt_cont_wrap"] { padding:120px 0; } 
@@ -551,7 +552,7 @@ body.sub.youtube .page_title b { color:#F60202 }
 .sub.youtube .yt_cont_wrap01 .yt_img_box + .top_title_box h2 { font-size: 40px; line-height: 58px; margin-bottom: 13px; } 
 .sub.youtube .yt_cont_wrap01 .yt_img_box + .top_title_box span { color: var(--font-color-base02); font-size: 18px; line-height: 28px; } 
 
-.sub.youtube .yt_cont_wrap02 { overflow: hidden; padding-bottom: 0; height: 1100px; } 
+.sub.youtube .yt_cont_wrap02 { overflow: hidden; padding-bottom: 0; height: 1080px; background: transparent linear-gradient(180deg, #243038 75%, #050709 100%) 0% 0% no-repeat padding-box; } 
 .sub.youtube .influence_box { position: relative; } 
 .sub.youtube .influence_box > ul { width: 100%; padding: 0 20px; max-width: 1420px; margin: 0 auto; display: flex; flex-direction: row; justify-content: center; align-items: center; } 
 .sub.youtube .influence_box > ul .yt_emoji_box { gap: 50px 0; display: flex; flex-direction: column; flex-wrap: nowrap; align-items: flex-start; } 
@@ -569,9 +570,48 @@ body.sub.youtube .page_title b { color:#F60202 }
 .sub.youtube .influence_box > ul li:not(.yt_emoji_box) img:first-child { bottom: -30px; left: -45px; } 
 .sub.youtube .influence_box > ul li:not(.yt_emoji_box) img:last-child { right: -120px; top: -40px; } 
 .sub.youtube .influence_box .emoji_group_box { position: relative; top: -69px; } 
-.sub.youtube .influence_box .emoji_group_box img { width: calc(50% + 40px); float: left; } 
-.sub.youtube .influence_box .emoji_group_box img:first-child { } 
-.sub.youtube .influence_box .emoji_group_box img:last-child { margin-left: -80px; } 
+.sub.youtube .influence_box .emoji_group_box img { float: left; animation:vert_motion .3s infinite; position: absolute; max-width: 1005px; } 
+.sub.youtube .influence_box .emoji_group_box img:first-child { animation-delay:.10s; } 
+.sub.youtube .influence_box .emoji_group_box img:last-child { margin-left: -80px; right: 0; } 
+
+.sub.youtube .yt_cont_wrap03 .top_title_box { margin-bottom: 30px; } 
+.sub.youtube .yt_cont_wrap03 .top_title_box h2 { font-size:40px; } 
+.sub.youtube .yt_cont_wrap03 .dp_w_c_flex:first-of-type { gap: 0 35px; margin-bottom: 80px; } 
+.sub.youtube .yt_cont_wrap03 .dp_w_c_flex:first-of-type li { text-align: center; padding: 40px; background: transparent linear-gradient(180deg, #1C283000 0%, #1C2830 100%) 0% 0% no-repeat padding-box; border-radius: 15px; } 
+.sub.youtube .yt_cont_wrap03 .dp_w_c_flex:first-of-type li img { width: 125px; display: block; margin: 0 auto 10px; } 
+.sub.youtube .yt_cont_wrap03 .dp_w_c_flex:first-of-type li p { font-size: 22px; line-height: 32px; color: var(--font-color-primary); } 
+.sub.youtube .yt_cont_wrap03 .dp_w_c_flex:last-of-type { } 
+.sub.youtube .yt_cont_wrap03 .dp_w_c_flex:last-of-type li { text-align: center; } 
+.sub.youtube .yt_cont_wrap03 .dp_w_c_flex:last-of-type li p { color: #FF3737; font-size: 22px; line-height: 32px; font-weight: 500; position: relative; margin-bottom: 30px; } 
+.sub.youtube .yt_cont_wrap03 .dp_w_c_flex:last-of-type li p::after { content:""; display:inline-block; position:absolute; height: 3px; width: 25px; left: 50%; transform: translateX(-50%); background: var(--font-color-secondary); bottom: -10px; } 
+.sub.youtube .yt_cont_wrap03 .dp_w_c_flex:last-of-type li span { font-size: 16px; color: var(--font-color-primary); line-height: 26px; } 
+
+.sub.youtube .yt_cont_wrap04 .top_title_box { margin-bottom:50px; } 
+.sub.youtube .yt_cont_wrap04 .top_title_box h2 { font-size:40px; } 
+.sub.youtube .yt_cont_wrap04 .instance_box { position: relative; margin-bottom: 80px; overflow: hidden; } 
+.sub.youtube .yt_cont_wrap04 .instance_box img { } 
+.sub.youtube .yt_cont_wrap04 .instance_box > div { position: absolute; right: 0; top: 50%; transform: translateY(-50%); text-align: center; padding: 50px 20px; width: 100%; max-width: 535px; background: #182229; border-radius: 20px; z-index: 2; } 
+.sub.youtube .yt_cont_wrap04 .instance_box > div p { font-size: 22px; color: var(--font-color-primary); line-height: 30px; font-weight: 500; margin-bottom: 8px; } 
+.sub.youtube .yt_cont_wrap04 .instance_box > div > span { font-size: 16px; line-height: 26px; color: var(--font-color-base02); margin-bottom: 25px; display: inline-block; } 
+.sub.youtube .yt_cont_wrap04 .instance_box > div .tag { text-align: center; margin-top: 0; display: inline-block; line-height: 34px; } 
+.sub.youtube .yt_cont_wrap04 .instance_box > div .tag span { font-size: 14px; } 
+
+.sub.youtube .yt_cont_wrap04 .instance_box:last-of-type { margin-bottom: 0; } 
+.sub.youtube .yt_cont_wrap04 .instance_box:last-of-type img { float: right; } 
+.sub.youtube .yt_cont_wrap04 .instance_box:last-of-type > div { right: initial; left: 0; } 
+
+.sub [class*="portpolio_box"] { display: flex; flex-direction: row; flex-wrap: wrap; gap: 35px; } 
+.sub [class*="portpolio_box"] li { width: calc(50% - 18.5px); height: 430px; position: relative; border-radius: 20px; overflow: hidden; } 
+.sub [class*="portpolio_box"] li:hover .portpolio_info{
+    bottom: 20px;
+}
+.sub [class*="portpolio_box"] li a { width: 100%; height: 100%; display: inline-block; } 
+.sub [class*="portpolio_box"] li a img { width: 100%; height: 100%; object-fit: cover; } 
+.sub [class*="portpolio_box"] li .portpolio_info {position: absolute;height: initial;bottom: -100px;left: 20px;padding: 25px 30px;width: calc(100% - 40px);background: rgb(0 0 0 / 50%) 0% 0% no-repeat padding-box;border-radius: 42px;display: flex;flex-direction: row;flex-wrap: nowrap;align-items: center;transition: bottom .2s ease-in-out;} 
+.sub [class*="portpolio_box"] li .portpolio_info h4 { font-size: 24px; color: var(--font-color-primary); font-weight: 500; margin-right: 10px; word-break: keep-all; } 
+.sub [class*="portpolio_box"] li .portpolio_info span { font-size: 16px; color: #FFFFFF; opacity: 0.6; line-height: 22px; } 
+.sub [class*="portpolio_box"] li .portpolio_info::after { content:""; background: url(/img/errow_r_xl.svg)center center no-repeat; width: 40px; height: 17px; position: absolute; right: 20px; } 
+.sub.youtube .yt_cont_wrap05 .ytb_portpolio_box { } 
 
 /******** sub offline */
 .sub.offline .dp_w_c_flex li { margin-right:30px; border-radius:20px; overflow:hidden; text-align:center; padding:0 0 30px; background: transparent linear-gradient(180deg, #1C283000 0%, #1C2830 100%) 0% 0% no-repeat padding-box; } 
@@ -632,7 +672,9 @@ body.sub.youtube .page_title b { color:#F60202 }
  100% { opacity:1; transform:translateY(-30px); } 
  }
 
-@keyframes vert_motion {0% { transform:translateY(-10px); } 
+@keyframes vert_motion { 
+ 0% { transform:translateY(0); } 
+50% { transform:translateY(-20px); } 
 100% { transform:translateY(0); } 
  }
 
