@@ -360,11 +360,11 @@ body.sub.youtube .page_title b { color:#F60202 }
 .sub.sns .heart_bnr_cont ul { position: relative; width: 100%; height: 100%; z-index:1; } 
 .sub.sns .heart_bnr_cont ul li:first-child,
 .sub.sns .heart_bnr_cont ul li:last-child { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); } 
-.sub.sns .heart_bnr_cont ul li:first-child { top: 180px; left: calc(50% - 340px); } 
+.sub.sns .heart_bnr_cont ul li:first-child { top: 180px; left: calc(50% - 330px); } 
 .sub.sns .heart_bnr_cont ul li:first-child p { font-size: 30px; color: #fff; margin-bottom: 5px; line-height: 45px; } 
 .sub.sns .heart_bnr_cont ul li:first-child p b { color: var(--font-color-point); } 
 .sub.sns .heart_bnr_cont ul li:first-child h2 { font-size: 50px; line-height: 55px; background: #141414; color: #fff; text-align: center; padding: 6px 15px 10px; font-weight: 600; display: inline-block; } 
-.sub.sns .heart_bnr_cont ul li:last-child { bottom: 90px; top: initial; display: inline-block; left: calc(50% + 335px); } 
+.sub.sns .heart_bnr_cont ul li:last-child { bottom: 90px; top: initial; display: inline-block; left: initial; right: 80px; } 
 .sub.sns .heart_bnr_cont ul li:last-child p { font-size: 22px; color: #fff; margin-bottom: 5px; line-height: 40px; } 
 .sub.sns .heart_bnr_cont ul li:last-child p b { color: var(--font-color-point); } 
 .sub.sns .heart_bnr_cont ul li:last-child h2 { font-size: 38px; line-height: 40px; background: #141414; color: #fff; text-align: center; padding: 6px 15px 10px; font-weight: 600; display: inline-block; } 
@@ -692,6 +692,8 @@ body.sub.youtube .page_title b { color:#F60202 }
 /* company */
 .sub_wrap.company .title_box p { padding-left:0; } 
 .sub_wrap.company .title_box h1 { font-size:50px; padding-left:0; line-height:60px; } 
+/* sns */
+.sub.sns .heart_bnr_cont ul li:last-child { right: 0; transform: translate(-50px, -50%); } 
  }
 
 @media (max-width: 1200px) { /* */
@@ -773,6 +775,13 @@ body.sub .top_dimmed [class*="btn_style_"] { margin: 0 auto; }
 .keyword_table + ul li .outline .waves { top: -35px; left: 10px; transform: initial; } 
 .keyword_table + ul li .outline + p { font-size: 18px; } 
 .keyword_table + ul li .outline + p + span { font-size: 15px; } 
+
+/* sns */
+.sub.sns .heart_bnr_cont ul li:first-child, .sub.sns .heart_bnr_cont ul li:last-child { transform:translate(0); z-index: 1; } 
+.sub.sns .heart_bnr_cont ul li:first-child { top: 0; left:0; } 
+.sub.sns .heart_bnr_cont ul li:last-child { bottom: 0; right:0; } 
+.sub.sns .heart_bnr_cont ul li:nth-child(2) { position: absolute; top: calc(50% + 15px); left: 50%; transform: translate(-50%, -50%); } 
+.sub.sns .heart_bnr_cont ul li:nth-child(2) img {max-width: 330px;} 
  }
 
 @media (max-width: 768px) { /* */
@@ -784,6 +793,7 @@ body.sub .top_dimmed [class*="btn_style_"] { margin: 0 auto; }
  .sub_head_word_box p { width:100%; font-size: 15px; line-height: 25px; padding: 0 25px; margin: 15px 0 40px; } 
  .sub_head_box { height: 570px; } 
  [class*="top_title_box"] > p { font-size:15px; } 
+ [class*="top_title_box"] > h2 { line-height:28px; } 
  /* company */
  .sub_wrap.company { padding-top:200px; } 
  .sub_wrap.company .title_box p { font-size:14px; top: -80px; } 
@@ -835,13 +845,13 @@ body.sub .top_dimmed [class*="btn_style_"] { margin: 0 auto; }
 .sub.search .search_cont_wrap_04 .add_warning img { width:64px; } 
 .sub.search .search_cont_wrap_04 .add_warning:first-child img { margin-right:25px; } 
 .sub.search .search_cont_wrap_04 .add_warning:last-child img { margin-left:25px; } 
-.sub.search .search_cont_wrap_04 .add_warning [class*="speech_box"] {padding: 25px 10px;} 
+.sub.search .search_cont_wrap_04 .add_warning [class*="speech_box"] { padding: 25px 10px; } 
 .sub.search .search_cont_wrap_04 .add_warning [class*="speech_box"] p { font-size:14px; } 
 .sub.search .search_cont_wrap_04 .add_warning:last-child { transform: translateY(0); margin: 20px 0 45px; } 
-.keyword_table table tr th:last-child, .keyword_table table tr td:last-child{display:none;}
-.keyword_table table tr th:not(:first-child), .keyword_table table tr td:not(:first-child){border-right:0;}
-.keyword_table .keyword_title{font-size:18px;width:100%;max-width: 230px;padding: 10px 20px;}
-.keyword_table{padding:20px;}
-.keyword_table table tr th, .keyword_table table tr td{font-size:15px;}
-.keyword_table table tr.check td{font-size:18px;}
+.keyword_table table tr th:last-child, .keyword_table table tr td:last-child { display:none; } 
+.keyword_table table tr th:not(:first-child), .keyword_table table tr td:not(:first-child) { border-right:0; } 
+.keyword_table .keyword_title { font-size:18px; width:100%; max-width: 230px; padding: 10px 20px; } 
+.keyword_table { padding:20px; } 
+.keyword_table table tr th, .keyword_table table tr td { font-size:15px; } 
+.keyword_table table tr.check td { font-size:18px; } 
  /* sub total */ } 
