@@ -12,6 +12,16 @@ AOS.init({
   duration: 700
 });
 
+// scroll event
+$(window).on('scroll', function () {
+  var headerHeight = $("header").outerHeight()
+  if ($(this).scrollTop() >= headerHeight) {
+    $("header").addClass("active")
+  } else {
+    $("header").removeClass("active")
+  }
+});
+
 // mouse cusor custom
 const mainBall = document.querySelector(".circle--1");
 const followBall = document.querySelector(".circle--2");
