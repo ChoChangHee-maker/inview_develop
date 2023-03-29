@@ -443,8 +443,8 @@
         loop: true,
         animateOut: 'fadeOut',
         animateIn: 'fadeIn',
-        autoplay: true,
-        autoplayTimeout: 2500,
+        // autoplay: true,
+        // autoplayTimeout: 2500,
         margin: -35,
         nav: false,
         dots: false,
@@ -459,6 +459,20 @@
           var index = $(".owl-item.active").index();
           $(".owl-item").removeClass("last");
           $(".owl-item").eq(index + 2).addClass("last");
+        },
+        responsive : {
+            // breakpoint from 0 up
+            0 : {
+              items: 1,
+            },
+            // breakpoint from 480 up
+            768 : {
+              items: 3,
+            },
+            // breakpoint from 768 up
+            1200 : {
+              items: 3,
+            }
         }
       })
     })
