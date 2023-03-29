@@ -117,157 +117,137 @@
           연령, 성별, 관심분야에 따라 디테일한 타겟팅이 가능하여 전환율이 높습니다.
         </p>
       </div>
-      <div class="gnd_cont_gsap_box">
-        <div class="gnd_segment_01">
-          <ul class="segment_txt_box">
-            <li class="active">사용자</li>
-            <li>콘텐츠</li>
-            <li>인구통계</li>
-            <li>기기</li>
-            <li>일정</li>
-            <li>위치</li>
-          </ul>
-          <div class="segment_cont_box">
-            <img src="/img/gdn_segment_img01.jpg" alt="gdn segment img01">
-            <ul>
-              <li>
-                <p>관심분야</p>
-                <span>특정 제품이나 서비스에 대해 <br>관심을 보여 온 사용자의 목록</span>
-              </li>
-              <li>
-                <p>구매의도</p>
-                <span>구매 단계에서 제품의 광고 클릭이나 <br>검색, 구매행동을 보이는 사용자</span>
-              </li>
-              <li>
-                <p>리타겟팅</p>
-                <span>광고주의 웹사이트, 쇼핑몰을 방문했거나<br> 비즈니스에 도움을 준 사용자</span>
-              </li>
-            </ul>
-          </div>
+      <div class="gnd_cont">        
+        <div class="tabs_control">
+          <input type="radio" name="radio2" value="1" id="tab_1" checked />
+          <label for="tab_1" class="tabs_control__1">
+            사용자
+          </label>
+          <input type="radio" name="radio2" value="2" id="tab_2" />
+          <label for="tab_2" class="tabs_control__1">
+            콘텐츠
+          </label>
+          <input type="radio" name="radio2" value="3" id="tab_3" />
+          <label for="tab_3" class="tabs_control__1">
+            인구통계
+          </label>
+          <input type="radio" name="radio2" value="4" id="tab_4" />
+          <label for="tab_4" class="tabs_control__1">
+            기기
+          </label>
+          <input type="radio" name="radio2" value="5" id="tab_5" />
+          <label for="tab_5" class="tabs_control__1">
+            일정
+          </label>
+          <input type="radio" name="radio2" value="6" id="tab_6" />
+          <label for="tab_6" class="tabs_control__1">
+            위치
+          </label>
         </div>
-        <div class="gnd_segment_02">
-          <ul class="segment_txt_box">
-            <li>사용자</li>
-            <li class="active">콘텐츠</li>
-            <li>인구통계</li>
-            <li>기기</li>
-            <li>일정</li>
-            <li>위치</li>
-          </ul>
-          <div class="segment_cont_box">
-            <img src="/img/gdn_segment_img02.jpg" alt="gdn segment img02">
-            <ul>
-              <li>
-                <p>키워드</p>
-                <span>지정한 키워드가 사이트의 주제나 <br>방문자의 탐색기록과 관련있는지 평가</span>
-              </li>
-              <li>
-                <p>주제</p>
-                <span>웹사이트, 동영상, 모바일 앱을 주제 별로 <br>분류한 뒤 관련성 있는 광고를 송출</span>
-              </li>
-              <li>
-                <p>게재위치</p>
-                <span>특정 주제의 사이트나 동영상, 채널, <br>모바일 앱을 개별적으로 선택 </span>
-              </li>
-            </ul>
+	  		<div class="tab_contents_wrap">
+          <div class="tab_cont active" attr-tabValue="tab_1">
+            <div class="segment_cont_box">
+              <img src="/img/gdn_segment_img01.jpg" alt="gdn segment img01">
+              <ul>
+                <li>
+                  <p>관심분야</p>
+                  <span>특정 제품이나 서비스에 대해 <br>관심을 보여 온 사용자의 목록</span>
+                </li>
+                <li>
+                  <p>구매의도</p>
+                  <span>구매 단계에서 제품의 광고 클릭이나 <br>검색, 구매행동을 보이는 사용자</span>
+                </li>
+                <li>
+                  <p>리타겟팅</p>
+                  <span>광고주의 웹사이트, 쇼핑몰을 방문했거나<br> 비즈니스에 도움을 준 사용자</span>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div class="gnd_segment_03">
-          <ul class="segment_txt_box">
-            <li>사용자</li>
-            <li>콘텐츠</li>
-            <li class="active">인구통계</li>
-            <li>기기</li>
-            <li>일정</li>
-            <li>위치</li>
-          </ul>
-          <div class="segment_cont_box">
-            <img src="/img/gdn_segment_img03.jpg" alt="gdn segment img03">
-            <ul>
-              <li>
-                <p>성별</p>
-                <span>성별에 따른 분류가 가능한 타겟팅 방식으로 <br>처음부터 대상의 성별이 명확한 경우 사용</span>
-              </li>
-              <li>
-                <p>나이</p>
-                <span>연령대별로 분류가 가능한 타겟팅 방식으로 <br>처음부터 대상의 연령대가 명확한 경우 사용</span>
-              </li>
-            </ul>
+          <div class="tab_cont" attr-tabValue="tab_2">
+            <div class="segment_cont_box">
+              <img src="/img/gdn_segment_img02.jpg" alt="gdn segment img02">
+              <ul>
+                <li>
+                  <p>키워드</p>
+                  <span>지정한 키워드가 사이트의 주제나 <br>방문자의 탐색기록과 관련있는지 평가</span>
+                </li>
+                <li>
+                  <p>주제</p>
+                  <span>웹사이트, 동영상, 모바일 앱을 주제 별로 <br>분류한 뒤 관련성 있는 광고를 송출</span>
+                </li>
+                <li>
+                  <p>게재위치</p>
+                  <span>특정 주제의 사이트나 동영상, 채널, <br>모바일 앱을 개별적으로 선택 </span>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div class="gnd_segment_04">
-          <ul class="segment_txt_box">
-            <li>사용자</li>
-            <li>콘텐츠</li>
-            <li>인구통계</li>
-            <li class="active">기기</li>
-            <li>일정</li>
-            <li>위치</li>
-          </ul>
-          <div class="segment_cont_box">
-            <img src="/img/gdn_segment_img03.jpg" alt="gdn segment img03">
-            <ul>
-              <li>
-                <p>모바일</p>
-                <span>휴대전화 또는 태블릿같은 모바일 기기를 통해 <br>노출이 가능하며 실적이 저조할 경우 제외도 가능</span>
-              </li>
-              <li>
-                <p>데스크탑</p>
-                <span>컴퓨터를 통해 노출이 가능하며 입찰가를 조정해 <br>노출수를 늘리거나 줄이는 등 제어가 가능</span>
-              </li>
-            </ul>
+          <div class="tab_cont" attr-tabValue="tab_3">            
+            <div class="segment_cont_box">
+              <img src="/img/gdn_segment_img03.jpg" alt="gdn segment img03">
+              <ul>
+                <li>
+                  <p>성별</p>
+                  <span>성별에 따른 분류가 가능한 타겟팅 방식으로 <br>처음부터 대상의 성별이 명확한 경우 사용</span>
+                </li>
+                <li>
+                  <p>나이</p>
+                  <span>연령대별로 분류가 가능한 타겟팅 방식으로 <br>처음부터 대상의 연령대가 명확한 경우 사용</span>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div class="gnd_segment_05">
-          <ul class="segment_txt_box">
-            <li>사용자</li>
-            <li>콘텐츠</li>
-            <li>인구통계</li>
-            <li>기기</li>
-            <li class="active">일정</li>
-            <li>위치</li>
-          </ul>
-          <div class="segment_cont_box">
-            <img src="/img/gdn_segment_img03.jpg" alt="gdn segment img03">
-            <ul>
-              <li>
-                <p>요일</p>
-                <span>요일별로 노출이 가능한 타겟팅 방식으로 <br>특정 요일에만 진행되는 이벤트 형태의 광고에 적합</span>
-              </li>
-              <li>
-                <p>시간</p>
-                <span>시간대별로 노출이 가능한 타겟팅 방식으로 <br>타임세일같은 이벤트에 적합한 타겟팅</span>
-              </li>
-            </ul>
+          <div class="tab_cont" attr-tabValue="tab_4">
+            <div class="segment_cont_box">
+              <img src="/img/gdn_segment_img03.jpg" alt="gdn segment img03">
+              <ul>
+                <li>
+                  <p>모바일</p>
+                  <span>휴대전화 또는 태블릿같은 모바일 기기를 통해 <br>노출이 가능하며 실적이 저조할 경우 제외도 가능</span>
+                </li>
+                <li>
+                  <p>데스크탑</p>
+                  <span>컴퓨터를 통해 노출이 가능하며 입찰가를 조정해 <br>노출수를 늘리거나 줄이는 등 제어가 가능</span>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div class="gnd_segment_06">
-          <ul class="segment_txt_box">
-            <li>사용자</li>
-            <li>콘텐츠</li>
-            <li>인구통계</li>
-            <li>기기</li>
-            <li>일정</li>
-            <li class="active">위치</li>
-          </ul>
-          <div class="segment_cont_box">
-            <img src="/img/gdn_segment_img03.jpg" alt="gdn segment img03">
-            <ul>
-              <li>
-                <p>국가</p>
-                <span>국가 단위로 노출이 가능하여 해외시장을 <br>대상으로 캠페인을 진행하는 경우</span>
-              </li>
-              <li>
-                <p>도시</p>
-                <span>도시 단위로 광고 노출이 가능하여 특정 <br>도시에만 노출을 원하는 경우</span>
-              </li>
-              <li>
-                <p>지역</p>
-                <span>지역 단위로 광고 노출이 가능하며 특정 <br>지역을 중심으로 원형의 범위를 타겟팅</span>
-              </li>
-            </ul>
+          <div class="tab_cont" attr-tabValue="tab_5">
+            <div class="segment_cont_box">
+              <img src="/img/gdn_segment_img03.jpg" alt="gdn segment img03">
+              <ul>
+                <li>
+                  <p>요일</p>
+                  <span>요일별로 노출이 가능한 타겟팅 방식으로 <br>특정 요일에만 진행되는 이벤트 형태의 광고에 적합</span>
+                </li>
+                <li>
+                  <p>시간</p>
+                  <span>시간대별로 노출이 가능한 타겟팅 방식으로 <br>타임세일같은 이벤트에 적합한 타겟팅</span>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
+          <div class="tab_cont" attr-tabValue="tab_6">
+            <div class="segment_cont_box">
+              <img src="/img/gdn_segment_img03.jpg" alt="gdn segment img03">
+              <ul>
+                <li>
+                  <p>국가</p>
+                  <span>국가 단위로 노출이 가능하여 해외시장을 <br>대상으로 캠페인을 진행하는 경우</span>
+                </li>
+                <li>
+                  <p>도시</p>
+                  <span>도시 단위로 광고 노출이 가능하여 특정 <br>도시에만 노출을 원하는 경우</span>
+                </li>
+                <li>
+                  <p>지역</p>
+                  <span>지역 단위로 광고 노출이 가능하며 특정 <br>지역을 중심으로 원형의 범위를 타겟팅</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+			  </div>
       </div>
     </div>
   </div>
@@ -277,6 +257,7 @@
         <h2>GDN의 효과가 궁금하시다구요?</h2>
       </div>
       <p>*일주일 동안 실제로 운영된 효과입니다.</p>
+      <div class="mo_dp_box">
       <ul class="dp_w_c_flex">
         <li data-aos="fade-up" data-aos-duration="250">
           <img src="/img/gdn_impact_img01.jpg" alt="gdn impact img01">
@@ -329,8 +310,7 @@
             </div>
           </div>
         </li>
-      </ul>
-      <ul class="dp_w_c_flex">
+        
         <li data-aos="fade-up" data-aos-duration="250">
           <img src="/img/gdn_impact_img04.jpg" alt="gdn impact img04">
           <div class="impact_info_box">
@@ -383,6 +363,7 @@
           </div>
         </li>
       </ul>
+      </div>
     </div>
   </div>
   <div class="sub_block gnd_cont_wrap05">
@@ -413,40 +394,6 @@
         $(".tab_cont[attr-tabValue=" + tabValue + "]").addClass("active").siblings().removeClass("active")
       })
     })
-
-    // gsap - scroll motion
-    gsap.timeline({  
-      scrollTrigger: {
-        trigger: ".gnd_cont_wrap03", // 객체기준범위
-        pin: true, // 고정
-        start: "top top", // 시작점
-        end: "+=300%",
-        scrub: 0.5, // 모션바운스
-        markers: false, // 개발가이드선
-        // viewport:true,
-        onLeave: function(){
-          console.log('end');
-        }
-      }
-    })
-    .to('.gnd_segment_01', {duration: 1.5, opacity: 1, y: 0})
-    .to('.gnd_segment_01', {duration: 1.5, opacity: 1, y: 0})
-
-    .to('.gnd_segment_02', {duration: 1.5, opacity: 1, y: 0}) 
-    .to('.gnd_segment_02', {duration: 1.5, opacity: 1, y: 0})
-
-    .to('.gnd_segment_03', {duration: 1.5, opacity: 1, y: 0}) 
-    .to('.gnd_segment_03', {duration: 1.5, opacity: 1, y: 0})
-
-    .to('.gnd_segment_04', {duration: 1.5, opacity: 1, y: 0}) 
-    .to('.gnd_segment_04', {duration: 1.5, opacity: 1, y: 0})
-
-    .to('.gnd_segment_05', {duration: 1.5, opacity: 1, y: 0}) 
-    .to('.gnd_segment_05', {duration: 1.5, opacity: 1, y: 0})
-
-    .to('.gnd_segment_06', {duration: 1.5, opacity: 1, y: 0}) 
-    .to('.gnd_segment_06', {duration: 1.5, opacity: 1, y: 0})
-    
   </script>
 </body>
 
