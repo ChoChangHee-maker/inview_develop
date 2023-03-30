@@ -1,3 +1,5 @@
+// mouse cusor disable
+document.body.style.cursor = 'none';
 
 // nav category toggle
 $(document).on('click', '.nav__list-item.in_depth > p', function () {
