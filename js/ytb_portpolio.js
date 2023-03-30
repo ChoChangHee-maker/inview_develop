@@ -506,7 +506,7 @@ function setList() {
     pfFrame.innerHTML +=
       "<li data-aos='fade-up' data-aos-duration='350'><a href=" +
       videoList[i].url +
-      ' target="_blank"><img src="/img/ytb_portpolio/' +
+      ' target="_blank"><img src="./img/ytb_portpolio/' +
       videoList[i].img +
       '.png" alt="'+ videoList[i].name + ' 섬네일" /></a>' +
       '<a href="'+ videoList[i].url +'" target="_blank" class="portpolio_info"><h4>' +
