@@ -126,7 +126,6 @@
 /*main07*/
 .main07 { padding: 120px 0; } 
 .main07 .mySwiper { overflow: hidden; } 
-.main07 .swiper-wrapper { } 
 .main07 .hompage_slide { margin-top: 60px; } 
 .main07 .hompage_slide .swiper-slide { width: 700px; margin: 0 15px; } 
 .main07 .hompage_slide .swiper-slide img { width: 100%; } 
@@ -291,7 +290,7 @@
  .main08 .pj_list li:nth-child(n+4):nth-child(-n+6){margin-bottom:25px;}
  .main08 .more_pj{font-size:15px;}
  /* main09 */
- .main09{padding:70px 20px;background: url(../img/footer_bg_mo.png)center center no-repeat;}
+ .main09{padding:70px 20px;background: url(../img/footer_bg_mo.png)center center no-repeat; background-size:cover;}
  .main09 .main_title b{white-space:nowrap;}
  .main09 .main09-btn_wrap{flex-direction: column;gap: 15px 0;}
  .main09 [class*="btn_style_"]{width:100%;max-width: 200px;padding: 18px 20px;}
