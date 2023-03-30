@@ -934,28 +934,7 @@ body.sub .top_dimmed [class*="btn_style_"] { margin: 0 auto; }
 .sub.offline .dp_w_c_flex li p { font-size:15px; } 
 
 /* vireal */
-.viral .w1200:not(.sub_head_box .w1200){border:3px solid red; padding:0 20px; box-sizing: border-box;}
-#viral_blog01 .blog_left_img{width:100%;}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.viral .w1200:not(.sub_head_box .w1200){ padding:0 20px; box-sizing: border-box;}
 
 
 @keyframes vert_motion { 
@@ -1164,6 +1143,22 @@ body.sub .top_dimmed [class*="btn_style_"] { margin: 0 auto; }
 
 .sub [class*="portpolio_box"] { gap: 15px 0; flex-direction: column; } 
 .sub [class*="portpolio_box"] li { height:240px; width: 100%; } 
+
+/* vireal */
+#viral_blog01 .blog_left_img{width:100%;}
+#viral_blog01 .blog01_list li{height:650px;}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* sub total */
