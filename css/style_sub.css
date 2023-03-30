@@ -920,14 +920,16 @@ body.sub .top_dimmed [class*="btn_style_"] { margin: 0 auto; }
 .sub.youtube .yt_cont_wrap04 .instance_box > div { position: relative; transform: initial; margin: 0 auto; right: 0; width: 100%; max-width: 460px; transform: translateY(-27px); } 
 .sub.youtube .yt_cont_wrap04 .instance_box:last-of-type { display: flex; flex-direction: column-reverse; } 
 .sub.youtube .yt_cont_wrap04 .instance_box:last-of-type > div { left: initial; } 
-
-.sub [class*="portpolio_box"]{gap:15px;}
-.sub [class*="portpolio_box"] li{height:240px;}
+.sub [class*="portpolio_box"] { gap:15px; } 
+.sub [class*="portpolio_box"] li { height:240px; width: calc(50% - 7.5px); } 
 .sub [class*="portpolio_box"] li:hover .portpolio_info { bottom: 10px; } 
 .sub [class*="portpolio_box"] li .portpolio_info { justify-content: space-between; padding: 15px 20px; width: calc(100% - 20px); left: 10px; } 
 .sub [class*="portpolio_box"] li .portpolio_info h4 { font-size: 15px; line-height: 20px; } 
-.sub [class*="portpolio_box"] li .portpolio_info span {font-size: 15px;padding-right: 0;line-height: 20px;text-align: right;} 
+.sub [class*="portpolio_box"] li .portpolio_info span { font-size: 15px; padding-right: 0; line-height: 20px; text-align: right; } 
 .sub [class*="portpolio_box"] li .portpolio_info::after { content: none; } 
+
+/* offline */
+.sub.offline .dp_w_c_flex li p { font-size:15px; } 
 
 @keyframes vert_motion { 
  0% { transform:translate(-50%,0); } 
@@ -1129,5 +1131,13 @@ body.sub .top_dimmed [class*="btn_style_"] { margin: 0 auto; }
 .sub.youtube .yt_cont_wrap04 .instance_box > div p { font-size: 18px; line-height: 25px; margin-bottom: 5px; } 
 .sub.youtube .yt_cont_wrap04 .instance_box > div > span { display:none; margin-bottom: 0; font-size: 15px; line-height: 22px; } 
 .sub.youtube .yt_cont_wrap04 .instance_box > div > span + span.mo { display:inline-block; } 
+.sub.youtube .yt_cont_wrap05 .ytb_portpolio_box + .btn_style_01 {margin: 40px auto 0;padding: 18px 80px;} 
+.sub.youtube .yt_cont_wrap05 .ytb_portpolio_box + .btn_style_01 * { font-size: 15px; } 
+.sub.youtube .yt_cont_wrap05 .ytb_portpolio_box + .btn_style_01::after { inset:3px; } 
+
+.sub [class*="portpolio_box"] { gap: 15px 0; flex-direction: column; } 
+.sub [class*="portpolio_box"] li { height:240px; width: 100%; } 
+
+
 /* sub total */
-/* */}
+/* */ } 
