@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" href="img/inv_favicon.ico">
+	<title>아이앤뷰커뮤니케이션 | 홈페이지 제작</title>
+	<!-- aos -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+	<link rel="stylesheet" href="css/style_sub.css">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap"
+		rel="stylesheet" />
+	<script src="resource/jquery.js"></script>
+	<script type="text/javascript" src="resource/tweenmax/TweenMax.min.js"></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.3.0/snap.svg-min.js'></script>
+	<script src="https://dl.dropbox.com/s/sk7fbhx9burholi/dat.gui.min.js?dl=0"></script>
+  <script type="module" src="js/background/main_bg.js"></script>
+</head>
+
+<body class="sub">
+	<div data-include-path="common/header.html"></div>
+	<div class="site">
+		<div class="circle circle--1"></div>
+		<div class="circle circle--2"></div>
+	</div>
+	<div class="sub_wrap web_develop">
+		<div class="top_dimmed">
+			<div class="web_develop_tit_box">
+				<img src="./img/web_dev_tit_img01.png" alt="web develop title img01" data-aos-offset="0" data-aos-duration="350" data-aos-delay="200" data-aos="fade-down">
+				<img src="./img/web_dev_tit_img02.png" alt="web develop title img02">
+				<div class="l_title_box">
+					<h1 data-aos-offset="0" data-aos-duration="450" data-aos="zoom-in-right">똑같은 레이아웃?<br><i>똑같은 디자인?</i><br><b>아이앤뷰</b>는 다릅니다.</h1>
+				</div>
+				<div class="r_title_box">
+					<div class="r_title_cont">
+						<div>
+							<img src="./img/web_dev_tit_img04.svg" alt="">
+							<img src="./img/web_dev_tit_img05.svg" alt="">
+						</div>
+						<h2>늘 새로운 크리에이티브로</h2>
+						<h2><b>내일의 변화를 만들어 나갑니다.</b></h2>
+						<p>남다른 광고 아이디어와 전략을 추구하며 창의적인 생각을<br>존중하고 구체화합니다.</p>
+						<p>혁신적인 관점에서 바라본다는 의미로 미래에 알맞은 온라인 마케팅 솔루션을 <br>미래를 함께하기 위해 최선을 다하고 있습니다.</p>
+						<canvas class="orb-canvas"></canvas>
+					</div>
+				</div>
+			</div>			
+			<div class="scroll_down_box">
+				<span class="line_wrap">
+					<span class="line_box">
+						<span></span>
+						<span></span>
+					</span>
+					<span class="scroll_down_word">Scroll Down</span>
+				</span>
+			</div>
+		</div>
+
+	</div>
+
+
+	<div data-include-path="common/footer.html"></div>
+	<script type="text/javascript" src="resource/includeHtml.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script>
+		
+    $(document).ready(function () {
+      $(".tabs_control").children("input").click(function () {
+        const tabValue = $(this).attr('id');
+        $(".tab_cont[attr-tabValue=" + tabValue + "]").addClass("active").siblings().removeClass("active")
+
+        AOS.init({
+          easing: 'ease-out',
+          duration: 700
+        });
+      })
+		})
+
+		AOS.init({
+				easing: 'ease-out',
+				duration: 700
+		});
+	</script>
+</body>
+
+</html>
