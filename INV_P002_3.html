@@ -84,8 +84,10 @@
               <div class="top_title_box">
                 <h2>블로그 체험단</h2>
                 <p>
-                  블로거를 모집 및 선정하고, 해당 블로거들이 본인의 블로그에 컨텐츠를 작성해 업로드하는<br> 
-                  마케팅 방법입니다. 다양한 잠재 고객들에게 브랜드의 제품, 인지도를 알릴 수 있습니다.
+                  블로거를 모집 및 선정하고, 해당 블로거들이 본인의 블로그에
+                  컨텐츠를 작성해 업로드하는<br />
+                  마케팅 방법입니다. 다양한 잠재 고객들에게 브랜드의 제품,
+                  인지도를 알릴 수 있습니다.
                 </p>
               </div>
             </div>
@@ -190,7 +192,7 @@
                   <div class="mark_txt">
                     <b>블로그 최적화</b>
                     <p>
-                      키워드 검색 시 블로그<br />
+                      키워드 검색 시 블로그<br class="block_767"/>
                       순위 반영 최적화로 상위노출
                     </p>
                   </div>
@@ -200,7 +202,7 @@
                   <div class="mark_txt">
                     <b>자연스러운 홍보</b>
                     <p>
-                      소비자가 원하는 정보를 후기 형태로<br />
+                      소비자가 원하는 정보를 후기 형태로<br class="block_767"/>
                       보여주며 자연스러운 홍보 효과
                     </p>
                   </div>
@@ -210,7 +212,7 @@
                   <div class="mark_txt">
                     <b>리뷰 및 평점</b>
                     <p>
-                      후기가 없는 상품보다 후기가 많은<br />
+                      후기가 없는 상품보다 후기가 많은<br class="block_767"/>
                       상품을 선호하는 소비자들에게 높은 효과
                     </p>
                   </div>
@@ -301,12 +303,12 @@
             <li>
               <img src="./img/select_inv01.svg" alt="정직한 컨설팅" />
               <span class="select_title">
-                비효율 키워드 NO<br />
+                비효율 키워드 NO<br class="block_767"/>
                 <span class="col_sky">정직한 컨설팅</span>
               </span>
               <p>
-                강남 맛집, 여성의류 등<br />
-                생각 없이 성의 없이<br />
+                강남 맛집, 여성의류 등<br class="block_767" />
+                생각 없이 성의 없이<br class="block_767" />
                 비효율 키워드 추천
               </p>
               <b>아이앤뷰는 하지않습니다.</b>
@@ -314,12 +316,12 @@
             <li>
               <img src="./img/select_inv02.svg" alt="정직한 컨설팅" />
               <span class="select_title">
-                고품질 블로거 선정<br />
+                고품질 블로거 선정<br class="block_767"/>
                 <span class="col_sky">블로거 보유 多</span>
               </span>
               <p>
-                신생업체와는 비교할 수 없는<br />
-                모집 기간과 블로거,<br />
+                신생업체와는 비교할 수 없는<br class="block_767"/>
+                모집 기간과 블로거,<br class="block_767"/>
                 고품질 블로거 선정
               </p>
               <b>아이앤뷰는 가능합니다.</b>
@@ -327,12 +329,12 @@
             <li>
               <img src="./img/select_inv03.svg" alt="정직한 컨설팅" />
               <span class="select_title">
-                완벽하게 마무리<br />
+                완벽하게 마무리<br class="block_767"/>
                 <span class="col_sky">체계적인 책임감</span>
               </span>
               <p>
-                전문 담당자 배정,<br />
-                1개월 안에 모집 안 되면<br />
+                전문 담당자 배정,<br class="block_767"/>
+                1개월 안에 모집 안 되면<br class="block_767"/>
                 원고 포스팅으로 완벽하게!
               </p>
               <b>아이앤뷰는 책임집니다.</b>
@@ -340,12 +342,12 @@
             <li>
               <img src="./img/select_inv04.svg" alt="정직한 컨설팅" />
               <span class="select_title">
-                아이앤뷰의 최선<br />
+                아이앤뷰의 최선<br class="block_767"/>
                 <span class="col_sky">편리한 시스템</span>
               </span>
               <p>
-                저희가 바빠질수록<br />
-                광고주님은<br />
+                저희가 바빠질수록<br class="block_767"/>
+                광고주님은<br class="block_767"/>
                 편리해집니다!
               </p>
               <b>아이앤뷰는 최선입니다.</b>
@@ -380,9 +382,13 @@
             el: ".swiper-pagination",
             clickable: true,
           },
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
+          breakpoints: {
+            1024: {
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+            },
           },
         });
       });
