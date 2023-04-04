@@ -3,46 +3,6 @@
         <h1 class="logo">
             <a href="index.html"><img src="./img/logo/logo.png" alt="logo img" /></a>
         </h1>
-        <nav class="gnb">
-            <ul>
-                <li><a href="./INV_P001.html">회사소개</a></li>
-                <li><p>온라인마케팅</p>
-                  <ul>
-                    <li>
-                      <a href="./INV_P002_1.html">검색 마케팅</a>
-                    </li>
-                    <li>
-                      <a href="./INV_P002_2.html">SNS 마케팅</a>
-                    </li>
-                    <li>
-                      <a href="./INV_P002_3.html">바이럴 마케팅</a>
-                    </li>
-                    <li>
-                      <a href="./INV_P002_4.html">언론뉴스 마케팅</a>
-                    </li>
-                    <li>
-                      <a href="./INV_P002_5.html">GDN 마케팅</a>
-                    </li>
-                    <li>
-                      <a href="./INV_P002_6.html">유튜브 마케팅</a>
-                    </li>
-                  </ul>
-                </li>
-                <li><p>오프라인마케팅</p>
-                  <ul>
-                    <li>
-                      <a href="./INV_P003_1.html">버스광고 마케팅</a>
-                    </li>
-                    <li>
-                      <a href="./INV_P003_2.html">지하철광고 마케팅</a>
-                    </li>
-                  </ul>
-                </li>
-                <li><a href="./INV_P004.html">홈페이지 제작</a></li>
-                <li><a href="./INV_P005.html">마케팅 교육</a></li>
-                <li><a href="">문의하기</a></li>
-            </ul>
-        </nav>
         <div class="header_right">
             <div class="menu flex">
                 <span>menu</span>
@@ -94,7 +54,69 @@
       </li>
       <li class="nav__list-item"><a href="./INV_P004.html" class="hover-target">홈페이지 제작</a></li>
       <li class="nav__list-item"><a href="./INV_P005.html" class="hover-target">마케팅 교육</a></li>
-      <li class="nav__list-item"><a href="#" class="hover-target">문의하기</a></li>
+      <li class="nav__list-item"><a href="#" class="hover-target inq_btn">문의하기</a></li>
     </ul>
+  </div>
+</div>
+
+<div class="inquiry">
+  <div class="inquiry__content">
+    <div class="inquiry_cont_box w1200">
+      <article class="useform">
+        <div class="useform_box">
+          <form id="smsForm" name='nicesms' method='POST' action="https://sms.nicesms.co.kr/cpsms/cpsms.html">
+            <div class="inquiry_title_box">
+              <h3>아이앤뷰는 여러분과 <br>함께하길 기다리고있습니다.</h3>
+              <div class="chk_privacy">
+                <label>
+                  <input type="checkbox" id="smsConsent"/>
+                  <div>개인정보 수집 및 이용에 동의합니다.</div>
+                </label>
+                <a href="#">자세히보기</a>
+              </div>
+            </div>
+             <input type="hidden" name="userid" value="theking" />
+             <input type="hidden" name="password" value="69365b7a61db0c1aa73de7520e4531a7"/>
+            <div class="smsWraper">
+              <input type="hidden" name="msgcnt" value="1"/>
+              <div>
+                <p>회사(단체)명</p>
+                <input type="text" placeholder="회사(단체)명을 입력해 주세요." class="smsCompany"/>
+              </div>
+              <div>
+                <p>홈페이지</p>
+                <input type="text" placeholder="홈페이지 주소를 입력해 주세요." class="smsHompage"/>
+              </div>
+              <div>
+                <p>이름</p>
+                <input type="text" placeholder="문의하시는 분의 성함을 입력해 주세요." class="smsName"/>
+              </div>
+              <div>
+                <p>직급/직책</p>
+                <input type="text" placeholder="직급이나 직책을 입력해 주세요." class="smsState"/>
+              </div>
+              <div>
+                <p>전화번호</p>
+                <input type="text" placeholder="연락받으실 전화번호를 입력해 주세요." id="phoneNum" class="smsPhone" maxlength="13"/>
+              </div>
+              <div>
+                <p>이메일주소</p>
+                <input type="text" placeholder="연락받으실 이메일을 입력해 주세요." class="smsEmail"/>
+              </div>
+              <div>
+                <p>문의내용</p>
+                <input type="text" placeholder="자세한 문의 사항을 남겨주세요." id="msg1" class="smsLocate"/>
+              </div>
+              <input type="hidden" name="msg1" class="finalMsg"/>
+            </div>
+            <input type="hidden" name="receivers" value="01089671997"/>
+            <input type="hidden" name="sender" value="01089671997"/>
+            <input type="hidden" name="resflag" value="N" />
+            <input type="hidden" name="returnurl" value="https://thekingstudy.com/">
+            <input type="button" class="sendBtn" value="문의하기"/>
+          </form>
+        </div>
+      </article>
+    </div>
   </div>
 </div>

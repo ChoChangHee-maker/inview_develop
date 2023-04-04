@@ -41,8 +41,9 @@
 				<div class="r_title_box">
 					<div class="r_title_cont">
 						<div>
-							<img src="./img/web_dev_tit_img04.svg" alt="">
-							<img src="./img/web_dev_tit_img05.svg" alt="">
+							<img src="./img/web_dev_tit_img04.svg" alt="web dev tit img04">
+							<img class="mo_dev_tit" src="./img/web_dev_tit_img04_mo.svg" alt="web dev tit img04 mo">
+							<img src="./img/web_dev_tit_img05.svg" alt="web dev tit img05">
 						</div>
 						<h2>늘 새로운 크리에이티브로</h2>
 						<h2><b>내일의 변화를 만들어 나갑니다.</b></h2>
@@ -264,6 +265,7 @@
 						<div class="top_title_box02">
 							<p>아이앤뷰커뮤니케이션만의 <b>맞</b><b>춤</b><b>형</b> 제작 서비스</p>
 							<h2>최고의 효율로 사용될 수 있도록!</h2>
+							<h2 class="mo_h2">모두가 만족한 홈페이지!</h2>
 						</div>
 						<div class="web_keywordbox">
 							<span>#이탈률 최소화</span>
@@ -346,13 +348,21 @@
 							<button class="btn_style_01">
 								<span>회사소개서 다운로드</span>
 							</button>
-							<button class="btn_style_01">
+							<button class="btn_style_01" class="">
 								<span>문의하기</span>
 							</button>
 						</div>
 					</section>
 				</div>
-				<div class="tab_cont" attr-tabValue="tab_2"></div>
+				<div class="tab_cont" attr-tabValue="tab_2">
+					<div class="w1200 portpolio_wrap">
+						<ul class="portpolio_box">
+						</ul>
+						<button class="portpolio_more btn_style_01">
+							<span>더보기</span>
+						</button>
+					</div>
+				</div>
 			</div>
 		</div>
 
@@ -361,7 +371,8 @@
 
 	<div data-include-path="common/footer.html"></div>
 	<script type="text/javascript" src="resource/includeHtml.js"></script>
-	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>	
+	<script type="text/javascript" src="js/web_portpolio.js"></script>
 	<script>
 		$(document).ready(function () {
 			$(".tabs_control").children("input").click(function () {

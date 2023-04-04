@@ -10,7 +10,7 @@
 .main_vis .main-vis_txt > p { font-size: 24px; padding: 25px 0 60px; color: var(--font-color-secondary); line-height: 1.5; } 
 .main_vis .main-vis_txt > a { display: block; width: 255px; height: 70px; line-height: 70px; border-radius: 40px; font-size: 18px; text-align: center; border: 1px solid transparent; background-image: linear-gradient(#121e25, #121e25), linear-gradient(to right, #FF2174, #9100B3); background-origin: border-box; background-clip: content-box, border-box; } 
 .main_vis .main-vis_txt > a span { color: #FF2174; } 
-.main_vis a.inq_btn { position: absolute; font-size: 16px; right: 0; bottom: 80px; text-decoration: underline; color: #fff; line-height: 24px; padding: 0 20px; } 
+.main_vis .inq_btn {position: absolute;font-size: 16px;right: 0;bottom: 80px;text-decoration: underline;color: #fff;line-height: 24px;padding: 0 20px;padding-right: 0;} 
 .main_vis i[class^="circle"] { display: block; border-radius: 50%; position: absolute; } 
 .main_vis i.circle01 { width: 550px; height: 550px; background: linear-gradient(#FF2174, #9100B3); top: 150px; right: -200px; animation: move-up-down 2.2s ease-in-out infinite alternate; } 
 .main_vis i.circle02 { width: 300px; height: 300px; background: linear-gradient(#B265FF, #75F1FF); bottom: -100px; left: 13%; animation: move-up-down 1.7s ease-in-out infinite alternate; } 
@@ -109,7 +109,7 @@
 
 /*main06*/
 .main06 { padding: 120px 0; padding-right: 20px; position: relative; background: #2C3840; overflow: hidden; } 
-.main06:after { content: ""; display: block; position: absolute; width: 694px; height: 344px; background:url(../img/logo/logo_bg.png)no-repeat center/cover; right: -5%; bottom: 5%; } 
+.main06:after { content: ""; display: block; position: absolute; pointer-events:none; width: 694px; height: 344px; background:url(../img/logo/logo_bg.png)no-repeat center/cover; right: -5%; bottom: 5%; } 
 .main06 .main_title { text-align: left; max-width: 600px; width: 100%; padding-left:20px; } 
 .main06 .main06_cont > div { width: 50%; } 
 .main06 .main06_cont .main06_left { display: flex; flex-wrap: wrap; justify-content: end; } 

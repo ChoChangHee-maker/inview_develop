@@ -1,4 +1,4 @@
-const pfFrame = document.querySelector(".ytb_portpolio_box");
+const pfFrame = document.querySelector(".portpolio_box");
 
 const videoList = [
   {
@@ -520,12 +520,12 @@ function setList() {
 setList();
 
 $(function(){
-  $(".ytb_portpolio_box li").slice(0, 12).show(); // 초기갯수
-  $(".ytb_portpolio_more").click(function(e){ // 클릭시 more
+  $(".portpolio_box li").slice(0, 12).show(); // 초기갯수
+  $(".portpolio_more").click(function(e){ // 클릭시 more
       e.preventDefault();
-      $(".ytb_portpolio_box li:hidden").slice(0, 12).show(); // 클릭시 more 갯수 지저정
-      if($(".ytb_portpolio_box li:hidden").length == 0){ // 컨텐츠 남아있는지 확인
-        $(".ytb_portpolio_more").fadeOut(450);
+      $(".portpolio_box li:hidden").slice(0, 12).show(); // 클릭시 more 갯수 지저정
+      if($(".portpolio_box li:hidden").length == 0){ // 컨텐츠 남아있는지 확인
+        $(".portpolio_more").fadeOut(450);
       }      
       AOS.init({
         easing: 'ease-out',
