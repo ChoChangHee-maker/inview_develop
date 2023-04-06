@@ -8,6 +8,11 @@ $(document).on('click', '.nav__list-item.in_depth > p', function () {
   $(this).parent().siblings().removeClass("active").find("ul").slideUp(200);
 });
 
+// html go top
+function goTop(){
+	$('html').scrollTop(0);
+}
+
 // aos load event
 AOS.init({
   easing: 'ease-out',

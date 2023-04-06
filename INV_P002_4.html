@@ -1,410 +1,445 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="img/inv_favicon.ico" />
-    <title>아이앤뷰커뮤니케이션</title>
-    <!--fullpage-->
-    <link rel="stylesheet" href="resource/fullpage/fullpage.css" />
-    <!--swiper-->
-    <link rel="stylesheet" href="resource/swiper/swiper-bundle.min.css" />
-    <script src="resource/swiper/swiper-bundle.min.js"></script>
-    <!-- aos -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 
-    <link rel="stylesheet" href="css/style_sub.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <script src="resource/jquery.js"></script>
-    <script
-      type="text/javascript"
-      src="resource/tweenmax/TweenMax.min.js"
-    ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.3.0/snap.svg-min.js"></script>
-    <script src="https://dl.dropbox.com/s/sk7fbhx9burholi/dat.gui.min.js?dl=0"></script>
-    <script type="module" src="js/background/sub_bg__viral.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  </head>
-  <body class="sub media">
-    <div data-include-path="common/header.html"></div>
-    <div class="site">
-      <div class="circle circle--1"></div>
-      <div class="circle circle--2"></div>
-    </div>
-    <div class="sub_head_box">
-      <canvas class="orb-canvas"></canvas>
-      <div class="top_dimmed">
-        <div class="w1200">
-          <div class="sub_head_word_box">
-            <h1 class="page_title"><b>언론뉴스</b> 마케팅</h1>
-            <div class="tag">
-              <span>#저렴한 가격</span>
-              <span>#신뢰도 급상승</span>
-              <span>#일석이조</span>
-            </div>
-            <p class="page_desc">
-              회사의 브랜드 가치를 가장 효과적으로 높일 수 있는 마케팅
-              방법입니다. 적은 비용으로 기업의 긍정적인 이미지와 홍보효과까지
-              상승할 수 있는 일석이조의 마케팅이라고 볼 수 있습니다.
-            </p>
-            <button class="btn_style_05">
-              <span>언론뉴스 마케팅 문의하기</span>
-            </button>
-          </div>
-          <div class="trigger_txt_box">
-            <span class="trigger_txt">Media</span>
-          </div>
-        </div>
-      </div>
-    </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="img/inv_favicon.ico" />
+  <title>아이앤뷰커뮤니케이션</title>
+  <script src="resource/jquery.js"></script>
+  <!--swiper-->
+  <link rel="stylesheet" href="resource/swiper/swiper-bundle.min.css" />
+  <script src="resource/swiper/swiper-bundle.min.js"></script>
+  <!-- OwlCarousel2 -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <!-- aos -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 
-    <div class="public_section">
-      <div class="w1600">
-        <div class="top_title_box">
-          <h2>언론뉴스 홍보</h2>
-          <p>
-            쉽게 접할 수 있는 일반적인 광고가 아닌 인터넷뉴스, 인터넷신문 등을
-            통해 기업의 보도자료로 소비자분들에게 다가가 신뢰를 바탕으로 기업의
-            홍보가 되는 마케팅입니다.
-          </p>
-        </div>
-      </div>
-      <div class="public_con">
-        <div class="public_swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide pub_fir">
-              <!-- <img src="./img/news_fir.png" alt="news_img" /> -->
-            </div>
-            <div class="swiper-slide pub_sec">
-              <!-- <img src="./img/news_sec.png" alt="news_img" /> -->
-            </div>
-            <div class="swiper-slide pub_thi">
-              <!-- <img src="./img/news_thi.png" alt="news_img" /> -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="online_section section_m">
+  <link rel="stylesheet" href="css/style_sub.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap"
+    rel="stylesheet" />
+  <script type="text/javascript" src="resource/tweenmax/TweenMax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.3.0/snap.svg-min.js"></script>
+  <script src="https://dl.dropbox.com/s/sk7fbhx9burholi/dat.gui.min.js?dl=0"></script>
+  <script type="module" src="js/background/sub_bg__viral.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body class="sub media">
+  <div data-include-path="common/header.html"></div>
+  <div class="site">
+    <div class="circle circle--1"></div>
+    <div class="circle circle--2"></div>
+  </div>
+  <div class="sub_head_box">
+    <canvas class="orb-canvas"></canvas>
+    <div class="top_dimmed">
       <div class="w1200">
-        <div class="top_title_box">
-          <h2>신문도 온라인 시대!</h2>
+        <div class="sub_head_word_box">
+          <h1 class="page_title"><b>언론뉴스</b> 마케팅</h1>
+          <div class="tag">
+            <span>#저렴한 가격</span>
+            <span>#신뢰도 급상승</span>
+            <span>#일석이조</span>
+          </div>
+          <p class="page_desc">
+            회사의 브랜드 가치를 가장 효과적으로 높일 수 있는 마케팅
+            방법입니다. 적은 비용으로 기업의 긍정적인 이미지와 홍보효과까지
+            상승할 수 있는 일석이조의 마케팅이라고 볼 수 있습니다.
+          </p>
+          <button class="btn_style_05">
+            <span>언론뉴스 마케팅 문의하기</span>
+          </button>
         </div>
-        <!---->
-        <div class="graph_wrap" data-aos="fade-left" data-aos-duration="450">
-          <div class="graph_info">
-            <ul>
-              <li>신문 보는 인구</li>
-              <li>종이신문</li>
-              <li>인터넷신문</li>
-            </ul>
-          </div>
-          <div class="graph_box">
-            <ul>
-              <li data-aos="fade-up" data-aos-duration="350">
-                <div class="graph_num">
-                  <img src="./img/online_graph01.png" alt="graph img06" />
-                  <p>71.4</p>
-                </div>
-                <p>2009</p>
-              </li>
-              <li
-                data-aos="fade-up"
-                data-aos-duration="350"
-                data-aos-delay="50"
-              >
-                <div class="graph_num">
-                  <img src="./img/online_graph02.png" alt="graph img07" />
-                  <p>75.6</p>
-                </div>
-                <p>2011</p>
-              </li>
-              <li
-                data-aos="fade-up"
-                data-aos-duration="350"
-                data-aos-delay="100"
-              >
-                <div class="graph_num">
-                  <img src="./img/online_graph03.png" alt="graph img08" />
-                  <p>72.6</p>
-                </div>
-                <p>2013</p>
-              </li>
-              <li
-                data-aos="fade-up"
-                data-aos-duration="350"
-                data-aos-delay="150"
-              >
-                <div class="graph_num">
-                  <img src="./img/online_graph04.png" alt="graph img09" />
-                  <p>72.5</p>
-                </div>
-                <p>2015</p>
-              </li>
-              <li
-                data-aos="fade-up"
-                data-aos-duration="350"
-                data-aos-delay="200"
-              >
-                <div class="graph_num">
-                  <img src="./img/online_graph05.png" alt="graph img10" />
-                  <p>70.0</p>
-                </div>
-                <p>2017</p>
-              </li>
-              <li
-                data-aos="fade-up"
-                data-aos-duration="350"
-                data-aos-delay="250"
-              >
-                <div class="graph_num">
-                  <img src="./img/online_graph06.png" alt="graph img11" />
-                  <p>69.9</p>
-                </div>
-                <p>2019</p>
-              </li>
-              <div class="graph_line">
-                <div class="graph_top"></div>
-                <div class="graph_bottom"></div>
-              </div>
-            </ul>
-          </div>
+        <div class="trigger_txt_box">
+          <span class="trigger_txt">Media</span>
         </div>
       </div>
     </div>
-    <div class="strength_section section">
-      <div class="str_wrap">
-        <div class="stren_left">
-          <div class="strength_swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide str_fir">
-                <!-- <img src="./img/streng_fir.png" alt="strength_img" /> -->
-              </div>
-              <div class="swiper-slide str_sec">
-                <!-- <img src="./img/streng_sec.png" alt="strength_img" /> -->
-              </div>
-              <div class="swiper-slide str_thi">
-                <!-- <img src="./img/streng_thi.png" alt="strength_img" /> -->
-              </div>
-            </div>
+  </div>
+
+  <div class="public_section">
+    <div class="w1600">
+      <div class="top_title_box">
+        <h2>언론뉴스 홍보</h2>
+        <p>
+          쉽게 접할 수 있는 일반적인 광고가 아닌 인터넷뉴스, 인터넷신문 등을
+          통해 기업의 보도자료로 소비자분들에게 다가가 신뢰를 바탕으로 기업의
+          홍보가 되는 마케팅입니다.
+        </p>
+      </div>
+    </div>
+    <div class="public_con">
+      <div class="public_swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide pub_fir">
+            <img src="./img/news_fir.png" alt="news_img" />
+          </div>
+          <div class="swiper-slide pub_sec">
+            <img src="./img/news_sec.png" alt="news_img" />
+          </div>
+          <div class="swiper-slide pub_thi">
+            <img src="./img/news_thi.png" alt="news_img" />
           </div>
         </div>
-        <div class="stren_right">
-          <strong>언론 홍보의 장점!</strong>
-          <ul class="strength_list">
-            <li>
-              <span class="col_green">합리적 가격</span>으로 중소기업 및
-              소상공인 부담 DOWN
-            </li>
-            <li>
-              소비자와의 신뢰 관계를 형성하여
-              <span class="col_green">브랜드 신뢰도 UP</span>
-            </li>
-            <li>
-              적정 시간에 노출이 필요한
-              <span class="col_green">핵심 타켓에게 접근</span>
-            </li>
-            <li>
-              다양한 채널들에 송출 기사를
-              <span class="col_green">마케팅 자료로 활용</span>
-            </li>
-            <li>
-              브랜드명 또는 관련 내용 검색 시
-              <span class="col_green">검색 결과 점유</span>
-            </li>
+      </div>
+      <img src="./img/moniter.png" alt="moniter">
+    </div>
+  </div>
+  <div class="online_section section_m">
+    <div class="w1200">
+      <div class="top_title_box">
+        <h2>신문도 온라인 시대!</h2>
+      </div>
+      <!---->
+      <div class="graph_wrap" data-aos="fade-left" data-aos-duration="450">
+        <div class="graph_info">
+          <ul>
+            <li>신문 보는 인구</li>
+            <li>종이신문</li>
+            <li>인터넷신문</li>
           </ul>
         </div>
+        <div class="graph_box">
+          <ul>
+            <li data-aos="fade-up" data-aos-duration="350">
+              <div class="graph_num">
+                <img src="./img/online_graph01.png" alt="graph img06" />
+                <p>71.4</p>
+              </div>
+              <p>2009</p>
+            </li>
+            <li data-aos="fade-up" data-aos-duration="350" data-aos-delay="50">
+              <div class="graph_num">
+                <img src="./img/online_graph02.png" alt="graph img07" />
+                <p>75.6</p>
+              </div>
+              <p>2011</p>
+            </li>
+            <li data-aos="fade-up" data-aos-duration="350" data-aos-delay="100">
+              <div class="graph_num">
+                <img src="./img/online_graph03.png" alt="graph img08" />
+                <p>72.6</p>
+              </div>
+              <p>2013</p>
+            </li>
+            <li data-aos="fade-up" data-aos-duration="350" data-aos-delay="150">
+              <div class="graph_num">
+                <img src="./img/online_graph04.png" alt="graph img09" />
+                <p>72.5</p>
+              </div>
+              <p>2015</p>
+            </li>
+            <li data-aos="fade-up" data-aos-duration="350" data-aos-delay="200">
+              <div class="graph_num">
+                <img src="./img/online_graph05.png" alt="graph img10" />
+                <p>70.0</p>
+              </div>
+              <p>2017</p>
+            </li>
+            <li data-aos="fade-up" data-aos-duration="350" data-aos-delay="250">
+              <div class="graph_num">
+                <img src="./img/online_graph06.png" alt="graph img11" />
+                <p>69.9</p>
+              </div>
+              <p>2019</p>
+            </li>
+          </ul>
+          <div class="graph_line">
+            <img src="./img/online_graph.svg" alt="online graph">
+            <img src="./img/online_graph_mo.svg" alt="online graph">
+          </div>
+        </div>
       </div>
     </div>
-    <div class="success_section section_m">
-      <div class="w1200">
-        <div class="top_title_box">
-          <h2>언론 마케팅 성공사례</h2>
-          <p>원고 작성부터 배포, 기획기사, 포토뉴스 등 콘텐츠 제작</p>
-        </div>
-        <div class="success_con">
-          <div class="success_left">
-            <img src="./img/success01.png" />
-            <div class="key_word_box">
-              <span>키워드</span>
-              <b>#맛집</b>
-            </div>
+  </div>
+  <div class="strength_section section">
+    <div class="str_wrap">
+      <div class="stren_left">
+        <div class="owl-carousel">
+          <div class="item">
+            <img src="./img/streng_fir.png" alt="strength_img" />
+            <img src="./img/streng_fir_active.png" alt="strength_img">
           </div>
-          <div class="success_right">
-            <img src="./img/success02.png" />
-            <div class="key_word_box">
-              <span>키워드</span>
-              <b>#숙박 펜션</b>
-            </div>
+          <div class="item">
+            <img src="./img/streng_sec.png" alt="strength_img" />
+            <img src="./img/streng_sec_active.png" alt="strength_img">
+          </div>
+          <div class="item">
+            <img src="./img/streng_thi.png" alt="strength_img" />
+            <img src="./img/streng_thi_active.png" alt="strength_img">
           </div>
         </div>
-        <ul class="success_con_bot">
+      </div>
+      <div class="stren_right">
+        <strong>언론 홍보의 장점!</strong>
+        <ul class="strength_list">
           <li>
-            <span class="procedure_title">보도자료 신청</span>
-            <p>
-              기사 내용에
-              <span class="col_white">뼈대가 되는 자료</span>를<br />
-              준비하여 담당자에게 전달
-            </p>
+            <span class="col_green">합리적 가격</span>으로 중소기업 및
+            소상공인 부담 DOWN
           </li>
           <li>
-            <span class="procedure_title">보도자료 작성</span>
-            <p>
-              담당자가 받은 자료들을<br />
-              기자분께 전달하여 <span class="col_white">보도자료 작성</span>
-            </p>
+            소비자와의 신뢰 관계를 형성하여
+            <span class="col_green">브랜드 신뢰도 UP</span>
           </li>
           <li>
-            <span class="procedure_title">언론 송출</span>
-            <p>
-              언론사 컨펌이후 기사가 송출되며<br />
-              <span class="col_white">포털사에 노출 완료</span>
-            </p>
+            적정 시간에 노출이 필요한
+            <span class="col_green">핵심 타켓에게 접근</span>
+          </li>
+          <li>
+            다양한 채널들에 송출 기사를
+            <span class="col_green">마케팅 자료로 활용</span>
+          </li>
+          <li>
+            브랜드명 또는 관련 내용 검색 시
+            <span class="col_green">검색 결과 점유</span>
           </li>
         </ul>
       </div>
     </div>
-    <div class="cooperation_section">
-      <div class="w1200">
-        <div class="top_title_box">
-          <h2>언론 마케팅 제휴</h2>
+  </div>
+  <div class="success_section section_m">
+    <div class="w1200">
+      <div class="top_title_box">
+        <h2>언론 마케팅 성공사례</h2>
+        <p>원고 작성부터 배포, 기획기사, 포토뉴스 등 콘텐츠 제작</p>
+      </div>
+      <div class="success_con">
+        <div class="success_left">
+          <img src="./img/success01.png" />
+          <div class="key_word_box">
+            <span>키워드</span>
+            <b>#맛집</b>
+          </div>
         </div>
-        <ul class="cooper_list">
-          <li>
-            <img src="./img/logo/public_logo_01.png" alt="중앙일보" />
-          </li>
-          <li>
-            <img src="./img/logo/public_logo_02.png" alt="조선biz" />
-          </li>
-          <li>
-            <img src="./img/logo/public_logo_03.png" alt="동아일보" />
-          </li>
-          <li>
-            <img src="./img/logo/public_logo_04.png" alt="매일경제" />
-          </li>
-          <li>
-            <img src="./img/logo/public_logo_05.png" alt="한국경제" />
-          </li>
-          <li>
-            <img src="./img/logo/public_logo_06.png" alt="연합뉴스" />
-          </li>
-          <li>
-            <img src="./img/logo/public_logo_07.png" alt="스포츠조선" />
-          </li>
-          <li>
-            <img src="./img/logo/public_logo_08.png" alt="경향신문" />
-          </li>
-          <li>
-            <img src="./img/logo/public_logo_09.png" alt="조선에듀" />
-          </li>
-          <li>
-            <img src="./img/logo/public_logo_10.png" alt="파이낸셜뉴스" />
-          </li>
-          <li>
-            <img src="./img/logo/public_logo_11.png" alt="세계일보" />
-          </li>
-          <li>
-            <img src="./img/logo/public_logo_12.png" alt="서울경제" />
-          </li>
-          <li>
-            <img src="./img/logo/public_logo_13.png" alt="국민일보" />
-          </li>
-          <li>
-            <img src="./img/logo/public_logo_14.png" alt="뉴스1" />
-          </li>
-          <li>
-            <img src="./img/logo/public_logo_15.png" alt="아시아경제" />
-          </li>
-          <li>
-            <img src="./img/logo/public_logo_16.png" alt="머니투데이" />
-          </li>
-          <li>
-            <img src="./img/logo/public_logo_17.png" alt="헤럴드경제" />
-          </li>
-          <li>
-            <img src="./img/logo/public_logo_18.png" alt="스포츠경향" />
-          </li>
-          <li>
-            <img src="./img/logo/public_logo_19.png" alt="전자신문" />
-          </li>
-          <li>
-            <img src="./img/logo/public_logo_20.png" alt="국토일보" />
-          </li>
-          <li>
-            <img src="./img/logo/public_logo_21.png" alt="서울신문" />
-          </li>
-          <li>
-            <img src="./img/logo/public_logo_22.png" alt="아주경제" />
-          </li>
-          <li>
-            <img src="./img/logo/public_logo_23.png" alt="매일방송" />
-          </li>
-          <li>
-            <img src="./img/logo/public_logo_24.png" alt="아이뉴스24" />
-          </li>
-          <li>
-            <img src="./img/logo/public_logo_25.png" alt="국제신문" />
-          </li>
-        </ul>
-        <div class="coop_loading"><img src="./img/road_gif.gif" /></div>
-        <div class="coop_bot_txt">
-          <b>국내 약 200여 개</b>
-          <p>언론사와 제휴되어 있어 다양한 매체에 노출이 가능합니다.</p>
+        <div class="success_right">
+          <img src="./img/success02.png" />
+          <div class="key_word_box">
+            <span>키워드</span>
+            <b>#숙박 펜션</b>
+          </div>
         </div>
       </div>
+      <ul class="success_con_bot">
+        <li>
+          <span class="procedure_title">보도자료 신청</span>
+          <p>
+            기사 내용에
+            <span class="col_white">뼈대가 되는 자료</span>를<br />
+            준비하여 담당자에게 전달
+          </p>
+        </li>
+        <li>
+          <span class="procedure_title">보도자료 작성</span>
+          <p>
+            담당자가 받은 자료들을<br />
+            기자분께 전달하여 <span class="col_white">보도자료 작성</span>
+          </p>
+        </li>
+        <li>
+          <span class="procedure_title">언론 송출</span>
+          <p>
+            언론사 컨펌이후 기사가 송출되며<br />
+            <span class="col_white">포털사에 노출 완료</span>
+          </p>
+        </li>
+      </ul>
     </div>
+  </div>
+  <div class="cooperation_section">
+    <div class="w1200">
+      <div class="top_title_box">
+        <h2>언론 마케팅 제휴</h2>
+      </div>
+      <ul class="cooper_list">
+        <li>
+          <img src="./img/logo/public_logo_01.png" alt="중앙일보" />
+        </li>
+        <li>
+          <img src="./img/logo/public_logo_02.png" alt="조선biz" />
+        </li>
+        <li>
+          <img src="./img/logo/public_logo_03.png" alt="동아일보" />
+        </li>
+        <li>
+          <img src="./img/logo/public_logo_04.png" alt="매일경제" />
+        </li>
+        <li>
+          <img src="./img/logo/public_logo_05.png" alt="한국경제" />
+        </li>
+        <li>
+          <img src="./img/logo/public_logo_06.png" alt="연합뉴스" />
+        </li>
+        <li>
+          <img src="./img/logo/public_logo_07.png" alt="스포츠조선" />
+        </li>
+        <li>
+          <img src="./img/logo/public_logo_08.png" alt="경향신문" />
+        </li>
+        <li>
+          <img src="./img/logo/public_logo_09.png" alt="조선에듀" />
+        </li>
+        <li>
+          <img src="./img/logo/public_logo_10.png" alt="파이낸셜뉴스" />
+        </li>
+        <li>
+          <img src="./img/logo/public_logo_11.png" alt="세계일보" />
+        </li>
+        <li>
+          <img src="./img/logo/public_logo_12.png" alt="서울경제" />
+        </li>
+        <li>
+          <img src="./img/logo/public_logo_13.png" alt="국민일보" />
+        </li>
+        <li>
+          <img src="./img/logo/public_logo_14.png" alt="뉴스1" />
+        </li>
+        <li>
+          <img src="./img/logo/public_logo_15.png" alt="아시아경제" />
+        </li>
+        <li>
+          <img src="./img/logo/public_logo_16.png" alt="머니투데이" />
+        </li>
+        <li>
+          <img src="./img/logo/public_logo_17.png" alt="헤럴드경제" />
+        </li>
+        <li>
+          <img src="./img/logo/public_logo_18.png" alt="스포츠경향" />
+        </li>
+        <li>
+          <img src="./img/logo/public_logo_19.png" alt="전자신문" />
+        </li>
+        <li>
+          <img src="./img/logo/public_logo_20.png" alt="국토일보" />
+        </li>
+        <li>
+          <img src="./img/logo/public_logo_21.png" alt="서울신문" />
+        </li>
+        <li>
+          <img src="./img/logo/public_logo_22.png" alt="아주경제" />
+        </li>
+        <li>
+          <img src="./img/logo/public_logo_23.png" alt="매일방송" />
+        </li>
+        <li>
+          <img src="./img/logo/public_logo_24.png" alt="아이뉴스24" />
+        </li>
+        <li>
+          <img src="./img/logo/public_logo_25.png" alt="국제신문" />
+        </li>
+      </ul>
+      <div class="coop_loading"><img src="./img/road_gif.gif" /></div>
+      <div class="coop_bot_txt">
+        <b>국내 약 200여 개</b>
+        <p>언론사와 제휴되어 있어 다양한 매체에 노출이 가능합니다.</p>
+      </div>
+    </div>
+  </div>
 
-    <div data-include-path="common/footer.html"></div>
-    <script type="text/javascript" src="resource/includeHtml.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r83/three.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
-    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/605067/OrbitControls.js"></script>
-    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/605067/GeometryUtils.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
-    <script>
-      /* swiper_P005 public */
-      var swiper = new Swiper(".public_swiper", {
-        slidesPerView: 1,
-        centeredSlides: true,
-        loop: true,
-        autoplay: {
-          delay: 30000,
-          disableOnInteraction: false,
-        },
-        breakpoints: {
-          767: {
-            slidesPerView: 2.4,
-            spaceBetween: 40,
-          },
-        },
-      });
+  <div data-include-path="common/footer.html"></div>
+  <script type="text/javascript" src="resource/includeHtml.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r83/three.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/605067/OrbitControls.js"></script>
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/605067/GeometryUtils.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script>
+    $(document).ready(function () {
+      var img_width = $(".public_con .swiper-slide-active").find("img").eq(0).outerWidth()
+      console.log(img_width)
+      $(".public_con .public_swiper + img").width(img_width)
+      $(window).resize(function () {
+        var img_width = $(".public_con .swiper-slide-active img").innerWidth()
+        $(".public_con .public_swiper + img").width(img_width)
+      })
+    })
 
-      /* swiper_P005 strength */
-      var swiper = new Swiper(".strength_swiper", {
-        slidesPerView: 1,
-        centeredSlides: true,
-        loop: true,
-        autoplay: {
-          delay: 30000,
-          disableOnInteraction: false,
+    /* swiper_P005 public */
+    var swiper = new Swiper(".public_swiper", {
+      slidesPerView: 1,
+      centeredSlides: true,
+      loop: true,
+      autoplay: {
+        delay: 30000,
+        disableOnInteraction: false,
+      },
+      breakpoints: {
+        767: {
+          slidesPerView: 2.4,
+          spaceBetween: 0,
         },
-        breakpoints: {
-          767: {
-            slidesPerView: 2,
-            spaceBetween: 10,
-            centeredSlides: false,
+      },
+      on: {
+        init: function () {
+        }
+      }
+    });
+
+    $('.owl-carousel').owlCarousel({
+      rtl: false,
+      loop: true,
+      animateOut: 'fadeOut',
+      animateIn: 'fadeIn',
+      // autoplay: true,
+      // autoplayTimeout:3500,
+      margin: 40,
+      nav: false,
+      dots: false,
+      items: 3,
+      onInitialized: function () {
+        var index = $(".owl-item.active").index();
+        $(".owl-item").removeClass("last");
+        $(".owl-item").eq(index + 2).addClass("last");
+      },
+      onTranslated: function () {
+        var index = $(".owl-item.active").index();
+        $(".owl-item").removeClass("last");
+        $(".owl-item").eq(index + 2).addClass("last");
+      },
+      responsive: {
+        // breakpoint from 0 up
+        0: {
+          items: 1,
+          margin: 0,
+          // autoplay: true,
+          autoplayTimeout:4500,
+          onInitialized: function () {
+            var index = $(".owl-item.active").index();
+            $(".owl-item").removeClass("last");
+            $(".owl-item").eq(index).addClass("last");
           },
-          1024: {
-            slidesPerView: 3,
-            spaceBetween: 40,
-          },
+          onTranslated: function () {
+            var index = $(".owl-item.active").index();
+            $(".owl-item").removeClass("last");
+            $(".owl-item").eq(index).addClass("last");
+          }
         },
-      });
-    </script>
-  </body>
+        // breakpoint from 480 up
+        768: {
+          items: 3,
+          margin: 20,
+          onInitialized: function () {
+            var index = $(".owl-item.active").index();
+            $(".owl-item").removeClass("last");
+            $(".owl-item").eq(index + 1).addClass("last");
+          },
+          onTranslated: function () {
+            var index = $(".owl-item.active").index();
+            $(".owl-item").removeClass("last");
+            $(".owl-item").eq(index + 1).addClass("last");
+          }
+        },
+        // breakpoint from 768 up
+        1200: {
+          items: 3,
+        }
+      }
+    })
+  </script>
+</body>
+
 </html>

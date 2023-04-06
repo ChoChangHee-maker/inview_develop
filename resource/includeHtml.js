@@ -11,6 +11,25 @@ document.addEventListener('DOMContentLoaded', function() {
             window.smsFormLoaded = true;
             smsForm();
           }
+					// scroll
+					var control = document.getElementById('control');
+					var bar = document.querySelector('.bar');
+					var RADIUS = 54;
+					var CIRCUMFERENCE = 2 * Math.PI * RADIUS;
+					function progress(per) {
+						const scrollTop = document.documentElement.scrollTop;
+						const height = document.documentElement.scrollHeight - document.documentElement.clientHeight
+						const scrollWidth = (scrollTop / height) * 100;
+						const perResult = scrollWidth / 100;
+						var dashoffset = CIRCUMFERENCE * (1 - perResult);
+						bar.style.strokeDashoffset = dashoffset;
+					}
+					bar.style.strokeDasharray = CIRCUMFERENCE;
+					progress(0);
+					const onScroll = () => {
+						progress()
+					}
+					window.addEventListener('scroll', () => onScroll())
         }
       };
       xhttp.open('GET', includePath, true);
@@ -123,7 +142,7 @@ $(document).off().on("click", function () {
       var init = function init() {
         body = $('body');
         menu = $('.menu.flex');
-        menu_inq = $('.inq_btn');
+        menu_inq = $('.inq_ative_btn');
         menuItems = $('.nav__list-item');
         applyListeners();
         applyListeners02();

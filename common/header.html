@@ -1,3 +1,17 @@
+<div class="side_menu">
+  <div class="inq_ative_btn">
+    <img src="./img/inquiry_icon.svg" alt="inquiry icon">
+  </div>
+  <div class="move_on_top" onclick="goTop()">    
+    <div class="circle_progress_wrap">
+      <svg class="circle_progress" width="60" height="60" viewBox="0 0 120 120">
+        <circle class="frame" cx="60" cy="60" r="54" stroke-width="5" />
+        <circle class="bar" cx="60" cy="60" r="54" stroke-width="5" />
+      </svg>
+    </div>
+    <img src="./img/arrow_up.svg" alt="arrow up">
+  </div>
+</div>
 <header class="header">
     <div class="header w1600">
         <h1 class="logo">
@@ -54,14 +68,30 @@
       </li>
       <li class="nav__list-item"><a href="./INV_P004.html" class="hover-target">홈페이지 제작</a></li>
       <li class="nav__list-item"><a href="./INV_P005.html" class="hover-target">마케팅 교육</a></li>
-      <li class="nav__list-item"><a href="#" class="hover-target inq_btn">문의하기</a></li>
+      <li class="nav__list-item"><a href="#" class="hover-target inq_ative_btn">문의하기</a></li>
     </ul>
   </div>
+  <div class="nav_company_info">
+    <p>새로운 문화창조, <br>기업의 가치를 디자인합니다.</p>
+    <div>
+      <span>Tal</span>
+      <span>02-6956-9091</span>
+    </div>
+    <div>
+      <span>Contact</span>
+      <span>inview0310@naver.com</span>
+    </div>
+    <div>
+      <span>Address</span>
+      <span>서울특별시 마포구 상암동 1647 DMC디지털큐브 5층</span>
+    </div>
+  </div>
+  <div class="copy">ⓒ inview communication All Rights Reserved</div>
 </div>
 
 <div class="inquiry">
   <div class="inquiry__content">
-    <div class="inquiry_cont_box w1200">
+    <div class="inquiry_cont_box">
       <article class="useform">
         <div class="useform_box">
           <form id="smsForm" name='nicesms' method='POST' action="https://sms.nicesms.co.kr/cpsms/cpsms.html">

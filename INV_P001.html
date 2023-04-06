@@ -22,18 +22,19 @@
   <script src='https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.3.0/snap.svg-min.js'></script>
   <script src="https://dl.dropbox.com/s/sk7fbhx9burholi/dat.gui.min.js?dl=0"></script>
 </head>
+
 <body class="sub">
-	<div data-include-path="common/header.html"></div>
+  <div data-include-path="common/header.html"></div>
   <div class="site">
     <div class="circle circle--1"></div>
     <div class="circle circle--2"></div>
   </div>
-	<div class="sub_wrap company">
+  <div class="sub_wrap company">
     <div class="sub_cont_box">
       <div class="title_box">
         <p data-aos="fade-right" data-aos-duration="800">I&VIEW COMMUNICATION</p>
         <h1 data-aos="fade-right" data-aos-duration="800" data-aos-delay="300">미래를 선도하는 기술력,<br>고객만족 극대화가 목표입니다.</h1>
-        <span data-aos="fade-left" data-aos-duration="500">미래에 알맞는 온라인 마케팅  솔루션을 미래를 함께하기 위해 최선을 다하고 있습니다.</span>
+        <span data-aos="fade-left" data-aos-duration="500">미래에 알맞는 온라인 마케팅 솔루션을 미래를 함께하기 위해 최선을 다하고 있습니다.</span>
         <div class="bg_box">
           <img src="./img/inv_company_bg.jpg" alt="company info background img">
         </div>
@@ -50,8 +51,10 @@
             <span>로고 강조 ver.</span>
           </li>
         </ul>
-        <p class="ci_info"><b>Innovation [혁신] + View [관점], [바라보다]</b> 의미의 아이앤뷰커뮤니케이션은 <i>'혁신적인 관점에서 바라본다'</i>에서 눈(Eye)을 모티브로<br>
-          <b>눈을 디지털적이고 혁신적인 이미지</b>로 심볼화하였고, 심플하고 깔끔한 로고타입으로 <b>안정적이고 신뢰감 있는</b> 기업임을 표현했습니다.</p>
+        <p class="ci_info"><b>Innovation [혁신] + View [관점], [바라보다]</b> 의미의 아이앤뷰커뮤니케이션은 <i>'혁신적인 관점에서 바라본다'</i>에서 눈(Eye)을
+          모티브로<br>
+          <b>눈을 디지털적이고 혁신적인 이미지</b>로 심볼화하였고, 심플하고 깔끔한 로고타입으로 <b>안정적이고 신뢰감 있는</b> 기업임을 표현했습니다.
+        </p>
         <ul class="ci_color">
           <li>
             <div class="color_box" data-aos="fade-down" data-aos-duration="600"></div>
@@ -63,7 +66,8 @@
           </li>
         </ul>
         <p class="ci_info">아이앤뷰커뮤니케이션과 소통하는 모든 광고주분들의 마케팅이 성공적으로 이루어지길 기원하며<br>
-          <b>미래지향적, 혁신적인 느낌을 주는 남색</b>과 <b>승리를 기념하는 색상인 마젠타</b>를 혼합 사용한 로고 디자인</p>
+          <b>미래지향적, 혁신적인 느낌을 주는 남색</b>과 <b>승리를 기념하는 색상인 마젠타</b>를 혼합 사용한 로고 디자인
+        </p>
       </div>
       <div class="sub_block bg_c_02">
         <h2 class="sub_h" data-aos="fade-down" data-aos-duration="600">미션</h2>
@@ -234,7 +238,7 @@
               <p><b>8월</b> 회사 확장 및 이전</p>
             </li>
             <li>
-              <h3>2020</h3>g
+              <h3>2020</h3>
               <p><b>2월</b> 거래처 20,000개 돌파</p>
               <p><b>2월</b> SNS마케팅 자체 개발</p>
               <p><b>5월</b> 마케팅 기획 부서 확장</p>
@@ -245,7 +249,7 @@
               <p><b>2월</b> Google 공식 파트너사 지정</p>
               <p><b>2월</b> Google ads 디스플레이 인증서 획득</p>
               <p><b>5월</b> Google ads 추가인증서 10건 획득</p>
-              <p><b>7월</b>  Google GDN 마케팅 정식 출시</p>
+              <p><b>7월</b> Google GDN 마케팅 정식 출시</p>
             </li>
             <li>
               <h3>2022</h3>
@@ -349,7 +353,7 @@
           </li>
         </ul>
       </div>
-      <div class="slide_list bg_secondary">        
+      <div class="slide_list bg_secondary">
         <div class="mySwiper swiper-container-free-mode">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -401,100 +405,53 @@
         </div>
       </div>
     </div>
-	</div>
+  </div>
   <div class="btn_test"></div>
   <div data-include-path="common/footer.html"></div>
   <script type="text/javascript" src="resource/includeHtml.js"></script>
   <script src="resource/swiper/swiper-bundle.min.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
-  <script type="text/javascript">  
+  <script type="text/javascript">
     document.body.style.cursor = 'none';
     $(function () {
       /*메인리뷰슬라이드*/
       var slide_list = new Swiper(".slide_list .mySwiper", {
         loop: true,
         autoplay: {
-          delay:0,
+          delay: 0,
           disableOnInteraction: false
         },
         slidesPerView: "auto",
-        speed:1500,
+        speed: 1500,
       });
     });
 
     // mobile / pc 구분
     const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
     if (isMobile) {
-    // 모바일 기기에서 실행하는 코드
+      // 모바일 기기에서 실행하는 코드
     } else {
-      // scroll event// 요소 & 사이즈
-      const list = document.querySelector('.list_box');
-      const listScrollWidth = list.scrollWidth;
-      const listClientWidth = list.clientWidth;
-      // 이벤트마다 갱신될 값
-      let startX = 0;
-      let nowX = 0;
-      let endX = 0;
-      let listX = 0;
-      const onScrollStart = (e) => {
-        startX = getClientX(e);
-        window.addEventListener('mousemove', onScrollMove);
-        window.addEventListener('touchmove', onScrollMove);
-        window.addEventListener('mouseup', onScrollEnd);
-        window.addEventListener('touchend', onScrollEnd);
-      };
-      const onScrollMove = (e) => {
-          nowX = getClientX(e);
-          setTranslateX(listX + nowX - startX);
-        };
-      const onScrollEnd = (e) => {
-        endX = getClientX(e);
-        listX = getTranslateX();
-        if (listX > 0) {
-          setTranslateX(0);
-          list.style.transition = `all 0.3s ease`;
-          listX = 0;
-        } else if (listX < listClientWidth - listScrollWidth) {
-          setTranslateX(listClientWidth - listScrollWidth);
-          list.style.transition = `all 0.3s ease`;
-          listX = listClientWidth - listScrollWidth;
+      var scrollContainer = $('.timeline_list_wrap');
+      var scrollContent = $('.list_box');
+      var isDragging = false;
+      var lastX;
+      scrollContainer.on('mousedown', function (e) {
+        isDragging = true;
+        lastX = e.clientX;
+        e.preventDefault();
+      });
+      scrollContainer.on('mouseup', function (e) {
+        isDragging = false;
+      });
+      scrollContainer.on('mousemove', function (e) {
+        if (isDragging) {
+          var deltaX = e.clientX - lastX;
+          scrollContainer.scrollLeft(scrollContainer.scrollLeft() - deltaX);
+          lastX = e.clientX;
         }
-
-        window.removeEventListener('mousedown', onScrollStart);
-        window.removeEventListener('touchstart', onScrollStart);
-        window.removeEventListener('mousemove', onScrollMove);
-        window.removeEventListener('touchmove', onScrollMove);
-        window.removeEventListener('mouseup', onScrollEnd);
-        window.removeEventListener('touchend', onScrollEnd);
-        window.removeEventListener('click', onClick);
-
-        setTimeout(() => {
-          bindEvents();
-          list.style.transition = '';
-        }, 300);
-      };
-      const onClick = (e) => {
-        if (startX - endX !== 0) {
-          e.preventDefault();
-        }
-      };
-      const getClientX = (e) => {
-      const isTouches = e.touches ? true : false;
-      return isTouches ? e.touches[0].clientX : e.clientX;
-      };
-      const getTranslateX = () => {
-        return parseInt(getComputedStyle(list).transform.split(/[^\-0-9]+/g)[5]);
-      };
-      const setTranslateX = (x) => {
-        list.style.transform = `translateX(${x}px)`;
-      };
-      const bindEvents = () => {
-        list.addEventListener('mousedown', onScrollStart);
-        list.addEventListener('touchstart', onScrollStart);
-        list.addEventListener('click', onClick);
-      };
-      bindEvents();
+      });
     }
   </script>
 </body>
+
 </html>
